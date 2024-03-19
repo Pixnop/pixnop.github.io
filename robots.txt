@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://pixnop.github.io/portfolio//sitemap.xml
+Sitemap: https://pixnop.github.io/sitemap.xml
