@@ -6,12 +6,10 @@ subtitle: Étudiant passionné d'informatique, à la recherche de nouveaux défi
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: leonfvt.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>5 rue de la vieille aiguillerie</p>
     <p>Montpellier, 34000</p>
-    <p></p>
     
 
 news: true # includes a list of news items
