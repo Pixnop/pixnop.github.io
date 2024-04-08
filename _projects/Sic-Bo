@@ -1,0 +1,40 @@
+---
+layout: page
+title: Jeu Sic Bo
+description: Un jeu de casino Sic Bo développé en PHP MVC avec JavaScript
+img: assets/img/sicbo-cover.jpg
+importance: 1
+category: work
+---
+
+<div class="row">
+  <div class="col-sm-6 mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/sicbo-gui.png" title="Interface du jeu Sic Bo" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-sm-6 mt-3 mt-md-0">
+    <h2>Projet SAE : Développement d'un jeu de casino Sic Bo</h2>
+    <p>Dans le cadre de notre projet de SAE, nous avons développé une version web du jeu de casino chinois <strong>Sic Bo</strong>. Le but était de mettre en pratique nos compétences en développement web avec une architecture MVC en PHP côté backend, et du JavaScript pour rendre l'interface interactive côté frontend.</p>
+  </div>
+</div>
+
+<div class="pt-5 pb-5">
+  <div class="container">
+    <h3>Règles du jeu</h3>
+    <p>Le jeu se joue avec trois dés. Les joueurs placent des paris sur le résultat du lancé, par exemple :</p>
+    <ul>
+      <li>La somme des dés</li>
+      <li>Une combinaison particulière</li>
+      <li>Un chiffre spécifique</li>
+    </ul>
+    <p>Notre version permet aux utilisateurs de placer leurs mises via une interface web avant que les dés ne soient lancés.</p>
+  </div>
+</div>
+
+<div class="pt-5 pb-5">
+  <div class="container">
+    <h3>Compétences développées</h3>
+    <p>Ce projet nous a permis de monter en compétence sur le développement web moderne, en créant une application complète avec une stack PHP/JavaScript et une architecture robuste. Cela nous servira pour nos projets futurs !</p>
+    <p>N'hésitez pas à consulter le code source sur GitHub : <a href="#">lien vers votre repo</a></p>
+  </div>
+</div>
+
