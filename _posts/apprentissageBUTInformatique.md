@@ -2,9 +2,9 @@
 layout: post
 title: apprentissage - BUT Informatique
 date: 2024-04-01 16:40:16
-description:
+description: apprentissage
 tags: BUT
-categories: sample-posts
+categories: posts
 ---
 
 # apprentissage - BUT Informatique
