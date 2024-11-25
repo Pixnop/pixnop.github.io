@@ -1,5 +1,5 @@
+//src/components/Navigation/NavigationBar.jsx
 import React from 'react';
-import PropTypes from 'prop-types';
 
 const NavigationBar = ({ sections, currentSection, onSectionChange }) => {
     return (
@@ -22,19 +22,6 @@ const NavigationBar = ({ sections, currentSection, onSectionChange }) => {
             </div>
         </nav>
     );
-};
-
-NavigationBar.propTypes = {
-    sections: PropTypes.arrayOf(
-        PropTypes.shape({
-            id: PropTypes.string.isRequired,
-            title: PropTypes.string.isRequired,
-            icon: PropTypes.elementType.isRequired,
-            color: PropTypes.string.isRequired,
-        })
-    ).isRequired,
-    currentSection: PropTypes.number.isRequired,
-    onSectionChange: PropTypes.func.isRequired,
 };
 
 export default NavigationBar;

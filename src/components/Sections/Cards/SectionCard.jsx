@@ -1,3 +1,4 @@
+//src/components/Sections/Cards/SectionCard.jsx
 import React from 'react';
 import PropTypes from 'prop-types';
 

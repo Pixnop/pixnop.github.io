@@ -1,6 +1,5 @@
+//src/constants/sections.js
 import { Code, GraduationCap, Briefcase, Monitor, Heart } from 'lucide-react';
-// Autres options d'icônes possibles:
-// import { Gamepad2, Hobby, Heart, Puzzle, Star, Sparkles } from 'lucide-react';
 
 export const sections = [
     {
