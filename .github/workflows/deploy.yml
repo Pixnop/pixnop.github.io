@@ -1,4 +1,6 @@
 name: Deploy React App
+env:
+  CI: false
 
 on:
   push:
