@@ -1,13 +1,13 @@
-// src/components/Sections/Passions/PassionsSection.jsx
 import React from 'react';
 import InfoCard from '../Cards/InfoCard';
 import { passionsContent } from '../../../constants/content/passions';
 
+const size = Math.random() * 400 + 200;
 const PassionsSection = () => (
-    <section className="w-screen h-screen flex-shrink-0 snap-start relative overflow-hidden">
-        {/* Fond principal avec dégradé profond */}
-        <div className="absolute inset-0 bg-[#0a0a1e]">
-            {/* Cercles décoratifs animés */}
+    <section className="w-screen h-screen flex-shrink-0 snap-start relative">
+        {/* Container pour les effets de fond avec overflow visible */}
+        <div className="absolute inset-0 overflow-visible bg-[#0a0a1e]">
+            {/* Cercles décoratifs animés avec positions absolues ajustées */}
             {[...Array(5)].map((_, i) => (
                 <div
                     key={i}
@@ -16,18 +16,21 @@ const PassionsSection = () => (
                         background: `radial-gradient(circle, ${
                             ['rgba(147,51,234,0.15)', 'rgba(59,130,246,0.15)', 'rgba(236,72,153,0.15)'][i % 3]
                         } 0%, transparent 70%)`,
-                        width: `${Math.random() * 400 + 200}px`,
-                        height: `${Math.random() * 400 + 200}px`,
+                        width: `${size}px`,
+                        height: `${size}px`,
                         left: `${Math.random() * 100}%`,
                         top: `${Math.random() * 100}%`,
+                        transform: 'translate(-50%, -50%)',
                         animationDelay: `${i * 1.5}s`,
                         animationDuration: '4s',
+                        pointerEvents: 'none',
+                        overflow: 'visible',
                     }}
                 />
             ))}
 
             {/* Motif ondulant */}
-            <div className="absolute inset-0 opacity-30">
+            <div className="absolute inset-0 overflow-hidden opacity-30">
                 {[...Array(8)].map((_, i) => (
                     <div
                         key={i}
@@ -62,7 +65,7 @@ const PassionsSection = () => (
         </div>
 
         {/* Particules flottantes */}
-        <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute inset-0 overflow-visible pointer-events-none">
             {[...Array(20)].map((_, i) => (
                 <div
                     key={i}
