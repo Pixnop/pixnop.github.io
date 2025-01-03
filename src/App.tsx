@@ -1,35 +1,44 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// src/App.tsx
+import { useRef } from 'react';
+import Header from '@/components/layout/Header';
+import Profile from '@/components/sections/Profile';
+import Experience from '@/components/sections/Experience';
+import Education from '@/components/sections/Education';
+import Skills from '@/components/sections/Skills';
+import Passions from '@/components/sections/Passions';
+import { useHorizontalScroll } from '@/hooks/useHorizontalScroll';
+import { PortfolioProvider } from '@/context/PortfolioContext';
 
-function App() {
-  const [count, setCount] = useState(0)
+const AppContent = () => {
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  useHorizontalScroll(scrollContainerRef);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div className="h-screen w-screen overflow-hidden bg-background">
+      <Header className="fixed top-0 left-0 right-0 h-16 z-50" />
 
-export default App
+      <main
+        ref={scrollContainerRef}
+        className="flex mt-16 h-[calc(100vh-4rem)] overflow-x-auto overflow-y-hidden"
+      >
+        <div className="flex flex-nowrap">
+          <Profile />
+          <Experience />
+          <Education />
+          <Skills />
+          <Passions />
+        </div>
+      </main>
+    </div>
+  );
+};
+
+const App = () => {
+  return (
+    <PortfolioProvider>
+      <AppContent />
+    </PortfolioProvider>
+  );
+};
+
+export default App;
