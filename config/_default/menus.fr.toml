@@ -1,0 +1,44 @@
+[[main]]
+name = "Accueil"
+pageRef = "/"
+weight = 10
+
+[[main]]
+name = "À propos"
+pageRef = "apropos"
+weight = 20
+
+[[main]]
+name = "Expérience"
+pageRef = "experience"
+weight = 30
+
+[[main]]
+name = "Formation"
+pageRef = "formation"
+weight = 40
+
+[[main]]
+name = "Compétences"
+pageRef = "competences"
+weight = 50
+
+[[main]]
+name = "Projets"
+pageRef = "projets"
+weight = 60
+
+[[main]]
+name = "Contact"
+pageRef = "contact"
+weight = 70
+
+[[footer]]
+name = "LinkedIn"
+url = "https://linkedin.com/in/leonfievet"
+weight = 10
+
+[[footer]]
+name = "GitHub"
+url = "https://github.com/pixnop"
+weight = 20
