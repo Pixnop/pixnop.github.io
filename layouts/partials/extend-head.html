@@ -6,62 +6,149 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
-  /* Animation de fond spécifique à l'en-tête avec dégradé progressif - fixe dans la page */
-  body::before {
-    content: "";
-    position: absolute;
+  /* Animation de fond pour la page entière */
+  #background-animation {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 500px;
-    background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(139, 92, 246, 0.15) 50%, rgba(236, 72, 153, 0.15) 100%);
+    height: 100%;
+    z-index: -10;
+    background: linear-gradient(-45deg,
+      rgba(132, 204, 22, 0.6),
+      rgba(163, 230, 53, 0.5),
+      rgba(16, 185, 129, 0.6),
+      rgba(52, 211, 153, 0.5),
+      rgba(101, 163, 13, 0.6));
     background-size: 400% 400%;
-    animation: gradientAnimation 15s ease infinite;
-    z-index: -1;
+    animation: gradientAnimation 60s ease infinite;
     pointer-events: none;
-    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 80%, transparent 100%);
-    mask-image: linear-gradient(to bottom, black 0%, black 80%, transparent 100%);
+    opacity: 0.15;
+    transition: filter 1.2s cubic-bezier(0.4, 0, 0.2, 1), 
+                opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1), 
+                brightness 1.2s cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  :root[data-appearance="dark"] body::before {
-    background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(139, 92, 246, 0.2) 50%, rgba(236, 72, 153, 0.2) 100%);
-    background-size: 400% 400%;
-  }
-  
+  /* Animation de dégradé en mouvement */
   @keyframes gradientAnimation {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
   }
   
+  /* Classe de flou qui sera activée par JavaScript */
+  #background-animation.blurred {
+    filter: blur(60px) brightness(0.6);
+    opacity: 0.12;
+  }
+  
+  /* Style pour le mode sombre */
+  :root[data-appearance="dark"] #background-animation {
+    background: linear-gradient(-45deg,
+      rgba(77, 124, 15, 0.5),
+      rgba(101, 163, 13, 0.4),
+      rgba(5, 150, 105, 0.5),
+      rgba(16, 185, 129, 0.4),
+      rgba(63, 98, 18, 0.5));
+    opacity: 0.12;
+    animation-duration: 80s; /* Encore plus lent en mode sombre */
+  }
+  
   /* Points d'animation */
-  .header-dot {
+  .animation-dot {
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background-color: rgba(99, 102, 241, 0.2);
-    z-index: -1;
-    position: absolute; /* Pour s'assurer qu'ils restent fixes dans la page */
+    background-color: rgba(132, 204, 22, 0.3);
+    z-index: -5;
+    position: fixed;
+    filter: blur(2px);
+    pointer-events: none;
   }
   
-  :root[data-appearance="dark"] .header-dot {
-    background-color: rgba(139, 92, 246, 0.3);
+  :root[data-appearance="dark"] .animation-dot {
+    background-color: rgba(77, 124, 15, 0.3);
   }
   
-  /* Position des points */
-  .dot1 { top: 50px; left: 10%; }
-  .dot2 { top: 100px; left: 30%; }
-  .dot3 { top: 80px; left: 60%; }
-  .dot4 { top: 150px; left: 75%; }
-  .dot5 { top: 200px; left: 20%; }
-  .dot6 { top: 180px; left: 85%; }
-  
-  /* Améliorations légères */
+  /* Animation pour le contenu */
   .card {
     transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
   }
   
   .card:hover {
     transform: translateY(-5px);
   }
+
+  /* S'assurer que le contenu est visible sur l'animation */
+  main, article, #content, header, footer {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Fixes pour le menu et les interactions */
+  .main-menu {
+    position: relative;
+    z-index: 20;
+  }
+  
+  /* Corriger le menu mobile */
+  @media (max-width: 767px) {
+    #menu-button {
+      position: relative;
+      z-index: 21;
+    }
+    
+    #menu-wrapper {
+      position: fixed;
+      z-index: 100;
+    }
+    
+    /* Assurer que le titre n'est pas cassé lettre par lettre */
+    .main-menu nav.flex a.text-base {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1); /* Ombre légère pour meilleur contraste */
+    }
+    
+    /* Ajuster la position du bouton hamburger */
+    .main-menu .block.-my-2 {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    
+    /* Fixer la hauteur minimale du menu */
+    .main-menu {
+      min-height: 60px;
+      position: relative;
+    }
+  }
 </style>
+
+<script>
+// Création de l'élément d'animation de fond dès que possible
+(function() {
+  // Créer l'élément de fond
+  const backgroundAnimation = document.createElement('div');
+  backgroundAnimation.id = 'background-animation';
+  
+  // L'insérer en premier dans le body (dès que body existe)
+  const insertBackground = function() {
+    if (document.body) {
+      document.body.insertBefore(backgroundAnimation, document.body.firstChild);
+      clearInterval(checkBody);
+    }
+  };
+  
+  // Vérifier régulièrement si body existe
+  const checkBody = setInterval(insertBackground, 10);
+  
+  // Tenter d'insérer tout de suite si possible
+  insertBackground();
+})();
+</script>

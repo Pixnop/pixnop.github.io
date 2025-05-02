@@ -1,60 +1,112 @@
 {{/* Ce fichier est utilisé pour insérer du contenu à la fin du body avant la fermeture */}}
 
-<!-- Script pour animations légères dans l'en-tête -->
+<!-- Script pour les animations et l'effet de flou -->
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    // Ajouter les points d'animation dans l'en-tête
-    function addHeaderDots() {
-      // Créer les points décoratifs
-      for (let i = 1; i <= 6; i++) {
+    // Référence à l'élément d'arrière-plan
+    const backgroundAnimation = document.getElementById('background-animation');
+    
+    // S'il n'existe pas encore, le créer
+    if (!backgroundAnimation) {
+      const newBg = document.createElement('div');
+      newBg.id = 'background-animation';
+      document.body.insertBefore(newBg, document.body.firstChild);
+    }
+    
+    // Ajouter les points d'animation flottants
+    function addAnimationDots() {
+      // Nombre de points à créer (réduit pour un effet plus subtil)
+      const numDots = 6;
+      
+      for (let i = 0; i < numDots; i++) {
         const dot = document.createElement('div');
-        dot.className = `header-dot dot${i}`;
+        dot.className = 'animation-dot';
+        
+        // Positionnement aléatoire (concentré vers le haut de la page)
+        dot.style.top = `${Math.floor(Math.random() * 70)}vh`;
+        dot.style.left = `${Math.floor(Math.random() * 100)}vw`;
+        dot.style.opacity = `${0.1 + Math.random() * 0.2}`; // Encore plus transparent
+        
+        // Taille variable
+        const size = 3 + Math.random() * 5;
+        dot.style.width = `${size}px`;
+        dot.style.height = `${size}px`;
+        
         document.body.appendChild(dot);
       }
       
-      // Effet de mouvement sur les points avec la souris
+      // Animation des points avec la souris
       document.addEventListener('mousemove', function(e) {
-        // Calculer la position par rapport au haut de la page
-        const pageY = window.scrollY + e.clientY;
-        
-        // Limiter l'effet à la partie haute de la page (en position absolue)
-        if (pageY < 500) {
-          document.querySelectorAll('.header-dot').forEach((dot, index) => {
-            const speed = (index + 1) * 0.01;
-            const x = (e.clientX - window.innerWidth / 2) * speed;
-            const y = (pageY - 250) * speed; // Relatif au milieu de la zone d'animation
-            
-            dot.style.transform = `translate(${x}px, ${y}px)`;
-            dot.style.transition = 'transform 0.5s ease-out';
-          });
-        }
+        document.querySelectorAll('.animation-dot').forEach((dot, index) => {
+          const speed = 0.005 + (index % 5) * 0.002; // Réduit de moitié
+          const x = (e.clientX - window.innerWidth / 2) * speed;
+          const y = (e.clientY - window.innerHeight / 2) * speed;
+          
+          dot.style.transform = `translate(${x}px, ${y}px)`;
+          dot.style.transition = 'transform 2s ease-out'; // Transition plus longue
+        });
       });
     }
     
-    // Optimisations pour les appareils à faible performance
-    function optimizeForLowPerformance() {
-      const isLowPerf = window.navigator.hardwareConcurrency <= 2 || 
-                        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    // Fonction pour appliquer le flou quand on défile la page
+    function handleScroll() {
+      const scrollThreshold = 100; // Point à partir duquel on active le flou
+      const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+      const bgElement = document.getElementById('background-animation');
       
-      if (isLowPerf) {
-        const style = document.createElement('style');
-        style.textContent = `
-          body::before {
-            animation-duration: 30s !important;
-          }
-          .header-dot {
-            display: none;
-          }
-        `;
-        document.head.appendChild(style);
-        return true;
+      if (bgElement) {
+        if (scrollPosition > scrollThreshold) {
+          // Calcul du flou basé sur la position de défilement
+          const maxScrollForEffect = 800; // Point où l'effet est maximum
+          const scrollProgress = Math.min(1, (scrollPosition - scrollThreshold) / maxScrollForEffect);
+          
+          // Appliquer directement le flou avec une intensité beaucoup plus prononcée
+          // et assombrir en même temps
+          const blurAmount = Math.min(60, 20 + scrollProgress * 40);
+          const brightnessValue = 0.6 - (scrollProgress * 0.2);
+          bgElement.style.filter = `blur(${blurAmount}px) brightness(${brightnessValue})`;
+          bgElement.style.opacity = 0.12;
+          
+          // Ajouter aussi la classe pour référence
+          bgElement.classList.add('blurred');
+        } else {
+          // Supprimer l'effet de flou
+          bgElement.style.filter = '';
+          bgElement.style.opacity = 0.3;
+          bgElement.classList.remove('blurred');
+        }
       }
-      return false;
     }
     
-    // N'ajouter les animations que si l'appareil le permet
-    if (!optimizeForLowPerformance()) {
-      setTimeout(addHeaderDots, 100);
+    // Optimisations pour appareils à faible performance
+    function detectLowPerformance() {
+      return window.navigator.hardwareConcurrency <= 2 || 
+             /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     }
+    
+    // Si l'appareil est à faible performance, réduire les animations
+    if (detectLowPerformance()) {
+      const bgElement = document.getElementById('background-animation');
+      if (bgElement) {
+        bgElement.style.animationDuration = '30s';
+      }
+    } else {
+      // Sinon, ajouter toutes les animations
+      addAnimationDots();
+      
+      // Écouter l'événement de défilement
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      
+      // Gérer aussi la taille de la fenêtre qui change
+      window.addEventListener('resize', handleScroll, { passive: true });
+      
+      // Appliquer immédiatement (si la page est déjà scrollée)
+      handleScroll();
+      
+      // Vérifier périodiquement l'état du scroll (sauvegarde)
+      setInterval(handleScroll, 500);
+    }
+    
+    // Pas d'élément de débogage en production
   });
 </script>

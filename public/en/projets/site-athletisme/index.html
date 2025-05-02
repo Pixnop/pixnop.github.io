@@ -28,8 +28,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.7b90d7986e26ac7d6887d425fb86e0b6d073dd1b85094fca709c114c7b406ed522478b5db2479699545f8dc8ec593da12736425d41cd9386c276ce6839315017.css"
-    integrity="sha512-e5DXmG4mrH1oh9Ql&#43;4bgttBz3RuFCU/KcJwRTHtAbtUiR4tdskeWmVRfjcjsWT2hJzZCXUHNk4bCds5oOTFQFw==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.523d80a34b528fe8db9284d1b03d5b0029269fd9951eba25148fbe49275fd3ee931a986f354e3d16170eb8517c3667050f76d3117a5df530b092475fa1567cec.css"
+    integrity="sha512-Uj2Ao0tSj&#43;jbkoTRsD1bACkmn9mVHrolFI&#43;&#43;SSdf0&#43;6TGphvNU49FhcOuFF8NmcFD3bTEXpd9TCwkkdfoVZ87A==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -178,27 +178,29 @@
 
 <style>
    
-  body::before {
-    content: "";
-    position: absolute;
+  #background-animation {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 500px;
-    background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(139, 92, 246, 0.15) 50%, rgba(236, 72, 153, 0.15) 100%);
+    height: 100%;
+    z-index: -10;
+    background: linear-gradient(-45deg,
+      rgba(132, 204, 22, 0.6),
+      rgba(163, 230, 53, 0.5),
+      rgba(16, 185, 129, 0.6),
+      rgba(52, 211, 153, 0.5),
+      rgba(101, 163, 13, 0.6));
     background-size: 400% 400%;
-    animation: gradientAnimation 15s ease infinite;
-    z-index: -1;
+    animation: gradientAnimation 60s ease infinite;
     pointer-events: none;
-    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 80%, transparent 100%);
-    mask-image: linear-gradient(to bottom, black 0%, black 80%, transparent 100%);
+    opacity: 0.15;
+    transition: filter 1.2s cubic-bezier(0.4, 0, 0.2, 1), 
+                opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1), 
+                brightness 1.2s cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  :root[data-appearance="dark"] body::before {
-    background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(139, 92, 246, 0.2) 50%, rgba(236, 72, 153, 0.2) 100%);
-    background-size: 400% 400%;
-  }
-  
+   
   @keyframes gradientAnimation {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
@@ -206,36 +208,121 @@
   }
   
    
-  .header-dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: rgba(99, 102, 241, 0.2);
-    z-index: -1;
-    position: absolute;  
-  }
-  
-  :root[data-appearance="dark"] .header-dot {
-    background-color: rgba(139, 92, 246, 0.3);
+  #background-animation.blurred {
+    filter: blur(60px) brightness(0.6);
+    opacity: 0.12;
   }
   
    
-  .dot1 { top: 50px; left: 10%; }
-  .dot2 { top: 100px; left: 30%; }
-  .dot3 { top: 80px; left: 60%; }
-  .dot4 { top: 150px; left: 75%; }
-  .dot5 { top: 200px; left: 20%; }
-  .dot6 { top: 180px; left: 85%; }
+  :root[data-appearance="dark"] #background-animation {
+    background: linear-gradient(-45deg,
+      rgba(77, 124, 15, 0.5),
+      rgba(101, 163, 13, 0.4),
+      rgba(5, 150, 105, 0.5),
+      rgba(16, 185, 129, 0.4),
+      rgba(63, 98, 18, 0.5));
+    opacity: 0.12;
+    animation-duration: 80s;  
+  }
+  
+   
+  .animation-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgba(132, 204, 22, 0.3);
+    z-index: -5;
+    position: fixed;
+    filter: blur(2px);
+    pointer-events: none;
+  }
+  
+  :root[data-appearance="dark"] .animation-dot {
+    background-color: rgba(77, 124, 15, 0.3);
+  }
   
    
   .card {
     transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
   }
   
   .card:hover {
     transform: translateY(-5px);
   }
+
+   
+  main, article, #content, header, footer {
+    position: relative;
+    z-index: 1;
+  }
+  
+   
+  .main-menu {
+    position: relative;
+    z-index: 20;
+  }
+  
+   
+  @media (max-width: 767px) {
+    #menu-button {
+      position: relative;
+      z-index: 21;
+    }
+    
+    #menu-wrapper {
+      position: fixed;
+      z-index: 100;
+    }
+    
+     
+    .main-menu nav.flex a.text-base {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);  
+    }
+    
+     
+    .main-menu .block.-my-2 {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    
+     
+    .main-menu {
+      min-height: 60px;
+      position: relative;
+    }
+  }
 </style>
+
+<script>
+
+(function() {
+  
+  const backgroundAnimation = document.createElement('div');
+  backgroundAnimation.id = 'background-animation';
+  
+  
+  const insertBackground = function() {
+    if (document.body) {
+      document.body.insertBefore(backgroundAnimation, document.body.firstChild);
+      clearInterval(checkBody);
+    }
+  };
+  
+  
+  const checkBody = setInterval(insertBackground, 10);
+  
+  
+  insertBackground();
+})();
+</script>
   
   <meta name="theme-color"/>
   
@@ -1400,58 +1487,110 @@
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     
-    function addHeaderDots() {
+    const backgroundAnimation = document.getElementById('background-animation');
+    
+    
+    if (!backgroundAnimation) {
+      const newBg = document.createElement('div');
+      newBg.id = 'background-animation';
+      document.body.insertBefore(newBg, document.body.firstChild);
+    }
+    
+    
+    function addAnimationDots() {
       
-      for (let i = 1; i <= 6; i++) {
+      const numDots = 6;
+      
+      for (let i = 0; i < numDots; i++) {
         const dot = document.createElement('div');
-        dot.className = `header-dot dot${i}`;
+        dot.className = 'animation-dot';
+        
+        
+        dot.style.top = `${Math.floor(Math.random() * 70)}vh`;
+        dot.style.left = `${Math.floor(Math.random() * 100)}vw`;
+        dot.style.opacity = `${0.1 + Math.random() * 0.2}`; 
+        
+        
+        const size = 3 + Math.random() * 5;
+        dot.style.width = `${size}px`;
+        dot.style.height = `${size}px`;
+        
         document.body.appendChild(dot);
       }
       
       
       document.addEventListener('mousemove', function(e) {
-        
-        const pageY = window.scrollY + e.clientY;
-        
-        
-        if (pageY < 500) {
-          document.querySelectorAll('.header-dot').forEach((dot, index) => {
-            const speed = (index + 1) * 0.01;
-            const x = (e.clientX - window.innerWidth / 2) * speed;
-            const y = (pageY - 250) * speed; 
-            
-            dot.style.transform = `translate(${x}px, ${y}px)`;
-            dot.style.transition = 'transform 0.5s ease-out';
-          });
-        }
+        document.querySelectorAll('.animation-dot').forEach((dot, index) => {
+          const speed = 0.005 + (index % 5) * 0.002; 
+          const x = (e.clientX - window.innerWidth / 2) * speed;
+          const y = (e.clientY - window.innerHeight / 2) * speed;
+          
+          dot.style.transform = `translate(${x}px, ${y}px)`;
+          dot.style.transition = 'transform 2s ease-out'; 
+        });
       });
     }
     
     
-    function optimizeForLowPerformance() {
-      const isLowPerf = window.navigator.hardwareConcurrency <= 2 || 
-                        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    function handleScroll() {
+      const scrollThreshold = 100; 
+      const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+      const bgElement = document.getElementById('background-animation');
       
-      if (isLowPerf) {
-        const style = document.createElement('style');
-        style.textContent = `
-          body::before {
-            animation-duration: 30s !important;
-          }
-          .header-dot {
-            display: none;
-          }
-        `;
-        document.head.appendChild(style);
-        return true;
+      if (bgElement) {
+        if (scrollPosition > scrollThreshold) {
+          
+          const maxScrollForEffect = 800; 
+          const scrollProgress = Math.min(1, (scrollPosition - scrollThreshold) / maxScrollForEffect);
+          
+          
+          
+          const blurAmount = Math.min(60, 20 + scrollProgress * 40);
+          const brightnessValue = 0.6 - (scrollProgress * 0.2);
+          bgElement.style.filter = `blur(${blurAmount}px) brightness(${brightnessValue})`;
+          bgElement.style.opacity = 0.12;
+          
+          
+          bgElement.classList.add('blurred');
+        } else {
+          
+          bgElement.style.filter = '';
+          bgElement.style.opacity = 0.3;
+          bgElement.classList.remove('blurred');
+        }
       }
-      return false;
     }
     
     
-    if (!optimizeForLowPerformance()) {
-      setTimeout(addHeaderDots, 100);
+    function detectLowPerformance() {
+      return window.navigator.hardwareConcurrency <= 2 || 
+             /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     }
+    
+    
+    if (detectLowPerformance()) {
+      const bgElement = document.getElementById('background-animation');
+      if (bgElement) {
+        bgElement.style.animationDuration = '30s';
+      }
+    } else {
+      
+      addAnimationDots();
+      
+      
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      
+      
+      window.addEventListener('resize', handleScroll, { passive: true });
+      
+      
+      handleScroll();
+      
+      
+      setInterval(handleScroll, 500);
+    }
+    
+    
   });
 </script>
   

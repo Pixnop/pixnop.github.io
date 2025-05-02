@@ -1,26 +1,81 @@
 /* Custom CSS to fix menu layout issues */
 
-/* Prevent menu items from wrapping to a new line */
-.main-menu nav.items-center a,
-.main-menu nav.items-center a p {
-  white-space: nowrap !important; 
+/* Styles du titre de la page - ne doit jamais être compressé et doit se différencier */
+.main-menu nav.flex a.text-base {
+  white-space: nowrap !important;
   display: inline-block !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  max-width: 180px !important; /* Limite la largeur sur mobile */
+  color: rgb(132, 204, 22) !important; /* Couleur verte avocado */
+  letter-spacing: 0.02em !important;
 }
 
-/* Increase spacing between menu items */
-.main-menu nav.items-center {
-  gap: 1.5rem !important;
+/* Ajouter un style au survol pour le titre */
+.main-menu nav.flex a.text-base:hover {
+  color: rgb(101, 163, 13) !important; /* Vert plus foncé au survol */
 }
 
-/* Ensure menu container has enough width */
-.main-menu .flex.flex-1 {
-  min-width: fit-content;
+@media (min-width: 640px) {
+  .main-menu nav.flex a.text-base {
+    max-width: none !important; /* Pas de limite sur desktop */
+    font-size: 1.1rem !important;
+    padding-right: 0.5rem !important;
+    border-right: 2px solid rgba(132, 204, 22, 0.3) !important; /* Séparateur subtil */
+  }
 }
 
-/* Menu spacing for better readability */
-.main-menu nav.hidden.md\:flex {
-  display: flex !important;
-  justify-content: space-between !important;
-  width: 100% !important;
-  margin-left: 1rem !important;
+/* Prevent menu items from wrapping to a new line - desktop only */
+@media (min-width: 768px) {
+  .main-menu nav.items-center a,
+  .main-menu nav.items-center a p {
+    white-space: nowrap !important; 
+    display: inline-block !important;
+  }
+  
+  /* Increase spacing between menu items */
+  .main-menu nav.items-center {
+    gap: 1.5rem !important;
+  }
+  
+  /* Ensure menu container has enough width */
+  .main-menu .flex.flex-1 {
+    min-width: fit-content;
+  }
+  
+  /* Menu spacing for better readability */
+  .main-menu nav.hidden.md\:flex {
+    display: flex !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    margin-left: 1rem !important;
+  }
+}
+
+/* Ensure mobile menu works properly */
+@media (max-width: 767px) {
+  /* Reset display property so the mobile menu button works */
+  .main-menu nav.hidden.md\:flex {
+    display: none !important;
+  }
+  
+  /* Make sure menu button is visible and clickable */
+  #menu-button {
+    display: block !important;
+    z-index: 20;
+  }
+  
+  /* Fix menu wrapper for mobile */
+  #menu-wrapper {
+    z-index: 30 !important;
+  }
+  
+  /* Ensure menu items are stacked properly on mobile */
+  #menu-wrapper ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }
