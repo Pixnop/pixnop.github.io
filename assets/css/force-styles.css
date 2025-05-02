@@ -1,0 +1,353 @@
+/* CSS avec !important pour forcer l'application des styles */
+
+/* ===== STYLES DE BASE POUR FORCER L'APPLICATION DES STYLES ===== */
+:root {
+  --primary-color: #6366f1 !important;
+  --secondary-color: #8b5cf6 !important;
+  --accent-color: #ec4899 !important;
+  --background-light: #ffffff !important;
+  --background-dark: #0f172a !important;
+}
+
+/* Réinitialisation des animations pour s'assurer qu'elles s'appliquent */
+* {
+  animation-play-state: running !important;
+  transition-duration: 0.3s !important;
+}
+
+/* Animation des titres */
+h1, h2, h3, h4, h5, h6 {
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--accent-color)) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-size: 300% 300% !important;
+  animation: gradientText 6s ease infinite !important;
+  display: inline-block !important;
+}
+
+@keyframes gradientText {
+  0% { background-position: 0% 50% !important; }
+  50% { background-position: 100% 50% !important; }
+  100% { background-position: 0% 50% !important; }
+}
+
+/* Animation des cartes */
+.card {
+  transform: scale(1) !important;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+  overflow: hidden !important;
+  position: relative !important;
+}
+
+.card::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: -100% !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.2) 50%,
+    transparent 100%
+  ) !important;
+  transition: left 0.7s ease !important;
+  z-index: 2 !important;
+}
+
+.card:hover {
+  transform: translateY(-20px) scale(1.05) !important;
+  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.3) !important;
+}
+
+.card:hover::before {
+  left: 100% !important;
+}
+
+/* Animation des boutons */
+.btn, button, a[role="button"] {
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)) !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 50px !important;
+  padding: 12px 30px !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+  box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3) !important;
+  transition: all 0.3s ease !important;
+  position: relative !important;
+  overflow: hidden !important;
+  z-index: 1 !important;
+}
+
+.btn:hover, button:hover, a[role="button"]:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 15px 30px rgba(99, 102, 241, 0.5) !important;
+}
+
+/* Style de l'image de profil */
+.home-profile img {
+  border: 5px solid transparent !important;
+  background: 
+    linear-gradient(var(--background-light), var(--background-light)) padding-box,
+    linear-gradient(45deg, var(--primary-color), var(--secondary-color), var(--accent-color)) border-box !important;
+  border-radius: 50% !important;
+  box-shadow: 0 15px 35px rgba(99, 102, 241, 0.3) !important;
+  animation: pulse 2s infinite !important;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.7) !important;
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(99, 102, 241, 0) !important;
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(99, 102, 241, 0) !important;
+  }
+}
+
+/* Menu principal avec effet de verre */
+.main-menu {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-bottom: 2px solid rgba(99, 102, 241, 0.3) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.dark .main-menu {
+  background: rgba(15, 23, 42, 0.8) !important;
+  border-bottom: 2px solid rgba(139, 92, 246, 0.3) !important;
+}
+
+/* Liens du menu */
+.main-menu a {
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.main-menu a p {
+  position: relative !important;
+  z-index: 1 !important;
+  transition: all 0.3s ease !important;
+}
+
+.main-menu a::before {
+  content: "" !important;
+  position: absolute !important;
+  bottom: -2px !important;
+  left: 0 !important;
+  width: 0 !important;
+  height: 2px !important;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color)) !important;
+  transition: width 0.3s ease !important;
+}
+
+.main-menu a:hover p {
+  transform: translateY(-3px) !important;
+  color: var(--primary-color) !important;
+}
+
+.main-menu a:hover::before {
+  width: 100% !important;
+}
+
+/* Fond de page simplifié pour performance */
+body::before {
+  content: "" !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: rgba(255, 255, 255, 0.02) !important;
+  z-index: -1 !important;
+}
+
+.dark body::before {
+  background: rgba(20, 20, 30, 0.02) !important;
+}
+
+/* Effet de glassmorphisme pour les sections */
+.glassmorphism, 
+.home-profile, 
+.recent-articles, 
+.projects-container, 
+.skills-container,
+.prose {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border-radius: 20px !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+  padding: 30px !important;
+  margin-bottom: 30px !important;
+}
+
+.dark .glassmorphism,
+.dark .home-profile, 
+.dark .recent-articles, 
+.dark .projects-container, 
+.dark .skills-container,
+.dark .prose {
+  background: rgba(15, 23, 42, 0.4) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Animation de pulsation pour certains éléments */
+@keyframes strongPulse {
+  0% {
+    transform: scale(1) !important;
+  }
+  50% {
+    transform: scale(1.05) !important;
+  }
+  100% {
+    transform: scale(1) !important;
+  }
+}
+
+.home-profile h1,
+.recent-articles-title,
+.projects-title,
+.skills-title {
+  animation: strongPulse 2s infinite !important;
+}
+
+/* Effet de vague pour le fond du site */
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) !important;
+  background-size: 400% 400% !important;
+  animation: gradientBG 15s ease infinite !important;
+}
+
+.dark body {
+  background: linear-gradient(-45deg, #0f172a, #1e293b, #334155, #1e293b) !important;
+  background-size: 400% 400% !important;
+  animation: gradientBG 15s ease infinite !important;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50% !important;
+  }
+  50% {
+    background-position: 100% 50% !important;
+  }
+  100% {
+    background-position: 0% 50% !important;
+  }
+}
+
+/* Forcer l'animation sur les textes pour qu'ils apparaissent progressivement */
+.home-profile p,
+.prose p,
+.card-body p {
+  animation: fadeInUp 1s ease-out forwards !important;
+  opacity: 0 !important;
+}
+
+.home-profile p {
+  animation-delay: 0.3s !important;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0 !important;
+    transform: translateY(30px) !important;
+  }
+  to {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+}
+
+/* Badges et étiquettes avec animation */
+.skill-badge,
+[class*="tag"] {
+  display: inline-block !important;
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)) !important;
+  color: white !important;
+  padding: 5px 15px !important;
+  border-radius: 50px !important;
+  font-weight: 600 !important;
+  margin: 3px !important;
+  box-shadow: 0 5px 15px rgba(99, 102, 241, 0.3) !important;
+  animation: pulse 2s infinite !important;
+  transition: all 0.3s ease !important;
+}
+
+.skill-badge:hover,
+[class*="tag"]:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 10px 20px rgba(99, 102, 241, 0.5) !important;
+}
+
+/* Animation d'entrée pour les cartes en cascade */
+.card:nth-child(1) {
+  animation-delay: 0.1s !important;
+}
+.card:nth-child(2) {
+  animation-delay: 0.2s !important;
+}
+.card:nth-child(3) {
+  animation-delay: 0.3s !important;
+}
+.card:nth-child(4) {
+  animation-delay: 0.4s !important;
+}
+.card:nth-child(5) {
+  animation-delay: 0.5s !important;
+}
+
+/* Animation du texte lettre par lettre */
+.animate-letters {
+  display: inline-block !important;
+}
+
+.animate-letters span {
+  display: inline-block !important;
+  animation: letterJump 0.5s ease forwards !important;
+  transform: translateY(50px) !important;
+  opacity: 0 !important;
+}
+
+@keyframes letterJump {
+  to {
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+  }
+}
+
+/* Effet de lumière pour les bordures */
+.card,
+.home-profile,
+.recent-articles,
+.projects-container,
+.skills-container,
+.prose {
+  border: 2px solid transparent !important;
+  box-shadow: 
+    0 5px 15px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(255, 255, 255, 0.1),
+    0 0 0 4px rgba(99, 102, 241, 0.1) !important;
+  transition: all 0.3s ease !important;
+}
+
+.card:hover,
+.home-profile:hover,
+.recent-articles:hover,
+.projects-container:hover,
+.skills-container:hover {
+  border-color: rgba(99, 102, 241, 0.5) !important;
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(255, 255, 255, 0.2),
+    0 0 0 6px rgba(99, 102, 241, 0.2) !important;
+}

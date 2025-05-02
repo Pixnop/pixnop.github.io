@@ -1,11 +1,62 @@
 [[main]]
-none = "none"
+name = "Home"
+pageRef = "/"
+weight = 10
 
 [[main]]
-pre = "youtube"
-url = "newSite"
-identifier = "IMt5zSCWHn"
-weight = 9999
+name = "About"
+pageRef = "apropos"
+weight = 20
+
+[[main]]
+name = "Experience"
+pageRef = "experience"
+weight = 30
+
+[[main]]
+name = "Education"
+pageRef = "formation"
+weight = 40
+
+[[main]]
+name = "Skills"
+pageRef = "competences"
+weight = 50
+
+[[main]]
+name = "Projects"
+pageRef = "projets"
+weight = 60
+
+[[main]]
+name = "Categories"
+pageRef = "categories"
+weight = 61
+parent = "Projects"
+
+[[main]]
+name = "Technologies"
+pageRef = "tags"
+weight = 62
+parent = "Projects"
+
+[[main]]
+name = "Series"
+pageRef = "series"
+weight = 63
+parent = "Projects"
+
+[[main]]
+name = "Contact"
+pageRef = "contact"
+weight = 70
 
 [[footer]]
-none = "none"
+name = "LinkedIn"
+url = "https://linkedin.com/in/leonfievet"
+weight = 10
+
+[[footer]]
+name = "GitHub"
+url = "https://github.com/pixnop"
+weight = 20

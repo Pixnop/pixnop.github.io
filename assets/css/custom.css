@@ -1,0 +1,26 @@
+/* Custom CSS to fix menu layout issues */
+
+/* Prevent menu items from wrapping to a new line */
+.main-menu nav.items-center a,
+.main-menu nav.items-center a p {
+  white-space: nowrap !important; 
+  display: inline-block !important;
+}
+
+/* Increase spacing between menu items */
+.main-menu nav.items-center {
+  gap: 1.5rem !important;
+}
+
+/* Ensure menu container has enough width */
+.main-menu .flex.flex-1 {
+  min-width: fit-content;
+}
+
+/* Menu spacing for better readability */
+.main-menu nav.hidden.md\:flex {
+  display: flex !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  margin-left: 1rem !important;
+}

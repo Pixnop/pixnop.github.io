@@ -1,0 +1,60 @@
+{{/* Ce fichier est utilisé pour insérer du contenu à la fin du body avant la fermeture */}}
+
+<!-- Script pour animations légères dans l'en-tête -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Ajouter les points d'animation dans l'en-tête
+    function addHeaderDots() {
+      // Créer les points décoratifs
+      for (let i = 1; i <= 6; i++) {
+        const dot = document.createElement('div');
+        dot.className = `header-dot dot${i}`;
+        document.body.appendChild(dot);
+      }
+      
+      // Effet de mouvement sur les points avec la souris
+      document.addEventListener('mousemove', function(e) {
+        // Calculer la position par rapport au haut de la page
+        const pageY = window.scrollY + e.clientY;
+        
+        // Limiter l'effet à la partie haute de la page (en position absolue)
+        if (pageY < 500) {
+          document.querySelectorAll('.header-dot').forEach((dot, index) => {
+            const speed = (index + 1) * 0.01;
+            const x = (e.clientX - window.innerWidth / 2) * speed;
+            const y = (pageY - 250) * speed; // Relatif au milieu de la zone d'animation
+            
+            dot.style.transform = `translate(${x}px, ${y}px)`;
+            dot.style.transition = 'transform 0.5s ease-out';
+          });
+        }
+      });
+    }
+    
+    // Optimisations pour les appareils à faible performance
+    function optimizeForLowPerformance() {
+      const isLowPerf = window.navigator.hardwareConcurrency <= 2 || 
+                        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      
+      if (isLowPerf) {
+        const style = document.createElement('style');
+        style.textContent = `
+          body::before {
+            animation-duration: 30s !important;
+          }
+          .header-dot {
+            display: none;
+          }
+        `;
+        document.head.appendChild(style);
+        return true;
+      }
+      return false;
+    }
+    
+    // N'ajouter les animations que si l'appareil le permet
+    if (!optimizeForLowPerformance()) {
+      setTimeout(addHeaderDots, 100);
+    }
+  });
+</script>

@@ -1,0 +1,360 @@
+/* ANIMATIONS AMÉLIORÉES - TRÈS VISIBLES */
+
+/* Animation de pulsation pour les éléments principaux */
+@keyframes superPulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.7);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 10px rgba(99, 102, 241, 0.3);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.7);
+  }
+}
+
+/* Animation de rebond pour les boutons et éléments interactifs */
+@keyframes superBounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Animation de rotation pour les icônes */
+@keyframes superSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animation de fondu pour les sections */
+@keyframes superFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Animation de secousse pour attirer l'attention */
+@keyframes superShake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px);
+  }
+}
+
+/* Animation d'arc-en-ciel pour les titres */
+@keyframes superRainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Animation de bordure dansante */
+@keyframes superBorderDance {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+/* Animation pour l'apparition des lettres */
+@keyframes superLetterFade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* APPLICATION DES ANIMATIONS */
+
+/* Animation pour le titre principal */
+.home-profile h1 {
+  background: linear-gradient(90deg, 
+    #ff3d00, #ffb300, #00c853, #2196f3, #9c27b0, #f50057, #ff3d00
+  ) !important;
+  background-size: 400% 100% !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  animation: superRainbow 3s linear infinite !important;
+  display: inline-block !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+  font-size: 2.5rem !important;
+}
+
+/* Animation pour l'image de profil */
+.home-profile img {
+  animation: superBorderDance 8s ease-in-out infinite !important;
+  border: 4px solid transparent !important;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(45deg, #ff3d00, #ffb300, #00c853, #2196f3, #9c27b0, #f50057) border-box !important;
+  box-shadow: 0 0 30px rgba(99, 102, 241, 0.5) !important;
+  filter: drop-shadow(0 0 10px rgba(139, 92, 246, 0.5)) !important;
+  transform: scale(1.1) !important;
+}
+
+.home-profile img:hover {
+  animation: superPulse 1.5s ease-in-out infinite !important;
+  transform: scale(1.15) !important;
+}
+
+/* Animation pour les cartes de projets */
+.card {
+  transform-style: preserve-3d !important;
+  perspective: 1000px !important;
+  transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 20px !important;
+  overflow: hidden !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(15px) !important;
+  -webkit-backdrop-filter: blur(15px) !important;
+  border: 2px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.card:hover {
+  transform: translateY(-15px) rotateX(5deg) rotateY(5deg) !important;
+  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.3) !important;
+  border-color: rgba(139, 92, 246, 0.5) !important;
+}
+
+.dark .card {
+  background: rgba(30, 41, 59, 0.5) !important;
+}
+
+/* Animation pour les boutons */
+.btn, button, a[class*="btn"] {
+  background: linear-gradient(45deg, #3b82f6, #8b5cf6, #ec4899) !important;
+  background-size: 200% 200% !important;
+  animation: superRainbow 3s ease infinite !important;
+  color: white !important;
+  font-weight: 600 !important;
+  padding: 12px 24px !important;
+  border-radius: 30px !important;
+  border: none !important;
+  box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3) !important;
+  transition: all 0.3s ease !important;
+  transform: translateY(0) !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+}
+
+.btn:hover, button:hover, a[class*="btn"]:hover {
+  animation: superBounce 1s ease 1 !important;
+  box-shadow: 0 15px 30px rgba(99, 102, 241, 0.5) !important;
+  letter-spacing: 2px !important;
+}
+
+/* Menu avec animation */
+.main-menu {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 0 0 20px 20px !important;
+  border-bottom: 2px solid rgba(139, 92, 246, 0.3) !important;
+  transition: all 0.5s ease !important;
+}
+
+.main-menu nav.items-center a p {
+  position: relative !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+  color: #6366f1 !important;
+  transition: all 0.3s ease !important;
+}
+
+.main-menu nav.items-center a p::after {
+  content: '' !important;
+  position: absolute !important;
+  bottom: -5px !important;
+  left: 0 !important;
+  width: 0 !important;
+  height: 3px !important;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899) !important;
+  transition: width 0.3s ease !important;
+  border-radius: 10px !important;
+}
+
+.main-menu nav.items-center a:hover p {
+  transform: translateY(-5px) !important;
+  color: #8b5cf6 !important;
+}
+
+.main-menu nav.items-center a:hover p::after {
+  width: 100% !important;
+}
+
+/* Animations pour les sections */
+section, article, .home-profile, .recent-articles {
+  animation: superFadeIn 1s ease-out forwards !important;
+  opacity: 0 !important;
+}
+
+/* Fond de page avec dégradé animé */
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) !important;
+  background-size: 400% 400% !important;
+  animation: superRainbow 15s ease infinite !important;
+}
+
+.dark body {
+  background: linear-gradient(-45deg, #121212, #1e1e1e, #2d3748, #1a2030) !important;
+  background-size: 400% 400% !important;
+  animation: superRainbow 15s ease infinite !important;
+}
+
+/* Styles pour le contenu */
+.prose h2, .prose h3, .article-title, .projects-title, h2, h3 {
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-size: 200% auto !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  display: inline-block !important;
+  animation: superRainbow 3s ease infinite !important;
+}
+
+/* Animation pour les badges et tags */
+.skill-badge, .article-tag, [class*="tag"], [class*="badge"] {
+  background: linear-gradient(45deg, #3b82f6, #8b5cf6) !important;
+  color: white !important;
+  padding: 5px 15px !important;
+  border-radius: 30px !important;
+  font-weight: 600 !important;
+  box-shadow: 0 5px 15px rgba(99, 102, 241, 0.3) !important;
+  transition: all 0.3s ease !important;
+  transform-origin: center !important;
+  animation: superPulse 3s ease infinite !important;
+}
+
+.skill-badge:hover, .article-tag:hover, [class*="tag"]:hover, [class*="badge"]:hover {
+  transform: scale(1.1) !important;
+}
+
+/* Effet de flottement pour les éléments d'arrière-plan */
+.floating {
+  animation: floatAnimation 3s ease-in-out infinite !important;
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Animation pour les icônes */
+.icon, svg {
+  transition: all 0.5s ease !important;
+}
+
+.icon:hover, svg:hover {
+  animation: superSpin 1s ease 1 !important;
+  color: #8b5cf6 !important;
+}
+
+/* Typographie avec animation */
+.animated-text {
+  display: inline-block !important;
+}
+
+.animated-text span {
+  display: inline-block !important;
+  opacity: 0 !important;
+  transform: translateY(20px) !important;
+  animation: superLetterFade 0.5s forwards !important;
+}
+
+/* Curseur personnalisé */
+body, html {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%236366f1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='5'%3E%3C/circle%3E%3C/svg%3E"), auto !important;
+}
+
+a, button, .btn, [role="button"], .card {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' fill='none' stroke='%238b5cf6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 16l6-6-6-6'%3E%3C/path%3E%3Cpath d='M4 21v-7a4 4 0 0 1 4-4h11'%3E%3C/path%3E%3C/svg%3E"), pointer !important;
+}
+
+/* Surlignage du texte */
+::selection {
+  background: #8b5cf6 !important;
+  color: white !important;
+}
+
+/* Styles supplémentaires pour le mode clair */
+:root {
+  --color-primary: #6366f1 !important;
+  --color-secondary: #8b5cf6 !important;
+  --color-accent: #ec4899 !important;
+}
+
+/* Classes utilitaires pour les animations */
+.animated {
+  opacity: 1 !important;
+}
+
+.hover-3d {
+  transition: transform 0.5s ease !important;
+  transform-style: preserve-3d !important;
+}
+
+.hover-3d:hover {
+  transform: perspective(1000px) rotateX(10deg) rotateY(10deg) scale(1.05) !important;
+}
+
+/* Masquer les animations pour les utilisateurs qui préfèrent les animations réduites */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

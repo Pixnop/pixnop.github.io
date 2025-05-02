@@ -1,13 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Series on Blowfish</title>
+    <title>Series on Léon Fievet - Portfolio</title>
     <link>http://localhost:1313/en/series/</link>
-    <description>Recent content in Series on Blowfish</description>
+    <description>Recent content in Series on Léon Fievet - Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2025 </copyright>
-    <atom:link href="http://localhost:1313/en/series/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>fievet.leon@free.fr (Léon Fievet)</managingEditor>
+    <webMaster>fievet.leon@free.fr (Léon Fievet)</webMaster>
+    <copyright>© 2025 Léon Fievet</copyright>
+    <lastBuildDate>Mon, 15 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/en/series/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ECO-MED</title>
+      <link>http://localhost:1313/en/series/eco-med/</link>
+      <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
+      <author>fievet.leon@free.fr (Léon Fievet)</author>
+      <guid>http://localhost:1313/en/series/eco-med/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>BUT Computer Science</title>
+      <link>http://localhost:1313/en/series/but-computer-science/</link>
+      <pubDate>Sat, 20 May 2023 00:00:00 +0000</pubDate>
+      <author>fievet.leon@free.fr (Léon Fievet)</author>
+      <guid>http://localhost:1313/en/series/but-computer-science/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Discord Development</title>
+      <link>http://localhost:1313/en/series/discord-development/</link>
+      <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
+      <author>fievet.leon@free.fr (Léon Fievet)</author>
+      <guid>http://localhost:1313/en/series/discord-development/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>STI2D</title>
+      <link>http://localhost:1313/en/series/sti2d/</link>
+      <pubDate>Tue, 15 Jun 2021 00:00:00 +0000</pubDate>
+      <author>fievet.leon@free.fr (Léon Fievet)</author>
+      <guid>http://localhost:1313/en/series/sti2d/</guid>
+      <description></description>
+      
+    </item>
     
   </channel>
 </rss>

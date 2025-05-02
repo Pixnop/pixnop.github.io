@@ -29,6 +29,24 @@ pageRef = "projets"
 weight = 60
 
 [[main]]
+name = "Catégories"
+pageRef = "categories"
+weight = 61
+parent = "Projets"
+
+[[main]]
+name = "Technologies"
+pageRef = "tags"
+weight = 62
+parent = "Projets"
+
+[[main]]
+name = "Séries"
+pageRef = "series"
+weight = 63
+parent = "Projets"
+
+[[main]]
 name = "Contact"
 pageRef = "contact"
 weight = 70

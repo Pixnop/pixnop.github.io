@@ -1,0 +1,118 @@
+/* Animation de fond pour la partie haute de la page uniquement */
+
+/* Conteneur de l'animation */
+.header-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px; /* Hauteur fixe pour limiter l'animation à la partie haute */
+  overflow: hidden;
+  z-index: -1;
+}
+
+/* Gradient doux et animé en arrière-plan du header */
+.header-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 50%, rgba(236, 72, 153, 0.1) 100%);
+  background-size: 200% 200%;
+  animation: gradientAnimation 15s ease infinite;
+  z-index: -1;
+}
+
+.dark .header-background::before {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(139, 92, 246, 0.15) 50%, rgba(236, 72, 153, 0.15) 100%);
+  background-size: 200% 200%;
+}
+
+/* Animation du gradient */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Effet de vagues légères en bas du header */
+.header-waves {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: 
+    radial-gradient(ellipse at 50% 150%, rgba(99, 102, 241, 0.05) 0%, transparent 70%),
+    radial-gradient(ellipse at 80% 150%, rgba(139, 92, 246, 0.05) 0%, transparent 70%);
+  filter: blur(7px);
+  transform: translateY(50%);
+}
+
+/* Effet de points flottants minimalistes */
+.header-dots {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.header-dot {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: rgba(99, 102, 241, 0.2);
+  opacity: 0.4;
+}
+
+/* Positionnement de quelques points statiques (légère performance) */
+.header-dot:nth-child(1) { top: 20%; left: 10%; }
+.header-dot:nth-child(2) { top: 30%; left: 25%; }
+.header-dot:nth-child(3) { top: 15%; left: 45%; }
+.header-dot:nth-child(4) { top: 40%; left: 60%; }
+.header-dot:nth-child(5) { top: 25%; left: 85%; }
+.header-dot:nth-child(6) { top: 50%; left: 40%; }
+
+/* Styles pour le header avec cet arrière-plan */
+.main-menu {
+  position: relative;
+  z-index: 10;
+}
+
+/* Ajustement pour header en mode profil */
+.home-profile {
+  position: relative;
+  z-index: 5;
+}
+
+/* Style pour adapter l'arrière-plan en mode sombre */
+.dark .header-dot {
+  background-color: rgba(139, 92, 246, 0.3);
+}
+
+/* Séparateur visuel entre la zone d'animation et le reste de la page */
+.main-content-wrapper {
+  position: relative;
+}
+
+.main-content-wrapper::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 5%;
+  width: 90%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.2), transparent);
+  z-index: 5;
+}

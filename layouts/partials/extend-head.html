@@ -1,0 +1,67 @@
+{{/* Ce fichier est utilisé pour insérer du contenu dans l'élément <head> du site */}}
+
+<!-- Police de caractères modernes (version légère) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+  /* Animation de fond spécifique à l'en-tête avec dégradé progressif - fixe dans la page */
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(139, 92, 246, 0.15) 50%, rgba(236, 72, 153, 0.15) 100%);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    z-index: -1;
+    pointer-events: none;
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 80%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 0%, black 80%, transparent 100%);
+  }
+  
+  :root[data-appearance="dark"] body::before {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(139, 92, 246, 0.2) 50%, rgba(236, 72, 153, 0.2) 100%);
+    background-size: 400% 400%;
+  }
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Points d'animation */
+  .header-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgba(99, 102, 241, 0.2);
+    z-index: -1;
+    position: absolute; /* Pour s'assurer qu'ils restent fixes dans la page */
+  }
+  
+  :root[data-appearance="dark"] .header-dot {
+    background-color: rgba(139, 92, 246, 0.3);
+  }
+  
+  /* Position des points */
+  .dot1 { top: 50px; left: 10%; }
+  .dot2 { top: 100px; left: 30%; }
+  .dot3 { top: 80px; left: 60%; }
+  .dot4 { top: 150px; left: 75%; }
+  .dot5 { top: 200px; left: 20%; }
+  .dot6 { top: 180px; left: 85%; }
+  
+  /* Améliorations légères */
+  .card {
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+</style>

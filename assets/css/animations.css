@@ -1,0 +1,137 @@
+/* Animations légères pour le site portfolio */
+
+/* Animation d'entrée pour les titres (simplifiée) */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation pour les liens du menu (simplifiée) */
+@keyframes borderAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* Styles modernes mais légers pour les éléments */
+
+/* Style du header et menu */
+.main-menu {
+  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.main-menu nav.items-center a p {
+  position: relative;
+  padding-bottom: 3px;
+}
+
+.main-menu nav.items-center a p::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #6366f1;
+  transition: width 0.3s ease;
+}
+
+.main-menu nav.items-center a:hover p::after {
+  animation: borderAnimation 0.3s forwards;
+}
+
+/* Style pour le titre principal */
+.home-profile h1 {
+  animation: fadeInUp 0.5s ease-out;
+  color: #6366f1;
+  font-weight: 700;
+}
+
+.home-profile .text-neutral-500 {
+  animation: fadeInUp 0.5s ease-out 0.2s forwards;
+}
+
+/* Style pour les cartes de projets */
+.card {
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid rgba(99, 102, 241, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(99, 102, 241, 0.1);
+  border-color: rgba(99, 102, 241, 0.2);
+}
+
+/* Animation pour les boutons */
+.button, button, [id^="search-button"], .prose .btn, .btn {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.button:hover, button:hover, [id^="search-button"]:hover, .prose .btn:hover, .btn:hover {
+  transform: translateY(-2px);
+  color: #6366f1;
+}
+
+/* Style pour les liens sociaux */
+.social-icons a {
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+  color: #6366f1;
+}
+
+/* Animation pour les images */
+.article-image img, .profile-image img {
+  transition: all 0.3s ease;
+}
+
+.article-image:hover img, .profile-image:hover img {
+  transform: scale(1.02);
+}
+
+/* Style pour améliorer la lisibilité */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+.prose {
+  line-height: 1.5;
+}
+
+/* Animations pour les sections (simplifiées) */
+section, article, .home-profile, .recent-articles {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Dark mode simplifié */
+.dark .card {
+  background: rgba(31, 41, 55, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Animation pour le mode sombre/clair */
+#appearance-switcher, #appearance-switcher-mobile {
+  transition: transform 0.3s ease;
+}
+
+#appearance-switcher:hover, #appearance-switcher-mobile:hover {
+  transform: rotate(90deg);
+}

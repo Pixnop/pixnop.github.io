@@ -1,0 +1,282 @@
+/* Styles modernes pour les projets et articles */
+
+/* Animation pour l'apparition des cartes */
+@keyframes cardAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Animation de hover pour les cartes */
+@keyframes cardHover {
+  0% {
+    transform: translateY(0);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Style des cartes de projet */
+.card.project {
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+  position: relative;
+  animation: cardAppear 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
+}
+
+.dark .card.project {
+  background: rgba(30, 41, 59, 0.3);
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+.card.project:hover {
+  animation: cardHover 0.5s forwards;
+  border-color: rgba(99, 102, 241, 0.3);
+}
+
+/* Effet de brillance au survol */
+.card.project::after {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.05) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(45deg);
+  transition: transform 0.7s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.card.project:hover::after {
+  transform: rotate(45deg) translate(100%, 100%);
+}
+
+/* Image de projet avec zoom au survol */
+.card.project img {
+  transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transform-origin: center;
+}
+
+.card.project:hover img {
+  transform: scale(1.05);
+}
+
+/* Contenu de la carte avec apparition progressive */
+.card.project .card-body {
+  transition: transform 0.3s ease;
+}
+
+.card.project:hover .card-body {
+  transform: translateY(-5px);
+}
+
+/* Titre de projet avec animation de couleur */
+.card.project h3.card-title {
+  position: relative;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  transition: background-position 0.5s ease;
+}
+
+.card.project:hover h3.card-title {
+  background-position: right center;
+}
+
+/* Badge de projet avec effet 3D */
+.card.project .project-badge {
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card.project:hover .project-badge {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Délai d'animation pour les cartes en cascade */
+.card.project:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.card.project:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.card.project:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.card.project:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.card.project:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+/* Bouton "Voir plus" avec effet moderne */
+.card.project .btn-read-more {
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  display: inline-block;
+}
+
+.card.project .btn-read-more:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card.project .btn-read-more::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.7s ease;
+}
+
+.card.project .btn-read-more:hover::before {
+  left: 100%;
+}
+
+/* Effet de glassmorphism pour le conteneur de projets */
+.projects-container {
+  padding: 2rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.dark .projects-container {
+  background: rgba(30, 41, 59, 0.2);
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Grille de projets avec espacement amélioré */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Titre de la section projet avec soulignement animation */
+.projects-title {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.projects-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  transition: width 0.3s ease;
+}
+
+.projects-title:hover::after {
+  width: 100px;
+}
+
+/* Styles pour la page d'article complet */
+.article-content {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.article-image {
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.article-title {
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: gradientText 3s ease infinite;
+}
+
+/* Tags des projets et articles */
+.article-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.article-tag {
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  border-radius: 30px;
+  background: rgba(99, 102, 241, 0.1);
+  color: #6366f1;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.dark .article-tag {
+  background: rgba(139, 92, 246, 0.2);
+  color: #8b5cf6;
+}
+
+.article-tag:hover {
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  color: white;
+  transform: translateY(-2px);
+}

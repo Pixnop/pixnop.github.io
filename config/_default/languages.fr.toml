@@ -17,9 +17,9 @@ description = "Portfolio professionnel de Léon Fievet - Développeur Web"
 [params.author]
 name = "Léon Fievet"
 email = "fievet.leon@free.fr"
-#image = "img/profile.jpg"
+image = "img/profile.jpg"
 headline = "Étudiant en informatique & Développeur Web"
-bio = "Je suis étudiant en informatique, j'apprends à créer des applications et des algorithmes. J'ai également de l'expérience dans la conception de produits."
+bio = "Développeur passionné, spécialisé dans la création d'applications web innovantes. Je combine mon expertise technique avec une approche créative pour résoudre des problèmes complexes. Pilote et constructeur de drones FPV, j'applique cette passion pour la technologie aérienne immersive à mon travail de développement."
 links = [
     { email = "mailto:fievet.leon@free.fr" },
     { email = "mailto:leon.fievet@etu.umontpellier.fr" },

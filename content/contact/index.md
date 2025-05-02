@@ -1,19 +1,37 @@
 ---
 title: "Contact"
 description: "Comment me contacter"
+showDate: false
+showAuthor: false
+showReadingTime: false
+layout: "simple"
 ---
 
-# Contact
+# Contactez-moi
 
-Vous pouvez me contacter par les moyens suivants :
+Je suis ouvert aux opportunités professionnelles, collaborations sur des projets ou simplement échanger sur des sujets liés au développement web et à l'informatique.
 
-- **E-mail :**
+## Informations de contact
+
+- **E-mail:**
     - fievet.leon@free.fr
     - leon.fievet@etu.umontpellier.fr
-- **Téléphone :** 07 81 87 39 33
-- **LinkedIn :** [Profil LinkedIn](https://linkedin.com/in/leonfievet)
-- **GitHub :** [Profil GitHub](https://github.com/pixnop)
+- **Téléphone:** 07 81 87 39 33
 
-## Formulaire de contact
+## Réseaux sociaux et profils
 
-*Vous pouvez ajouter un formulaire de contact ici si vous le souhaitez*
+- **LinkedIn:** [linkedin.com/in/leonfievet](https://linkedin.com/in/leonfievet)
+- **GitHub:** [github.com/pixnop](https://github.com/pixnop)
+- **Site web:** [pixnop.github.io](https://pixnop.github.io)
+
+## Localisation
+
+Je suis basé à Montpellier, France, mais suis ouvert aux opportunités de travail à distance.
+
+## Disponibilité
+
+N'hésitez pas à me contacter pour toute question ou proposition. Je m'efforce de répondre dans les 24-48 heures.
+
+{{< alert "envelope" >}}
+Pour toute demande professionnelle, merci de privilégier le contact par e-mail ou LinkedIn.
+{{< /alert >}}
