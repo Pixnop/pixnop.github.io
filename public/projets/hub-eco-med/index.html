@@ -178,6 +178,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
+
+
+
+<script type="text/javascript" src="/js/custom-zen-mode-final.min.412c2fbd7826bba87368a8a3dccea4ed3446862cccb89a767aa4157168e08fb01dc98d180bcad042a447aed5485f8cea55f1a3e08e4b4c90d206bf6799d23552.js" integrity="sha512-QSwvvXgmu6hzaKij3M6k7TRGhizMuJp2eqQVcWjgj7AdyY0YC8rQQqRHrtVIX4zqVfGj4I5LTJDSBr9nmdI1Ug=="></script>
+
 <style>
    
   #background-animation {
@@ -1897,6 +1902,28 @@
         </span>
         <span>
           
+            <a class="flex text-right group ml-3" href="/projets/skyfuel/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >SkyFuel - Application de Gestion de Batteries de Drone</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2025-05-07T00:00:00&#43;00:00">7 mai 2025</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
+          
         </span>
       </div>
     </div>
@@ -1971,6 +1998,35 @@
   
   
   
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    
+    const path = window.location.pathname;
+
+    
+    if (path.includes('/projets/') || path.includes('/projects/')) {
+      
+      const button = document.createElement('div');
+      button.className = 'fixed bottom-8 right-8 z-50';
+      button.innerHTML = `
+        <button id="zen-mode-button"
+                class="p-2 bg-neutral-100 dark:bg-neutral-800 text-neutral-500 dark:text-neutral-400 rounded-full shadow-md hover:text-primary-500 hover:shadow-lg focus:outline-none transition-all"
+                title="Enable Zen Mode"
+                data-title-i18n-disable="Enable Zen Mode"
+                data-title-i18n-enable="Disable Zen Mode">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-maximize">
+            <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
+          </svg>
+        </button>
+      `;
+
+      
+      document.body.appendChild(button);
+    }
+  });
+</script>
 
 
 <script>
