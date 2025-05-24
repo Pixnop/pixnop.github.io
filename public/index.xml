@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Léon Fievet - Développeur Web on Léon Fievet - Portfolio</title>
+    <title>Léon Fievet - Développeur Full-Stack &amp; Ingénieur Logiciel on Léon Fievet - Portfolio</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content in Léon Fievet - Développeur Web on Léon Fievet - Portfolio</description>
+    <description>Recent content in Léon Fievet - Développeur Full-Stack &amp; Ingénieur Logiciel on Léon Fievet - Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
     <managingEditor>fievet.leon@free.fr (Léon Fievet)</managingEditor>
@@ -42,7 +42,37 @@
     </item>
     
     <item>
-      <title>Application de Gestion de Tâches</title>
+      <title>FlightCore - Contrôleur de Vol Open Source</title>
+      <link>http://localhost:1313/projets/drone-flight-controller/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <author>fievet.leon@free.fr (Léon Fievet)</author>
+      <guid>http://localhost:1313/projets/drone-flight-controller/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>GoMetrics - Système de Monitoring Distribué</title>
+      <link>http://localhost:1313/projets/microservice-monitoring/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <author>fievet.leon@free.fr (Léon Fievet)</author>
+      <guid>http://localhost:1313/projets/microservice-monitoring/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>PixEngine - Moteur de Jeu 2D en Rust</title>
+      <link>http://localhost:1313/projets/rust-game-engine/</link>
+      <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
+      <author>fievet.leon@free.fr (Léon Fievet)</author>
+      <guid>http://localhost:1313/projets/rust-game-engine/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TaskFlow - Application de Gestion de Tâches Collaborative</title>
       <link>http://localhost:1313/projets/application-gestion-taches/</link>
       <pubDate>Sat, 20 May 2023 00:00:00 +0000</pubDate>
       <author>fievet.leon@free.fr (Léon Fievet)</author>
@@ -82,7 +112,7 @@
     </item>
     
     <item>
-      <title>À propos</title>
+      <title>À propos de moi</title>
       <link>http://localhost:1313/apropos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>fievet.leon@free.fr (Léon Fievet)</author>
@@ -92,7 +122,7 @@
     </item>
     
     <item>
-      <title>Compétences</title>
+      <title>Compétences &amp; Technologies</title>
       <link>http://localhost:1313/competences/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>fievet.leon@free.fr (Léon Fievet)</author>

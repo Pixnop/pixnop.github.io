@@ -83,6 +83,24 @@
     />
   </url>
   <url>
+    <loc>http://localhost:1313/projets/drone-flight-controller/</loc>
+    <lastmod>2024-03-05T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/projets/microservice-monitoring/</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/projets/rust-game-engine/</loc>
+    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/projets/application-gestion-taches/</loc>
     <lastmod>2023-05-20T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>

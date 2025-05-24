@@ -22,6 +22,36 @@
     </item>
     
     <item>
+      <title>FlightCore - Contrôleur de Vol Open Source</title>
+      <link>http://localhost:1313/projets/drone-flight-controller/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <author>fievet.leon@free.fr (Léon Fievet)</author>
+      <guid>http://localhost:1313/projets/drone-flight-controller/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>GoMetrics - Système de Monitoring Distribué</title>
+      <link>http://localhost:1313/projets/microservice-monitoring/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <author>fievet.leon@free.fr (Léon Fievet)</author>
+      <guid>http://localhost:1313/projets/microservice-monitoring/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>PixEngine - Moteur de Jeu 2D en Rust</title>
+      <link>http://localhost:1313/projets/rust-game-engine/</link>
+      <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
+      <author>fievet.leon@free.fr (Léon Fievet)</author>
+      <guid>http://localhost:1313/projets/rust-game-engine/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>Bot Discord pour Gestion de Communauté</title>
       <link>http://localhost:1313/projets/bot-discord-communaute/</link>
       <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
