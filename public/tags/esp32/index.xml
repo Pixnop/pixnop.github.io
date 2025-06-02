@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ESP32 on Léon Fievet - Portfolio</title>
+    <link>http://localhost:1313/tags/esp32/</link>
+    <description>Recent content in ESP32 on Léon Fievet - Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <managingEditor>fievet.leon@free.fr (Léon Fievet)</managingEditor>
+    <webMaster>fievet.leon@free.fr (Léon Fievet)</webMaster>
+    <copyright>© 2025 Léon Fievet</copyright>
+    <lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/esp32/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>FlightCore - Contrôleur de Vol Open Source</title>
+      <link>http://localhost:1313/projets/drone-flight-controller/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <author>fievet.leon@free.fr (Léon Fievet)</author>
+      <guid>http://localhost:1313/projets/drone-flight-controller/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
