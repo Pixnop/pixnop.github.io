@@ -8,11 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>Task Management Application &middot; Léon Fievet - Portfolio</title>
-  <meta name="title" content="Task Management Application &middot; Léon Fievet - Portfolio" />
+  <title>TaskFlow - Collaborative Task Management Application &middot; Léon Fievet - Portfolio</title>
+  <meta name="title" content="TaskFlow - Collaborative Task Management Application &middot; Léon Fievet - Portfolio" />
   
-  <meta name="description" content="Development of a task management web application as part of the BUT Computer Science program" />
-  <meta name="keywords" content="React.js, Node.js, Express, MongoDB, Redux, " />
+  <meta name="description" content="A modern project management web application with Kanban boards, real-time collaboration and advanced analytics" />
+  <meta name="keywords" content="React.js, Node.js, Express, MongoDB, Redux, Socket.io, JWT, Chart.js, " />
   
   
   <link rel="canonical" href="http://localhost:1313/en/projets/application-gestion-taches/" />
@@ -28,8 +28,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.523d80a34b528fe8db9284d1b03d5b0029269fd9951eba25148fbe49275fd3ee931a986f354e3d16170eb8517c3667050f76d3117a5df530b092475fa1567cec.css"
-    integrity="sha512-Uj2Ao0tSj&#43;jbkoTRsD1bACkmn9mVHrolFI&#43;&#43;SSdf0&#43;6TGphvNU49FhcOuFF8NmcFD3bTEXpd9TCwkkdfoVZ87A==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.ce5e0735518d790f0312cb69a1cc0f9e5e0f36f21151f41bbcf46e8111b186d8c1f5e105125f811677be2e869e5fa646cccc0f3fb1df9bb5188df8dab2aeff78.css"
+    integrity="sha512-zl4HNVGNeQ8DEstpocwPnl4PNvIRUfQbvPRugRGxhtjB9eEFEl&#43;BFne&#43;LoaeX6ZGzMwPP7Hfm7UYjfjasq7/eA==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -71,8 +71,8 @@
   
   <meta property="og:url" content="http://localhost:1313/en/projets/application-gestion-taches/">
   <meta property="og:site_name" content="Léon Fievet - Portfolio">
-  <meta property="og:title" content="Task Management Application">
-  <meta property="og:description" content="Development of a task management web application as part of the BUT Computer Science program">
+  <meta property="og:title" content="TaskFlow - Collaborative Task Management Application">
+  <meta property="og:description" content="A modern project management web application with Kanban boards, real-time collaboration and advanced analytics">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="projets">
@@ -83,11 +83,12 @@
     <meta property="article:tag" content="Express">
     <meta property="article:tag" content="MongoDB">
     <meta property="article:tag" content="Redux">
+    <meta property="article:tag" content="Socket.io">
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Task Management Application">
-  <meta name="twitter:description" content="Development of a task management web application as part of the BUT Computer Science program">
+  <meta name="twitter:title" content="TaskFlow - Collaborative Task Management Application">
+  <meta name="twitter:description" content="A modern project management web application with Kanban boards, real-time collaboration and advanced analytics">
 
   
   <script type="application/ld+json">
@@ -95,9 +96,9 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Projects",
-    "name": "Task Management Application",
-    "headline": "Task Management Application",
-    "description": "Development of a task management web application as part of the BUT Computer Science program",
+    "name": "TaskFlow - Collaborative Task Management Application",
+    "headline": "TaskFlow - Collaborative Task Management Application",
+    "description": "A modern project management web application with Kanban boards, real-time collaboration and advanced analytics",
     
     "inLanguage": "en",
     "url" : "http:\/\/localhost:1313\/en\/projets\/application-gestion-taches\/",
@@ -111,10 +112,10 @@
     
     "dateModified": "2023-05-20T00:00:00\u002b00:00",
     
-    "keywords": ["React.js","Node.js","Express","MongoDB","Redux"],
+    "keywords": ["React.js","Node.js","Express","MongoDB","Redux","Socket.io","JWT","Chart.js"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "100"
+    "wordCount": "384"
   }]
   </script>
 
@@ -151,6 +152,8 @@
 
 
 
+<script defer type="text/javascript" src="/js/chart.bundle.dc3e5d888637950bf9913d69bc1692fa8363f5a8d3053e75040171e4f81c02cc00663bfbf543aba8e209033b802f0bae3c3bded151ed8cda309c00a4be1e4357.js"
+  integrity="sha512-3D5diIY3lQv5kT1pvBaS&#43;oNj9ajTBT51BAFx5PgcAswAZjv79UOrqOIJAzuALwuuPDve0VHtjNownACkvh5DVw=="></script>
 
 
 
@@ -158,6 +161,14 @@
 
 
 
+
+
+
+
+
+
+
+<script defer src="/lib/tw-elements/index.min.js" integrity=""></script>
 
 
 
@@ -362,7 +373,7 @@
             
   <a href="/en/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
-    <p class="text-base font-medium" title="Léon Fievet - Web Developer">
+    <p class="text-base font-medium" title="Léon Fievet - Full-Stack Developer &amp; Software Engineer">
         Home
     </p>
 </a>
@@ -502,7 +513,7 @@
 
 
     </span>
-    <div class="text-sm font-medium text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" title="Task Management Application">EN</div>
+    <div class="text-sm font-medium text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" title="TaskFlow - Collaborative Task Management Application">EN</div>
   </div>
   <div class="absolute menuhide">
     <div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl">
@@ -515,7 +526,7 @@
         </a>
         
         <a href="/en/projets/application-gestion-taches/" class="flex items-center">
-          <p class="text-sm font-sm text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" title="Task Management Application">
+          <p class="text-sm font-sm text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" title="TaskFlow - Collaborative Task Management Application">
             EN
           </p>
         </a>
@@ -589,7 +600,7 @@
 
 
     </span>
-    <div class="text-sm font-medium text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" title="Task Management Application">EN</div>
+    <div class="text-sm font-medium text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" title="TaskFlow - Collaborative Task Management Application">EN</div>
   </div>
   <div class="absolute menuhide">
     <div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl">
@@ -602,7 +613,7 @@
         </a>
         
         <a href="/en/projets/application-gestion-taches/" class="flex items-center">
-          <p class="text-sm font-sm text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" title="Task Management Application">
+          <p class="text-sm font-sm text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" title="TaskFlow - Collaborative Task Management Application">
             EN
           </p>
         </a>
@@ -693,7 +704,7 @@
   <li class="mt-1">
     <a href="/en/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
-        <p class="text-bg font-bg" title="Léon Fievet - Web Developer">
+        <p class="text-bg font-bg" title="Léon Fievet - Full-Stack Developer &amp; Software Engineer">
             Home
         </p>
     </a>
@@ -890,7 +901,17 @@
   
   
   
- 
+
+<div id="background-blur" class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl"></div>
+<script>
+    window.addEventListener('scroll', function (e) {
+        var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var background_blur = document.getElementById('background-blur');
+        background_blur.style.opacity = (scroll / 300)
+    });
+</script>
+
+
 
   
   
@@ -908,7 +929,7 @@
     <a
       class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
       href="/en/"
-      >Léon Fievet - Web Developer</a
+      >Léon Fievet - Full-Stack Developer &amp; Software Engineer</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -926,7 +947,7 @@
     <a
       class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
       href="/en/projets/application-gestion-taches/"
-      >Task Management Application</a
+      >TaskFlow - Collaborative Task Management Application</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -935,7 +956,7 @@
 
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      Task Management Application
+      TaskFlow - Collaborative Task Management Application
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -978,7 +999,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-05-20T00:00:00&#43;00:00">May 20, 2023</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
+  <time datetime="2023-05-20T00:00:00&#43;00:00">May 20, 2023</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
   
 
   
@@ -1054,6 +1075,30 @@
 </span>
   </span>
   
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/en/tags/socket.io/&#34;,'_self');return false;">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Socket.io
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/en/tags/jwt/&#34;,'_self');return false;">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    JWT
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/en/tags/chart.js/&#34;,'_self');return false;">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Chart.js
+  </span>
+</span>
+  </span>
+  
   
   
   
@@ -1100,10 +1145,18 @@
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#description">Description</a></li>
-    <li><a href="#technologies-used">Technologies Used</a></li>
-    <li><a href="#key-features">Key Features</a></li>
-    <li><a href="#results">Results</a></li>
+    <li><a href="#-project-overview">🎯 Project Overview</a></li>
+    <li><a href="#-main-features">🚀 Main Features</a></li>
+    <li><a href="#-technical-architecture">💻 Technical Architecture</a>
+      <ul>
+        <li><a href="#frontend---reactjs--redux">Frontend - React.js &amp; Redux</a></li>
+        <li><a href="#backend---nodejs--express">Backend - Node.js &amp; Express</a></li>
+      </ul>
+    </li>
+    <li><a href="#-complete-tech-stack">🛠️ Complete Tech Stack</a></li>
+    <li><a href="#-results-and-impact">📊 Results and Impact</a></li>
+    <li><a href="#-key-learnings">🎓 Key Learnings</a></li>
+    <li><a href="#-links-and-resources">🔗 Links and Resources</a></li>
   </ul>
 </nav>
   </div>
@@ -1117,10 +1170,18 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#description">Description</a></li>
-    <li><a href="#technologies-used">Technologies Used</a></li>
-    <li><a href="#key-features">Key Features</a></li>
-    <li><a href="#results">Results</a></li>
+    <li><a href="#-project-overview">🎯 Project Overview</a></li>
+    <li><a href="#-main-features">🚀 Main Features</a></li>
+    <li><a href="#-technical-architecture">💻 Technical Architecture</a>
+      <ul>
+        <li><a href="#frontend---reactjs--redux">Frontend - React.js &amp; Redux</a></li>
+        <li><a href="#backend---nodejs--express">Backend - Node.js &amp; Express</a></li>
+      </ul>
+    </li>
+    <li><a href="#-complete-tech-stack">🛠️ Complete Tech Stack</a></li>
+    <li><a href="#-results-and-impact">📊 Results and Impact</a></li>
+    <li><a href="#-key-learnings">🎓 Key Learnings</a></li>
+    <li><a href="#-links-and-resources">🔗 Links and Resources</a></li>
   </ul>
 </nav>
   </div>
@@ -1223,91 +1284,560 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          
+          <div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+  Complete task management web application with advanced collaborative features, developed as part of an ambitious university project.
+</div>
 
-<h1 class="relative group">Task Management Application 
-    <div id="task-management-application" class="anchor"></div>
+<span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    
+🏆 Final grade: 17/20
+
+  </span>
+</span>
+
+
+
+<h2 class="relative group">🎯 Project Overview 
+    <div id="-project-overview" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#task-management-application" aria-label="Anchor">#</a>
-    </span>        
-    
-</h1>
-<p>Development of a task management web application as part of the BUT Computer Science program.</p>
-
-
-<h2 class="relative group">Description 
-    <div id="description" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#description" aria-label="Anchor">#</a>
-    </span>        
-    
-</h2>
-<ul>
-<li>Intuitive user interface with drag-and-drop functionality</li>
-<li>Task system with priorities and deadlines</li>
-<li>Collaborative features (task sharing)</li>
-<li>Offline mode with synchronization</li>
-</ul>
-
-
-<h2 class="relative group">Technologies Used 
-    <div id="technologies-used" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#technologies-used" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#-project-overview" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
-<ul>
-<li><strong>React.js</strong>: Frontend development</li>
-<li><strong>Node.js &amp; Express</strong>: Backend API</li>
-<li><strong>MongoDB</strong>: NoSQL database</li>
-<li><strong>Redux</strong>: Application state management</li>
-</ul>
+<p><strong>TaskFlow</strong> was born from a simple observation: existing project management tools are often too complex for small teams. I designed this application to offer a <strong>smooth user experience</strong> while providing powerful features.</p>
+
+  
+  
+  
+  
 
 
-<h2 class="relative group">Key Features 
-    <div id="key-features" class="anchor"></div>
+
+<div
+  
+    class="flex px-4 py-3 rounded-md"
+    style="background-color: #fef3c7"
+  >
+
+  <span
+    
+      class="ltr:pr-3 rtl:pl-3 flex items-center"
+      style="color: #f59e0b"
+    >
+
+    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M287.9 0C297.1 0 305.5 5.25 309.5 13.52L378.1 154.8L531.4 177.5C540.4 178.8 547.8 185.1 550.7 193.7C553.5 202.4 551.2 211.9 544.8 218.2L433.6 328.4L459.9 483.9C461.4 492.9 457.7 502.1 450.2 507.4C442.8 512.7 432.1 513.4 424.9 509.1L287.9 435.9L150.1 509.1C142.9 513.4 133.1 512.7 125.6 507.4C118.2 502.1 114.5 492.9 115.1 483.9L142.2 328.4L31.11 218.2C24.65 211.9 22.36 202.4 25.2 193.7C28.03 185.1 35.5 178.8 44.49 177.5L197.7 154.8L266.3 13.52C270.4 5.249 278.7 0 287.9 0L287.9 0zM287.9 78.95L235.4 187.2C231.9 194.3 225.1 199.3 217.3 200.5L98.98 217.9L184.9 303C190.4 308.5 192.9 316.4 191.6 324.1L171.4 443.7L276.6 387.5C283.7 383.7 292.2 383.7 299.2 387.5L404.4 443.7L384.2 324.1C382.9 316.4 385.5 308.5 391 303L476.9 217.9L358.6 200.5C350.7 199.3 343.9 194.3 340.5 187.2L287.9 78.95z"/></svg>
+  </span>
+
+
+  </span>
+
+  <span
+    
+      style="color: #92400e"
+    ><strong>Highlight</strong>: The application was adopted as a reference tool by the computer science department for subsequent student projects.</span>
+</div>
+
+
+
+<h2 class="relative group">🚀 Main Features 
+    <div id="-main-features" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#key-features" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#-main-features" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
-<ul>
-<li>Customizable Kanban boards</li>
-<li>Advanced filters and search</li>
-<li>Notifications and reminders</li>
-<li>Productivity statistics</li>
-<li>Responsive interface (mobile/desktop)</li>
-</ul>
+<ol class="border-l-2 border-primary-500 dark:border-primary-300 list-none">
 
 
-<h2 class="relative group">Results 
-    <div id="results" class="anchor"></div>
+
+
+
+<li>
+  <div class="flex flex-start">
+    <div class="bg-primary-500 dark:bg-primary-300 text-neutral-50 dark:text-neutral-700 min-w-[30px] h-8 text-2xl flex items-center justify-center rounded-full -ml-12 mt-5">
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M88 48C101.3 48 112 58.75 112 72V120C112 133.3 101.3 144 88 144H40C26.75 144 16 133.3 16 120V72C16 58.75 26.75 48 40 48H88zM480 64C497.7 64 512 78.33 512 96C512 113.7 497.7 128 480 128H192C174.3 128 160 113.7 160 96C160 78.33 174.3 64 192 64H480zM480 224C497.7 224 512 238.3 512 256C512 273.7 497.7 288 480 288H192C174.3 288 160 273.7 160 256C160 238.3 174.3 224 192 224H480zM480 384C497.7 384 512 398.3 512 416C512 433.7 497.7 448 480 448H192C174.3 448 160 433.7 160 416C160 398.3 174.3 384 192 384H480zM16 232C16 218.7 26.75 208 40 208H88C101.3 208 112 218.7 112 232V280C112 293.3 101.3 304 88 304H40C26.75 304 16 293.3 16 280V232zM88 368C101.3 368 112 378.7 112 392V440C112 453.3 101.3 464 88 464H40C26.75 464 16 453.3 16 440V392C16 378.7 26.75 368 40 368H88z"/></svg>
+
+  </span>
+
+
+    </div>
+    <div class="block p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words">
+      <div class="flex justify-between">
+        
+        <h2 class="mt-0">
+          Dynamic Kanban Boards 
+        </h2>
+        
+        
+        <h3 class="">
+          <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Core Feature
+  </span>
+</span>
+        </h3>
+        
+      </div>
+      
+      <div class="mb-6">
+- <strong>Intuitive Drag & Drop</strong> between columns
+- Unlimited creation of custom boards
+- Configurable columns (To Do, In Progress, In Review, Done)
+- Automatic position saving
+</div>
+    </div>
+  </div>
+</li>
+
+
+
+
+
+
+
+<li>
+  <div class="flex flex-start">
+    <div class="bg-primary-500 dark:bg-primary-300 text-neutral-50 dark:text-neutral-700 min-w-[30px] h-8 text-2xl flex items-center justify-center rounded-full -ml-12 mt-5">
+      
+
+
+    </div>
+    <div class="block p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words">
+      <div class="flex justify-between">
+        
+        <h2 class="mt-0">
+          Real-Time Collaboration 
+        </h2>
+        
+        
+        <h3 class="">
+          <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Innovation
+  </span>
+</span>
+        </h3>
+        
+      </div>
+      
+      <div class="mb-6">
+- <strong>WebSockets</strong> for instant updates
+- Collaborator presence indicators
+- Comments and mentions (@user)
+- Complete modification history
+</div>
+    </div>
+  </div>
+</li>
+
+
+
+
+
+
+
+<li>
+  <div class="flex flex-start">
+    <div class="bg-primary-500 dark:bg-primary-300 text-neutral-50 dark:text-neutral-700 min-w-[30px] h-8 text-2xl flex items-center justify-center rounded-full -ml-12 mt-5">
+      
+
+
+    </div>
+    <div class="block p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words">
+      <div class="flex justify-between">
+        
+        <h2 class="mt-0">
+          Analytics &amp; Reporting 
+        </h2>
+        
+        
+        <h3 class="">
+          <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Data-Driven
+  </span>
+</span>
+        </h3>
+        
+      </div>
+      
+      <div class="mb-6">
+- Progress charts (Chart.js)
+- Average completion time per task
+- Workload distribution
+- PDF report export
+</div>
+    </div>
+  </div>
+</li>
+
+
+
+
+
+
+
+<li>
+  <div class="flex flex-start">
+    <div class="bg-primary-500 dark:bg-primary-300 text-neutral-50 dark:text-neutral-700 min-w-[30px] h-8 text-2xl flex items-center justify-center rounded-full -ml-12 mt-5">
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+<path fill="currentColor" d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"/></svg>
+  </span>
+
+
+    </div>
+    <div class="block p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words">
+      <div class="flex justify-between">
+        
+        <h2 class="mt-0">
+          Notification System 
+        </h2>
+        
+        
+        <h3 class="">
+          <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Engagement
+  </span>
+</span>
+        </h3>
+        
+      </div>
+      
+      <div class="mb-6">
+- Push notifications for deadlines
+- Customizable reminders
+- Daily email digest
+- Calendar integration (iCal)
+</div>
+    </div>
+  </div>
+</li>
+
+</ol>
+
+
+<h2 class="relative group">💻 Technical Architecture 
+    <div id="-technical-architecture" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#results" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#-technical-architecture" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
-<ul>
-<li>Functional application deployed on Heroku</li>
-<li>Final grade: 17/20</li>
-<li>Used as a reference tool for subsequent projects in the computer science department</li>
-</ul>
+
+
+<h3 class="relative group">Frontend - React.js &amp; Redux 
+    <div id="frontend---reactjs--redux" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#frontend---reactjs--redux" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// Example of React component with custom hooks
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">TaskCard</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">task</span><span class="p">,</span> <span class="nx">onUpdate</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="p">[</span><span class="nx">isDragging</span><span class="p">,</span> <span class="nx">setIsDragging</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="p">{</span> <span class="nx">user</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">useAuth</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">dispatch</span> <span class="o">=</span> <span class="nx">useDispatch</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  <span class="c1">// Optimistic update handling
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">const</span> <span class="nx">handleUpdate</span> <span class="o">=</span> <span class="nx">useCallback</span><span class="p">(</span><span class="kr">async</span> <span class="p">(</span><span class="nx">updates</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">dispatch</span><span class="p">(</span><span class="nx">updateTaskOptimistic</span><span class="p">(</span><span class="nx">task</span><span class="p">.</span><span class="nx">id</span><span class="p">,</span> <span class="nx">updates</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="k">try</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="kr">await</span> <span class="nx">api</span><span class="p">.</span><span class="nx">updateTask</span><span class="p">(</span><span class="nx">task</span><span class="p">.</span><span class="nx">id</span><span class="p">,</span> <span class="nx">updates</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">dispatch</span><span class="p">(</span><span class="nx">revertTaskUpdate</span><span class="p">(</span><span class="nx">task</span><span class="p">.</span><span class="nx">id</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span> <span class="p">[</span><span class="nx">task</span><span class="p">.</span><span class="nx">id</span><span class="p">,</span> <span class="nx">dispatch</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div>
+
+<h3 class="relative group">Backend - Node.js &amp; Express 
+    <div id="backend---nodejs--express" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#backend---nodejs--express" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<div class="flex flex-row flex-wrap items-center space-x-2">
+
+<div class="flex mt-2">
+<span
+  class="rounded-full bg-primary-500 dark:bg-primary-400 text-neutral-50 dark:text-neutral-800 px-1.5 py-[1px] text-xs font-normal"
+>
+  <span class="flex flex-row items-center">
+    
+    <span class="mr-1">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path fill="currentColor" d="M256 0c4.6 0 9.2 1 13.4 2.9L457.7 82.8c22 9.3 38.4 31 38.3 57.2c-.5 99.2-41.3 280.7-213.7 363.2c-16.7 8-36.1 8-52.8 0C57.3 420.7 16.5 239.2 16 140c-.1-26.2 16.3-47.9 38.3-57.2L242.7 2.9C246.8 1 251.4 0 256 0zm0 66.8V444.8C394 378 431.1 230.1 432 141.4L256 66.8l0 0z"/></svg>
+  </span>
+
+</span>
+    
+    <span><strong>Secure JWT Authentication</strong></span>
+  </span>
+</span>
+</div>
+
+<div class="flex mt-2">
+<span
+  class="rounded-full bg-primary-500 dark:bg-primary-400 text-neutral-50 dark:text-neutral-800 px-1.5 py-[1px] text-xs font-normal"
+>
+  <span class="flex flex-row items-center">
+    
+    <span class="mr-1">
+
+</span>
+    
+    <span><strong>MongoDB</strong> with complex aggregations</span>
+  </span>
+</span>
+</div>
+
+<div class="flex mt-2">
+<span
+  class="rounded-full bg-primary-500 dark:bg-primary-400 text-neutral-50 dark:text-neutral-800 px-1.5 py-[1px] text-xs font-normal"
+>
+  <span class="flex flex-row items-center">
+    
+    <span class="mr-1">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M266.3 48.3L232.5 73.6c-5.4 4-8.5 10.4-8.5 17.1v9.1c0 6.8 5.5 12.3 12.3 12.3c2.4 0 4.8-.7 6.8-2.1l41.8-27.9c2-1.3 4.4-2.1 6.8-2.1h1c6.2 0 11.3 5.1 11.3 11.3c0 3-1.2 5.9-3.3 8l-19.9 19.9c-5.8 5.8-12.9 10.2-20.7 12.8l-26.5 8.8c-5.8 1.9-9.6 7.3-9.6 13.4c0 3.7-1.5 7.3-4.1 10l-17.9 17.9c-6.4 6.4-9.9 15-9.9 24v4.3c0 16.4 13.6 29.7 29.9 29.7c11 0 21.2-6.2 26.1-16l4-8.1c2.4-4.8 7.4-7.9 12.8-7.9c4.5 0 8.7 2.1 11.4 5.7l16.3 21.7c2.1 2.9 5.5 4.5 9.1 4.5c8.4 0 13.9-8.9 10.1-16.4l-1.1-2.3c-3.5-7 0-15.5 7.5-18l21.2-7.1c7.6-2.5 12.7-9.6 12.7-17.6c0-10.3 8.3-18.6 18.6-18.6H400c8.8 0 16 7.2 16 16s-7.2 16-16 16H379.3c-7.2 0-14.2 2.9-19.3 8l-4.7 4.7c-2.1 2.1-3.3 5-3.3 8c0 6.2 5.1 11.3 11.3 11.3h11.3c6 0 11.8 2.4 16 6.6l6.5 6.5c1.8 1.8 2.8 4.3 2.8 6.8s-1 5-2.8 6.8l-7.5 7.5C386 262 384 266.9 384 272s2 10 5.7 13.7L408 304c10.2 10.2 24.1 16 38.6 16H454c6.5-20.2 10-41.7 10-64c0-111.4-87.6-202.4-197.7-207.7zm172 307.9c-3.7-2.6-8.2-4.1-13-4.1c-6 0-11.8-2.4-16-6.6L396 332c-7.7-7.7-18-12-28.9-12c-9.7 0-19.2-3.5-26.6-9.8L314 287.4c-11.6-9.9-26.4-15.4-41.6-15.4H251.4c-12.6 0-25 3.7-35.5 10.7L188.5 301c-17.8 11.9-28.5 31.9-28.5 53.3v3.2c0 17 6.7 33.3 18.7 45.3l16 16c8.5 8.5 20 13.3 32 13.3H248c13.3 0 24 10.7 24 24c0 2.5 .4 5 1.1 7.3c71.3-5.8 132.5-47.6 165.2-107.2zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM187.3 100.7c-6.2-6.2-16.4-6.2-22.6 0l-32 32c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l32-32c6.2-6.2 6.2-16.4 0-22.6z"/></svg>
+  </span>
+
+</span>
+    
+    <span><strong>Socket.io</strong> for real-time</span>
+  </span>
+</span>
+</div>
+
+<div class="flex mt-2">
+<span
+  class="rounded-full bg-primary-500 dark:bg-primary-400 text-neutral-50 dark:text-neutral-800 px-1.5 py-[1px] text-xs font-normal"
+>
+  <span class="flex flex-row items-center">
+    
+    <span class="mr-1">
+
+</span>
+    
+    <span><strong>RESTful API</strong> documented with Swagger</span>
+  </span>
+</span>
+</div>
+</div>
+
+
+
+<h2 class="relative group">🛠️ Complete Tech Stack 
+    <div id="-complete-tech-stack" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#-complete-tech-stack" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<div class="flex justify-between">
+  <span
+    class="w-full py-6 mr-3 rounded-md"
+    style="background-color: #61DAFB"
+  ></span>
+  <span
+    class="w-full py-6 mr-3 rounded-md"
+    style="background-color: #68A063"
+  ></span>
+  <span
+    class="w-full py-6 mr-3 rounded-md"
+    style="background-color: #47A248"
+  ></span>
+</div>
+
+<table>
+  <thead>
+      <tr>
+          <th>Category</th>
+          <th>Technologies</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Frontend</strong></td>
+          <td>React.js 18, Redux Toolkit, React DnD, Tailwind CSS</td>
+      </tr>
+      <tr>
+          <td><strong>Backend</strong></td>
+          <td>Node.js, Express.js, Socket.io, Joi (validation)</td>
+      </tr>
+      <tr>
+          <td><strong>Database</strong></td>
+          <td>MongoDB, Mongoose ODM, Redis (cache)</td>
+      </tr>
+      <tr>
+          <td><strong>DevOps</strong></td>
+          <td>Docker, GitHub Actions, Heroku, Jest &amp; Cypress</td>
+      </tr>
+      <tr>
+          <td><strong>Security</strong></td>
+          <td>JWT, bcrypt, Helmet.js, rate limiting</td>
+      </tr>
+  </tbody>
+</table>
+
+
+<h2 class="relative group">📊 Results and Impact 
+    <div id="-results-and-impact" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#-results-and-impact" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+<div class="chart">
+  <canvas id="chart-0027ae54d82b95947bbde71a9f67896d"></canvas>
+  <script type="text/javascript">
+    window.addEventListener("DOMContentLoaded", (event) => {
+      const ctx = document.getElementById("chart-0027ae54d82b95947bbde71a9f67896d");
+      const chart = new Chart(ctx, {
+        
+type: 'bar',
+data: {
+  labels: ['Active Users', 'Tasks Created', 'Projects Managed', 'Satisfaction'],
+  datasets: [{
+    label: 'Key Metrics',
+    data: [150, 2500, 35, 92],
+    backgroundColor: [
+      'rgba(59, 130, 246, 0.8)',
+      'rgba(16, 185, 129, 0.8)',
+      'rgba(139, 92, 246, 0.8)',
+      'rgba(236, 72, 153, 0.8)'
+    ]
+  }]
+}
+
+      });
+    });
+  </script>
+</div>
+
+
+
+<h2 class="relative group">🎓 Key Learnings 
+    <div id="-key-learnings" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#-key-learnings" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>This project allowed me to:</p>
+<ol>
+<li><strong>Master modern Full-Stack architecture</strong> with React and Node.js</li>
+<li><strong>Implement complex real-time features</strong> with WebSockets</li>
+<li><strong>Optimize performance</strong> (lazy loading, memoization, MongoDB indexing)</li>
+<li><strong>Manage a large-scale project</strong> from design to deployment</li>
+<li><strong>Collaborate effectively</strong> with a team of 4 developers</li>
+</ol>
+
+
+<h2 class="relative group">🔗 Links and Resources 
+    <div id="-links-and-resources" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#-links-and-resources" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<a
+  class="!rounded-md bg-primary-600 px-4 py-2 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
+  href="https://github.com/pixnop/taskflow"
+  target="_blank"
+  
+  role="button"
+>
+  
+View code on GitHub
+
+</a>
+
+<a
+  class="!rounded-md bg-primary-600 px-4 py-2 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
+  href="https://taskflow-demo.herokuapp.com"
+  target="_blank"
+  
+  role="button"
+>
+  
+Live demo
+
+</a>
+
+<hr>
+
+  
+  
+  
+  
+
+
+
+<div
+  
+    class="flex px-4 py-3 rounded-md bg-primary-100 dark:bg-primary-900"
+  >
+
+  <span
+    
+      class="text-primary-400 ltr:pr-3 rtl:pl-3 flex items-center"
+    >
+
+    
+
+
+  </span>
+
+  <span
+    
+      class="dark:text-neutral-300"
+    ><strong>Want to know more?</strong> Contact me for a complete demonstration of the application and its advanced features!</span>
+</div>
+
 
           
           
@@ -1344,7 +1874,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/en/projets/application-gestion-taches/&amp;title=Task%20Management%20Application"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/en/projets/application-gestion-taches/&amp;title=TaskFlow%20-%20Collaborative%20Task%20Management%20Application"
       title="Share on LinkedIn"
       aria-label="Share on LinkedIn"
       >
@@ -1363,7 +1893,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=http://localhost:1313/en/projets/application-gestion-taches/&amp;text=Task%20Management%20Application"
+      href="https://twitter.com/intent/tweet/?url=http://localhost:1313/en/projets/application-gestion-taches/&amp;text=TaskFlow%20-%20Collaborative%20Task%20Management%20Application"
       title="Tweet on Twitter"
       aria-label="Tweet on Twitter"
       >
@@ -1381,7 +1911,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=http://localhost:1313/en/projets/application-gestion-taches/&amp;subject=Task%20Management%20Application"
+      href="mailto:?body=http://localhost:1313/en/projets/application-gestion-taches/&amp;subject=TaskFlow%20-%20Collaborative%20Task%20Management%20Application"
       title="Send via email"
       aria-label="Send via email"
       >
@@ -1549,7 +2079,7 @@
   
   
 
-  <a href="/en/projets/systeme-surveillance-environnementale/" class="min-w-full">
+  <a href="/en/competences/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
@@ -1557,7 +2087,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/en/projets/systeme-surveillance-environnementale/">Environmental Monitoring System</div>
+          href="/en/competences/">Skills</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1573,15 +2103,11 @@
 
 
 
-  
 
 
 
 
 
-
-
-  
 
 
 
@@ -1597,8 +2123,6 @@
 
 <div class="flex flex-row flex-wrap items-center">
   
-  
-  <time datetime="2021-06-15T00:00:00&#43;00:00">June 15, 2021</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
   
 
   
@@ -1614,13 +2138,6 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/en/categories/school-projects/&#34;,'_self');return false;">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    School Projects
-  </span>
-</span>
-  </span>
   
   
   
@@ -1628,185 +2145,6 @@
   
   
   
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/en/tags/arduino/&#34;,'_self');return false;">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Arduino
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/en/tags/environmental-sensors/&#34;,'_self');return false;">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Environmental Sensors
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/en/tags/html/css/javascript/&#34;,'_self');return false;">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    HTML/CSS/JavaScript
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/en/tags/php/&#34;,'_self');return false;">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    PHP
-  </span>
-</span>
-  </span>
-  
-  
-  
-  
-</div>
-
-
-
-
-        </div>
-
-        
-        <div class="py-1 prose dark:prose-invert">
-          
-        </div>
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-
-  
-  
-
-  <a href="/en/projets/site-athletisme/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/en/projets/site-athletisme/">Athletics Club Website</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2020-09-15T00:00:00&#43;00:00">September 15, 2020</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
-  
-
-  
-  
-</div>
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/en/categories/personal-projects/&#34;,'_self');return false;">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Personal Projects
-  </span>
-</span>
-  </span>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/en/tags/wordpress/&#34;,'_self');return false;">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    WordPress
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/en/tags/html/css/&#34;,'_self');return false;">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    HTML/CSS
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/en/tags/php/&#34;,'_self');return false;">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    PHP
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/en/tags/javascript/&#34;,'_self');return false;">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    JavaScript
-  </span>
-</span>
-  </span>
   
   
   
@@ -1893,15 +2231,15 @@
         </span>
         <span>
           
-            <a class="flex text-right group ml-3" href="/en/projets/covoiturage-interne/">
+            <a class="flex text-right group ml-3" href="/en/projets/rust-game-engine/">
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Internal Carpooling Application</span
+                  >PixEngine - 2D Game Engine in Rust</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-04-01T00:00:00&#43;00:00">April 1, 2024</time>
+                    <time datetime="2023-11-10T00:00:00&#43;00:00">November 10, 2023</time>
                   
                 </span>
               </span>

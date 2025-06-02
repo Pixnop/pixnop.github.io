@@ -61,27 +61,18 @@ Pilote et constructeur de drones FPV depuis 3 ans, cette passion m'a appris :
 - **IoT** : Intégration d'objets connectés dans des applications web
 - **Cybersécurité** : Sécurisation des applications et protection des données
 
-## 📫 Restons en contact
-
-{{< alert icon="envelope" >}}
-N'hésitez pas à me contacter pour discuter de vos projets ou simplement échanger sur les technologies web !
-{{< /alert >}}
-
-{{< keywordList >}}
-{{< keyword icon="email" >}} <strong>Email professionnel</strong> : fievet.leon@free.fr {{< /keyword >}}
-{{< keyword icon="email" >}} <strong>Email universitaire</strong> : leon.fievet@etu.umontpellier.fr {{< /keyword >}}
-{{< keyword icon="phone" >}} <strong>Téléphone</strong> : 07 81 87 39 33 {{< /keyword >}}
-{{< keyword icon="linkedin" >}} <strong>LinkedIn</strong> : [linkedin.com/in/leonfievet](https://linkedin.com/in/leonfievet) {{< /keyword >}}
-{{< keyword icon="github" >}} <strong>GitHub</strong> : [github.com/pixnop](https://github.com/pixnop) {{< /keyword >}}
-{{< keyword icon="location-dot" >}} <strong>Localisation</strong> : Montpellier, France {{< /keyword >}}
-{{< /keywordList >}}
-
 ---
 
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
 {{< button href="/projets" >}}
 Voir mes projets
+{{< /button >}}
+
+{{< button href="/cv" >}}
+Télécharger mon CV
 {{< /button >}}
 
 {{< button href="/contact" >}}
 Me contacter directement
 {{< /button >}}
+</div>

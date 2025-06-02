@@ -79,3 +79,335 @@
     align-items: flex-end;
   }
 }
+
+/* ========================================
+   CORRECTIONS DE CONTRASTE - ALERTS ET KEYWORDS
+   ======================================== */
+
+/* Fix pour l'alert bleu clair avec "Formation actuelle" */
+div[style*="background-color: #e0f2fe"] span:last-child,
+div[style*="background-color: #e0f2fe"] span:last-child *,
+div[style*="background-color: #e0f2fe"] span:last-child strong,
+div[style*="background-color: #e0f2fe"] span:last-child p {
+  color: #0c4a6e !important;
+  -webkit-text-fill-color: #0c4a6e !important;
+}
+
+/* Override la classe dark:text-neutral-300 qui force le texte blanc */
+div[style*="background-color: #e0f2fe"] .dark\:text-neutral-300,
+div[style*="background-color: #e0f2fe"] span[class*="text-neutral"],
+div[style*="background-color: #e0f2fe"] span[class*="text-white"] {
+  color: #0c4a6e !important;
+  -webkit-text-fill-color: #0c4a6e !important;
+}
+
+/* Fix pour les autres alerts colorées */
+div[style*="background-color: #d1fae5"] span:not(:first-child),
+div[style*="background-color: #d1fae5"] span:not(:first-child) * {
+  color: #064e3b !important;
+  -webkit-text-fill-color: #064e3b !important;
+}
+
+div[style*="background-color: #fef3c7"] span:not(:first-child),
+div[style*="background-color: #fef3c7"] span:not(:first-child) * {
+  color: #92400e !important;
+  -webkit-text-fill-color: #92400e !important;
+}
+
+div[style*="background-color: #dbeafe"] span:not(:first-child),
+div[style*="background-color: #dbeafe"] span:not(:first-child) * {
+  color: #1e3a8a !important;
+  -webkit-text-fill-color: #1e3a8a !important;
+}
+
+/* Fix pour les keywords avec fond vert - utiliser du texte foncé pour meilleur contraste */
+.rounded-full.bg-primary-500,
+.rounded-full.bg-primary-500 * {
+  color: rgb(28, 25, 23) !important; /* neutral-900 */
+  -webkit-text-fill-color: rgb(28, 25, 23) !important;
+}
+
+.rounded-full.bg-primary-400,
+.rounded-full.bg-primary-400 * {
+  color: rgb(41, 37, 36) !important; /* neutral-800 */
+  -webkit-text-fill-color: rgb(41, 37, 36) !important;
+}
+
+/* Mode sombre : texte blanc sur fond vert foncé */
+.dark .rounded-full.bg-primary-400,
+.dark .rounded-full.bg-primary-400 * {
+  color: rgb(255, 255, 255) !important;
+  -webkit-text-fill-color: rgb(255, 255, 255) !important;
+}
+
+/* Fix pour les boutons avec fond vert */
+.bg-primary-600,
+.bg-primary-500,
+a.bg-primary-600,
+a.bg-primary-500 {
+  color: rgb(255, 255, 255) !important;
+}
+
+/* Override global pour toute classe Tailwind qui pourrait forcer du texte blanc sur fond clair */
+body div.flex.px-4.py-3.rounded-md[style*="background-color"] span[style*="color"],
+body div.flex.px-4.py-3.rounded-md[style*="background-color"] span[style*="color"] * {
+  color: inherit !important;
+  -webkit-text-fill-color: inherit !important;
+}
+
+/* Fix absolu pour tout texte dans les badges keywords verts - texte foncé en mode clair */
+.bg-primary-500.text-neutral-50 {
+  color: rgb(28, 25, 23) !important; /* neutral-900 */
+  -webkit-text-fill-color: rgb(28, 25, 23) !important;
+}
+
+.bg-primary-400.text-neutral-50 {
+  color: rgb(41, 37, 36) !important; /* neutral-800 */
+  -webkit-text-fill-color: rgb(41, 37, 36) !important;
+}
+
+/* Mode sombre - garder le texte blanc */
+.dark .bg-primary-500.dark\:text-neutral-800,
+.dark .bg-primary-400.dark\:text-neutral-800 {
+  color: rgb(255, 255, 255) !important;
+  -webkit-text-fill-color: rgb(255, 255, 255) !important;
+}
+
+/* Forcer le texte foncé pour TOUT le contenu des keywords en mode clair */
+div.flex.mt-2 span.rounded-full.bg-primary-500,
+div.flex.mt-2 span.rounded-full.bg-primary-500 * {
+  color: rgb(28, 25, 23) !important;
+  -webkit-text-fill-color: rgb(28, 25, 23) !important;
+}
+
+div.flex.mt-2 span.rounded-full.bg-primary-400,
+div.flex.mt-2 span.rounded-full.bg-primary-400 * {
+  color: rgb(41, 37, 36) !important;
+  -webkit-text-fill-color: rgb(41, 37, 36) !important;
+}
+
+/* Mode sombre - override pour texte blanc */
+.dark div.flex.mt-2 span.rounded-full.bg-primary-400,
+.dark div.flex.mt-2 span.rounded-full.bg-primary-400 * {
+  color: rgb(255, 255, 255) !important;
+  -webkit-text-fill-color: rgb(255, 255, 255) !important;
+}
+
+/* ========================================
+   CONTRAST FIXES
+   From contrast-fixes.css
+   ======================================== */
+
+/* Corrections de contraste pour améliorer la lisibilité */
+
+/* ========================================
+   FIX 1: Keywords avec fond vert
+   ======================================== */
+/* Forcer le texte blanc sur tous les keywords */
+.rounded-full.bg-primary-500,
+.rounded-full.bg-primary-400 {
+  color: rgb(255, 255, 255) !important;
+}
+
+/* Override pour les keywords en mode sombre */
+.dark .rounded-full.bg-primary-400 {
+  color: rgb(255, 255, 255) !important;
+}
+
+/* Assurer que les éléments enfants héritent de la couleur */
+.rounded-full.bg-primary-500 *,
+.rounded-full.bg-primary-400 * {
+  color: inherit !important;
+}
+
+/* ========================================
+   FIX 2: Alerts avec couleurs personnalisées
+   ======================================== */
+/* Alert vert clair */
+div[style*="background-color: #d1fae5"],
+div[style*="background-color: #d1fae5"] * {
+  color: #064e3b !important;
+}
+
+/* Alert jaune clair */
+div[style*="background-color: #fef3c7"],
+div[style*="background-color: #fef3c7"] * {
+  color: #92400e !important;
+}
+
+/* Alert bleu clair */
+div[style*="background-color: #dbeafe"],
+div[style*="background-color: #dbeafe"] * {
+  color: #1e3a8a !important;
+}
+
+/* Alert bleu très clair (problème signalé) */
+div[style*="background-color: #e0f2fe"],
+div[style*="background-color: #e0f2fe"] * {
+  color: #0c4a6e !important;
+}
+
+/* Override plus spécifique pour le contenu de l'alert bleu clair */
+.flex.px-4.py-3.rounded-md[style*="#e0f2fe"] span,
+.flex.px-4.py-3.rounded-md[style*="#e0f2fe"] span *,
+.flex.px-4.py-3.rounded-md[style*="#e0f2fe"] strong {
+  color: #0c4a6e !important;
+}
+
+/* Forcer les styles pour les éléments strong dans les alerts */
+div.flex.px-4.py-3.rounded-md[style*="background-color"] strong {
+  font-weight: 700 !important;
+  opacity: 1 !important;
+}
+
+/* ========================================
+   FIX 3: Boutons avec fond vert
+   ======================================== */
+.bg-primary-600,
+.bg-primary-500,
+.hover\:bg-primary-500:hover,
+.dark\:bg-primary-800,
+.dark\:hover\:bg-primary-700:hover {
+  color: rgb(255, 255, 255) !important;
+}
+
+/* ========================================
+   FIX 4: Général - tous les fonds primary
+   ======================================== */
+[class*="bg-primary-"] {
+  color: rgb(255, 255, 255) !important;
+}
+
+/* Exception pour les fonds très clairs */
+.bg-primary-50,
+.bg-primary-100 {
+  color: rgb(54, 83, 20) !important; /* primary-900 */
+}
+
+/* ========================================
+   FIX 5: Mode sombre
+   ======================================== */
+.dark [class*="bg-primary-"] {
+  color: rgb(255, 255, 255) !important;
+}
+
+/* Exception pour les fonds très clairs en mode sombre */
+.dark .bg-primary-50,
+.dark .bg-primary-100 {
+  color: rgb(247, 254, 231) !important; /* primary-50 */
+}
+
+/* ========================================
+   FIX SPÉCIFIQUE: Override des classes Tailwind dans les alerts
+   ======================================== */
+/* Cibler spécifiquement les spans avec classe dark:text-neutral-300 dans les alerts colorées */
+div[style*="background-color: #e0f2fe"] .dark\:text-neutral-300,
+div[style*="background-color: #e0f2fe"] [class*="text-neutral"],
+div[style*="background-color: #e0f2fe"] [class*="text-white"] {
+  color: #0c4a6e !important;
+}
+
+/* Même chose pour les autres alerts */
+div[style*="background-color: #d1fae5"] .dark\:text-neutral-300,
+div[style*="background-color: #d1fae5"] [class*="text-neutral"],
+div[style*="background-color: #d1fae5"] [class*="text-white"] {
+  color: #064e3b !important;
+}
+
+div[style*="background-color: #fef3c7"] .dark\:text-neutral-300,
+div[style*="background-color: #fef3c7"] [class*="text-neutral"],
+div[style*="background-color: #fef3c7"] [class*="text-white"] {
+  color: #92400e !important;
+}
+
+div[style*="background-color: #dbeafe"] .dark\:text-neutral-300,
+div[style*="background-color: #dbeafe"] [class*="text-neutral"],
+div[style*="background-color: #dbeafe"] [class*="text-white"] {
+  color: #1e3a8a !important;
+}
+
+/* ========================================
+   DEBUG: Forcer la visibilité du texte
+   ======================================== */
+/* Si du texte est toujours invisible, cette règle le forcera à être visible */
+.text-white,
+.text-neutral,
+.text-neutral-50 {
+  opacity: 1 !important;
+}
+
+/* Assurer que les liens dans les sections colorées restent visibles */
+[class*="bg-primary-"] a,
+[class*="bg-secondary-"] a {
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+[class*="bg-primary-"] a:hover,
+[class*="bg-secondary-"] a:hover {
+  opacity: 1;
+}
+
+/* ========================================
+   ALERT FIXES
+   From alert-fix.css
+   ======================================== */
+
+/* Fix spécifique pour les alerts avec fond coloré */
+
+/* Force absolue pour l'alert bleu clair - Formation actuelle */
+body div[style*="#e0f2fe"] span:last-child,
+body div[style*="#e0f2fe"] span:last-child *,
+body div[style*="#e0f2fe"] span:last-child strong,
+body div[style*="#e0f2fe"] span:last-child p,
+html body div[style*="#e0f2fe"] span:not(:first-child),
+html body div[style*="#e0f2fe"] span:not(:first-child) * {
+  color: #0c4a6e !important;
+  -webkit-text-fill-color: #0c4a6e !important;
+}
+
+/* Alternative avec rgb */
+body div[style*="rgb(224, 242, 254)"] span:last-child,
+body div[style*="rgb(224, 242, 254)"] span:last-child * {
+  color: #0c4a6e !important;
+  -webkit-text-fill-color: #0c4a6e !important;
+}
+
+/* Override toute classe qui pourrait forcer le blanc */
+body div.flex.px-4.py-3.rounded-md[style*="#e0f2fe"] * {
+  color: #0c4a6e !important;
+  -webkit-text-fill-color: #0c4a6e !important;
+}
+
+/* Cas spécifique pour le shortcode alert avec textColor */
+body div.flex.px-4.py-3.rounded-md span[style*="color: #0c4a6e"],
+body div.flex.px-4.py-3.rounded-md span[style*="color: #0c4a6e"] * {
+  color: #0c4a6e !important;
+  -webkit-text-fill-color: #0c4a6e !important;
+}
+
+/* Autres alerts pour cohérence */
+body div[style*="#d1fae5"] span:not(:first-child),
+body div[style*="#d1fae5"] span:not(:first-child) * {
+  color: #064e3b !important;
+  -webkit-text-fill-color: #064e3b !important;
+}
+
+body div[style*="#fef3c7"] span:not(:first-child),
+body div[style*="#fef3c7"] span:not(:first-child) * {
+  color: #92400e !important;
+  -webkit-text-fill-color: #92400e !important;
+}
+
+body div[style*="#dbeafe"] span:not(:first-child),
+body div[style*="#dbeafe"] span:not(:first-child) * {
+  color: #1e3a8a !important;
+  -webkit-text-fill-color: #1e3a8a !important;
+}
+
+/* Reset any text-white or text-neutral classes inside alerts */
+body div[style*="background-color"] [class*="text-white"],
+body div[style*="background-color"] [class*="text-neutral"] {
+  color: inherit !important;
+  -webkit-text-fill-color: inherit !important;
+}

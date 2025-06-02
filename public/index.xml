@@ -122,7 +122,7 @@
     </item>
     
     <item>
-      <title>Compétences &amp; Technologies</title>
+      <title>Compétences</title>
       <link>http://localhost:1313/competences/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>fievet.leon@free.fr (Léon Fievet)</author>
@@ -137,6 +137,16 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>fievet.leon@free.fr (Léon Fievet)</author>
       <guid>http://localhost:1313/contact/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Curriculum Vitae</title>
+      <link>http://localhost:1313/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>fievet.leon@free.fr (Léon Fievet)</author>
+      <guid>http://localhost:1313/cv/</guid>
       <description></description>
       
     </item>

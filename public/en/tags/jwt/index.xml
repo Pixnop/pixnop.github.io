@@ -21,5 +21,15 @@
       
     </item>
     
+    <item>
+      <title>TaskFlow - Collaborative Task Management Application</title>
+      <link>http://localhost:1313/en/projets/application-gestion-taches/</link>
+      <pubDate>Sat, 20 May 2023 00:00:00 +0000</pubDate>
+      <author>fievet.leon@free.fr (Léon Fievet)</author>
+      <guid>http://localhost:1313/en/projets/application-gestion-taches/</guid>
+      <description></description>
+      
+    </item>
+    
   </channel>
 </rss>

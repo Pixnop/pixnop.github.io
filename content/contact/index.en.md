@@ -35,3 +35,19 @@ Feel free to contact me with any questions or proposals. I aim to respond within
 {{< alert "envelope" >}}
 For professional inquiries, please prefer contact via email or LinkedIn.
 {{< /alert >}}
+
+---
+
+## 📄 Resume
+
+You can view my complete resume for more details about my background and skills.
+
+<div class="flex flex-col sm:flex-row gap-4 justify-center mt-4">
+{{< button href="/en/cv" >}}
+View my complete resume
+{{< /button >}}
+
+{{< button href="/cv/leon-fievet-cv.pdf" target="_blank" >}}
+Download resume (PDF)
+{{< /button >}}
+</div>

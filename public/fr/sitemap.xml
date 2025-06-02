@@ -87,18 +87,48 @@
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="http://localhost:1313/en/projets/drone-flight-controller/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="fr"
+      href="http://localhost:1313/projets/drone-flight-controller/"
+    />
   </url>
   <url>
     <loc>http://localhost:1313/projets/microservice-monitoring/</loc>
     <lastmod>2024-01-15T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="http://localhost:1313/en/projets/microservice-monitoring/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="fr"
+      href="http://localhost:1313/projets/microservice-monitoring/"
+    />
   </url>
   <url>
     <loc>http://localhost:1313/projets/rust-game-engine/</loc>
     <lastmod>2023-11-10T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="http://localhost:1313/en/projets/rust-game-engine/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="fr"
+      href="http://localhost:1313/projets/rust-game-engine/"
+    />
   </url>
   <url>
     <loc>http://localhost:1313/projets/application-gestion-taches/</loc>
@@ -207,6 +237,21 @@
       rel="alternate"
       hreflang="fr"
       href="http://localhost:1313/contact/"
+    />
+  </url>
+  <url>
+    <loc>http://localhost:1313/cv/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="http://localhost:1313/en/cv/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="fr"
+      href="http://localhost:1313/cv/"
     />
   </url>
   <url>

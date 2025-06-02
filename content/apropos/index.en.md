@@ -1,41 +1,78 @@
 ---
 title: "About Me"
-description: "Who I am"
+description: "Discover my journey, values, and vision for web development"
 showDate: false
 showAuthor: false
 showReadingTime: false
 showTableOfContents: true
 ---
 
-# Who I am
+{{< lead >}}
+Passionate developer, I create web experiences that make a difference.
+{{< /lead >}}
 
-I am a computer science student at the University of Montpellier, passionate about web development and new technologies. My academic background and personal projects have allowed me to develop strong technical expertise, as well as great adaptability and learning capacity.
+## 🎯 My Journey
 
-## My approach
+Student in **Computer Science** at IUT Montpellier, I discovered my passion for web development from my very first programming courses. This training has allowed me to acquire solid foundations in **algorithms**, **system design**, and **application development**.
 
-As a developer, I strive to create elegant and efficient solutions that perfectly meet user needs. I pay particular attention to:
+{{< alert icon="graduation-cap" cardColor="#e0f2fe" iconColor="#0284c7" textColor="#0c4a6e" >}}
+**Current education**: 3rd year of Computer Science - Application Development Track
+{{< /alert >}}
 
-- **User experience**: intuitive and pleasant interfaces
-- **Code quality**: clean, maintainable, and well-documented
-- **Performance**: optimization and speed of execution
-- **Innovation**: constant technological watch
+Beyond the academic framework, I constantly develop my skills through **personal projects** and **technical challenges**. This self-taught approach allows me to stay at the forefront of modern web technologies.
 
-## My interests
+## 💻 My Development Philosophy
 
-Outside of software development, I'm interested in:
-- Product design
-- Emerging technologies
-- Artificial intelligence
-- Cybersecurity
+{{< timeline >}}
+{{< timelineItem icon="heart" header="User-Centered" badge="Priority #1" >}}
+Every feature, every interface is designed to offer the <strong>best possible experience</strong>. I firmly believe that a good developer must first understand the real needs of users.
+{{< /timelineItem >}}
 
-## Contact me
+{{< timelineItem icon="shield" header="Quality Code" badge="Excellence" >}}
+I apply <strong>best practices</strong>: clean code, automated tests, clear documentation. Maintainable code today means time saved tomorrow.
+{{< /timelineItem >}}
 
-- **Email:**
-    - fievet.leon@free.fr
-    - leon.fievet@etu.umontpellier.fr
-- **Phone:** 07 81 87 39 33
-- **Website:** pixnop.github.io
-- **LinkedIn:** [linkedin.com/in/leonfievet](https://linkedin.com/in/leonfievet)
-- **GitHub:** [github.com/pixnop](https://github.com/pixnop)
-- **Address:**
-    - 42 rue du mas du juge, Saint gély du fesc, 34980
+{{< timelineItem icon="rocket" header="Optimal Performance" badge="Speed" >}}
+Resource optimization, lazy loading, strategic caching... I ensure that every application is <strong>fast and responsive</strong>, even on limited connections.
+{{< /timelineItem >}}
+
+{{< timelineItem icon="lightbulb" header="Constant Innovation" badge="Creativity" >}}
+Active technology watch, exploration of new approaches, questioning existing solutions. <strong>Innovation</strong> guides each of my projects.
+{{< /timelineItem >}}
+{{< /timeline >}}
+
+## 🚁 My Passions
+
+### FPV Drones
+FPV drone pilot and builder for 3 years, this passion has taught me:
+- **Technical precision** in component assembly
+- **Problem solving** complex issues in real-time
+- The importance of **perseverance** in the face of challenges
+- Creativity in **capturing unique images**
+
+{{< gallery >}}
+  <img src="/img/drone1.jpg" class="grid-w50" alt="Custom FPV drone" />
+  <img src="/img/drone2.jpg" class="grid-w50" alt="Mountain flight" />
+{{< /gallery >}}
+
+### Emerging Technologies
+- **Artificial Intelligence**: Exploring AI possibilities in web development
+- **Web3 & Blockchain**: Understanding decentralized technologies
+- **IoT**: Integrating connected objects into web applications
+- **Cybersecurity**: Securing applications and protecting data
+
+---
+
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+{{< button href="/en/projets" >}}
+View my projects
+{{< /button >}}
+
+{{< button href="/en/cv" >}}
+Download my resume
+{{< /button >}}
+
+{{< button href="/en/contact" >}}
+Contact me directly
+{{< /button >}}
+</div>

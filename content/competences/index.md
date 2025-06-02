@@ -1,6 +1,6 @@
 ---
-title: "Compétences & Technologies"
-description: "Mon expertise technique, mes outils de prédilection et mes compétences transversales"
+title: "Compétences"
+description: "Technologies modernes et expertise full-stack"
 showDate: false
 showAuthor: false
 showReadingTime: false
@@ -8,192 +8,393 @@ showTableOfContents: true
 ---
 
 {{< lead >}}
-Une stack technique moderne et une soif d'apprendre qui me permettent de m'adapter rapidement à tout nouveau défi.
+Passionné par les technologies de pointe, je crée des solutions performantes et élégantes qui font la différence.
 {{< /lead >}}
 
-## 💻 Langages de programmation
-+
-{{< timeline >}}
-{{< timelineItem icon="star" header="Expertise avancée" badge="Maîtrise" >}}
-{{< keywordList >}}
-{{< keyword icon="code" >}} <strong>Go</strong> - Microservices, APIs haute performance, concurrence {{< /keyword >}}
-{{< keyword icon="shield" >}} <strong>Rust</strong> - Programmation système, WebAssembly, sécurité {{< /keyword >}}
-{{< keyword icon="javascript" >}} <strong>JavaScript/TypeScript</strong> - Full-stack, React, Node.js {{< /keyword >}}
-{{< keyword icon="database" >}} <strong>SQL/NoSQL</strong> - PostgreSQL, MongoDB, Redis {{< /keyword >}}
-{{< /keywordList >}}
-{{< /timelineItem >}}
-
-{{< timelineItem icon="code" header="Niveau intermédiaire" badge="Solide" >}}
-{{< keywordList >}}
-{{< keyword >}} <strong>Python</strong> - Scripts, automatisation, APIs, ML {{< /keyword >}}
-{{< keyword >}} <strong>Java</strong> - Applications entreprise, Spring Boot {{< /keyword >}}
-{{< keyword >}} <strong>C/C++</strong> - Systèmes embarqués, IoT {{< /keyword >}}
-{{< keyword >}} <strong>PHP</strong> - Laravel, WordPress {{< /keyword >}}
-{{< /keywordList >}}
-{{< /timelineItem >}}
-
-{{< timelineItem icon="graduation-cap" header="En exploration" badge="R&D" >}}
-{{< keywordList >}}
-{{< keyword >}} <strong>WebAssembly</strong> - Performance web native {{< /keyword >}}
-{{< keyword >}} <strong>Zig</strong> - Alternative moderne au C {{< /keyword >}}
-{{< keyword >}} <strong>Elixir</strong> - Systèmes distribués fault-tolerant {{< /keyword >}}
-{{< /keywordList >}}
-{{< /timelineItem >}}
-{{< /timeline >}}
-
-## 🚀 Frameworks & Technologies
-
-### Frontend
-{{< swatches "#61DAFB" "#4FC08D" "#38BDF8" "#7C3AED" >}}
-
-{{< gallery >}}
-<div class="skill-card glassmorphism">
-{{< icon "code" >}}
-### React.js
-Applications SPA modernes avec hooks, context API et optimisations avancées
-</div>
-
-<div class="skill-card glassmorphism">
-{{< icon "code" >}}
-### Vue.js
-Interfaces réactives et composants réutilisables
-</div>
-
-<div class="skill-card glassmorphism">
-{{< icon "wand-magic-sparkles" >}}
-### Tailwind CSS
-Design systems scalables et responsive design
-</div>
-{{< /gallery >}}
-
-### Backend & Microservices
-{{< alert icon="server" cardColor="#d1fae5" iconColor="#059669" textColor="#064e3b" >}}
-**Architectures modernes** : Microservices en Go, APIs GraphQL, systèmes distribués, message queuing
-{{< /alert >}}
-
-{{< keywordList >}}
-{{< keyword icon="code" >}} <strong>Go</strong> - Gin, Echo, gRPC, goroutines {{< /keyword >}}
-{{< keyword icon="shield" >}} <strong>Rust</strong> - Actix, Tokio, async runtime {{< /keyword >}}
-{{< keyword icon="code" >}} <strong>Node.js</strong> - Express, Fastify, NestJS {{< /keyword >}}
-{{< keyword icon="server" >}} <strong>APIs</strong> - REST, GraphQL, gRPC, WebSockets {{< /keyword >}}
-{{< keyword icon="database" >}} <strong>Message Queue</strong> - RabbitMQ, Kafka, Redis Pub/Sub {{< /keyword >}}
-{{< /keywordList >}}
-
-### Bases de données
-
-{{< chart >}}
-type: 'radar',
-data: {
-  labels: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'Elasticsearch'],
-  datasets: [{
-    label: 'Niveau de maîtrise',
-    data: [90, 85, 80, 70, 60],
-    backgroundColor: 'rgba(99, 102, 241, 0.2)',
-    borderColor: 'rgba(99, 102, 241, 1)',
-    pointBackgroundColor: 'rgba(99, 102, 241, 1)'
-  }]
+<style>
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
 }
-{{< /chart >}}
 
-### Systèmes & Embarqué
-{{< alert icon="code" cardColor="#fef3c7" iconColor="#f59e0b" textColor="#92400e" >}}
-**Low-level programming** : Développement embarqué, IoT, protocoles de communication, optimisation mémoire
-{{< /alert >}}
+.skill-card {
+  background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 20px;
+  padding: 2rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
 
-{{< gallery >}}
-<div class="skill-card">
-{{< icon "code" >}}
-### Arduino & ESP32
-Capteurs, actuateurs, protocoles I2C/SPI, WiFi/Bluetooth
+.skill-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, transparent 0%, rgba(132, 204, 22, 0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.skill-card:hover::before {
+  opacity: 1;
+}
+
+.progress-bar {
+  background: rgba(0,0,0,0.1);
+  border-radius: 10px;
+  height: 8px;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #84cc16 0%, #10b981 100%);
+  transition: width 1s ease-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-fill::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    transparent 100%
+  );
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.tech-pill {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  background: rgba(132, 204, 22, 0.1);
+  border: 1px solid rgba(132, 204, 22, 0.3);
+  border-radius: 25px;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+  cursor: default;
+}
+
+.tech-pill:hover {
+  background: rgba(132, 204, 22, 0.2);
+  border-color: rgba(132, 204, 22, 0.5);
+  transform: translateY(-2px);
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(132, 204, 22, 0.05) 0%, transparent 100%);
+  border: 1px solid rgba(132, 204, 22, 0.2);
+  transition: all 0.3s ease;
+}
+
+.feature-box:hover {
+  border-color: rgba(132, 204, 22, 0.5);
+  background: linear-gradient(135deg, rgba(132, 204, 22, 0.1) 0%, transparent 100%);
+}
+
+.icon-large {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.skill-description {
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  color: #374151; /* Gris plus foncé pour meilleur contraste */
+}
+
+.card-description {
+  color: #1f2937; /* Gris très foncé pour excellent contraste */
+  margin-bottom: 1.5rem;
+}
+
+.feature-description {
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+@media (prefers-color-scheme: dark) {
+  .skill-card {
+    background: linear-gradient(135deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.1) 100%);
+    border-color: rgba(255,255,255,0.1);
+  }
+  
+  .progress-bar {
+    background: rgba(255,255,255,0.1);
+  }
+  
+  .tech-pill {
+    background: rgba(132, 204, 22, 0.2);
+    border-color: rgba(132, 204, 22, 0.4);
+  }
+  
+  .tech-pill:hover {
+    background: rgba(132, 204, 22, 0.3);
+    border-color: rgba(132, 204, 22, 0.6);
+  }
+  
+  .skill-description {
+    color: #d1d5db; /* Gris clair en mode sombre */
+  }
+  
+  .card-description {
+    color: #e5e7eb; /* Gris très clair en mode sombre */
+  }
+  
+  .feature-description {
+    color: #d1d5db;
+  }
+}
+</style>
+
+## 🚀 Expertise Technique
+
+<div class="skill-grid">
+  <div class="skill-card">
+    <h3 style="font-size: 1.5rem; margin-bottom: 1rem; background: linear-gradient(90deg, #84cc16 0%, #10b981 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+      Backend Development
+    </h3>
+    <p class="card-description">
+      Architecture de microservices scalables et APIs haute performance
+    </p>
+    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+      <span class="tech-pill">Go</span>
+      <span class="tech-pill">Rust</span>
+      <span class="tech-pill">Node.js</span>
+      <span class="tech-pill">gRPC</span>
+      <span class="tech-pill">GraphQL</span>
+    </div>
+  </div>
+
+  <div class="skill-card">
+    <h3 style="font-size: 1.5rem; margin-bottom: 1rem; background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+      Frontend Development
+    </h3>
+    <p class="card-description">
+      Interfaces modernes et expériences utilisateur exceptionnelles
+    </p>
+    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+      <span class="tech-pill">React</span>
+      <span class="tech-pill">Vue 3</span>
+      <span class="tech-pill">TypeScript</span>
+      <span class="tech-pill">Next.js</span>
+      <span class="tech-pill">Tailwind</span>
+    </div>
+  </div>
+
+  <div class="skill-card">
+    <h3 style="font-size: 1.5rem; margin-bottom: 1rem; background: linear-gradient(90deg, #f59e0b 0%, #ef4444 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+      DevOps & Cloud
+    </h3>
+    <p class="card-description">
+      Infrastructure moderne et déploiement continu
+    </p>
+    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+      <span class="tech-pill">Docker</span>
+      <span class="tech-pill">Kubernetes</span>
+      <span class="tech-pill">AWS</span>
+      <span class="tech-pill">CI/CD</span>
+      <span class="tech-pill">Terraform</span>
+    </div>
+  </div>
 </div>
 
-<div class="skill-card">
-{{< icon "code" >}}
-### Rust Embedded
-no_std, RTOS, drivers hardware, memory safety
+## 💻 Langages & Maîtrise
+
+<div style="margin: 3rem 0;">
+  <div style="margin-bottom: 2rem;">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+      <h4 style="font-size: 1.125rem; font-weight: 600;">Go</h4>
+      <span style="color: #10b981; font-weight: 500;">95%</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" style="width: 95%;"></div>
+    </div>
+    <p class="skill-description">
+      Microservices • Concurrence • APIs REST/gRPC • Performance
+    </p>
+  </div>
+
+  <div style="margin-bottom: 2rem;">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+      <h4 style="font-size: 1.125rem; font-weight: 600;">JavaScript/TypeScript</h4>
+      <span style="color: #10b981; font-weight: 500;">90%</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" style="width: 90%;"></div>
+    </div>
+    <p class="skill-description">
+      React • Vue • Node.js • Full-Stack • Modern ES6+
+    </p>
+  </div>
+
+  <div style="margin-bottom: 2rem;">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+      <h4 style="font-size: 1.125rem; font-weight: 600;">Rust</h4>
+      <span style="color: #f59e0b; font-weight: 500;">85%</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" style="width: 85%; background: linear-gradient(90deg, #f59e0b 0%, #ef4444 100%);"></div>
+    </div>
+    <p class="skill-description">
+      Systems Programming • WebAssembly • Memory Safety • Async
+    </p>
+  </div>
+
+  <div style="margin-bottom: 2rem;">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+      <h4 style="font-size: 1.125rem; font-weight: 600;">Python</h4>
+      <span style="color: #3b82f6; font-weight: 500;">75%</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" style="width: 75%; background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 100%);"></div>
+    </div>
+    <p class="skill-description">
+      Scripts • Automatisation • APIs • Data Processing
+    </p>
+  </div>
 </div>
 
-<div class="skill-card">
-{{< icon "shield" >}}
-### Protocoles IoT
-MQTT, CoAP, LoRaWAN, communication temps réel
-</div>
-{{< /gallery >}}
+## 🛠️ Stack Technique Complète
 
-## 🛠️ Outils & DevOps
+<div class="feature-grid">
+  <div class="feature-box">
+    <span class="icon-large">⚛️</span>
+    <h4 style="margin-bottom: 0.5rem;">React Ecosystem</h4>
+    <p class="feature-description">
+      Next.js, Redux, React Query, Styled Components
+    </p>
+  </div>
+
+  <div class="feature-box">
+    <span class="icon-large">🐳</span>
+    <h4 style="margin-bottom: 0.5rem;">Containerisation</h4>
+    <p class="feature-description">
+      Docker, Kubernetes, Docker Compose, Helm
+    </p>
+  </div>
+
+  <div class="feature-box">
+    <span class="icon-large">🗄️</span>
+    <h4 style="margin-bottom: 0.5rem;">Bases de données</h4>
+    <p class="feature-description">
+      PostgreSQL, MongoDB, Redis, Elasticsearch
+    </p>
+  </div>
+
+  <div class="feature-box">
+    <span class="icon-large">🔧</span>
+    <h4 style="margin-bottom: 0.5rem;">Outils Dev</h4>
+    <p class="feature-description">
+      Git, VS Code, Postman, Figma
+    </p>
+  </div>
+
+  <div class="feature-box">
+    <span class="icon-large">📊</span>
+    <h4 style="margin-bottom: 0.5rem;">Monitoring</h4>
+    <p class="feature-description">
+      Prometheus, Grafana, ELK Stack, Sentry
+    </p>
+  </div>
+
+  <div class="feature-box">
+    <span class="icon-large">🔐</span>
+    <h4 style="margin-bottom: 0.5rem;">Sécurité</h4>
+    <p class="feature-description">
+      OAuth2, JWT, SSL/TLS, OWASP
+    </p>
+  </div>
+</div>
+
+## 🌟 Ce qui me distingue
 
 {{< timeline >}}
-{{< timelineItem icon="github" header="Versioning & Collaboration" >}}
-- <strong>Git</strong> - Workflow avancé (rebase, cherry-pick, hooks)
-- <strong>GitHub/GitLab</strong> - CI/CD, code review, issues tracking
-- <strong>Conventional Commits</strong> - Messages standardisés
+{{< timelineItem icon="rocket" header="Innovation constante" badge="Mindset" >}}
+Je reste à l'affût des dernières technologies et n'hésite pas à explorer de nouvelles approches pour résoudre des problèmes complexes.
 {{< /timelineItem >}}
 
-{{< timelineItem icon="docker" header="Containerisation & Déploiement" >}}
-- <strong>Docker</strong> - Conteneurs pour dev/prod
-- <strong>Docker Compose</strong> - Orchestration multi-conteneurs
-- <strong>GitHub Actions</strong> - Pipelines CI/CD automatisés
-- <strong>Heroku/Vercel</strong> - Déploiement cloud
+{{< timelineItem icon="code" header="Code de qualité" badge="Standards" >}}
+Tests automatisés, documentation claire, architecture propre - je livre du code maintenable et évolutif.
 {{< /timelineItem >}}
 
-{{< timelineItem icon="code" header="Environnement de développement" >}}
-- <strong>VS Code</strong> - Extensions personnalisées, snippets
-- <strong>JetBrains IDEs</strong> - WebStorm, IntelliJ
-- <strong>Postman/Insomnia</strong> - Tests d'API
-- <strong>Figma</strong> - Design et prototypage
+{{< timelineItem icon="users" header="Collaboration efficace" badge="Team" >}}
+Communication transparente, partage de connaissances et mentoring font partie intégrante de mon approche professionnelle.
 {{< /timelineItem >}}
 {{< /timeline >}}
 
-## 🎯 Compétences transversales
+## 🚁 Au-delà du code
 
-{{< lead >}}
-Au-delà de la technique, des qualités humaines essentielles
-{{< /lead >}}
-
-{{< keywordList >}}
-{{< keyword icon="users" >}} <strong>Leadership</strong> - Animation d'équipes projets {{< /keyword >}}
-{{< keyword icon="comment" >}} <strong>Communication</strong> - Vulgarisation technique {{< /keyword >}}
-{{< keyword icon="lightbulb" >}} <strong>Problem Solving</strong> - Approche analytique {{< /keyword >}}
-{{< keyword icon="clock" >}} <strong>Gestion du temps</strong> - Méthodes agiles {{< /keyword >}}
-{{< keyword icon="graduation-cap" >}} <strong>Veille technologique</strong> - Apprentissage continu {{< /keyword >}}
-{{< /keywordList >}}
-
-## 🚁 Passions & Hobbies Tech
-
-### Pilotage de drones FPV
-{{< alert icon="rocket" cardColor="#dbeafe" iconColor="#2563eb" textColor="#1e3a8a" >}}
-**Depuis 2019** - Construction, configuration et pilotage de drones racing. Cette passion m'a appris la précision, la patience et la résolution de problèmes électroniques complexes.
-{{< /alert >}}
-
-- 🏗️ **Construction** de drones sur mesure
-- 🎮 **Pilotage** en immersion (lunettes FPV)
-- 🎬 **Montage vidéo** avec DaVinci Resolve
-- 🛠️ **Maintenance** et optimisation des performances
-
-### Impression 3D & Prototypage
-{{< gallery >}}
-<div class="skill-card">
-### FDM (Fused Deposition Modeling)
-Prototypage rapide et pièces fonctionnelles avec PLA, PETG, TPU
+<div style="background: linear-gradient(135deg, rgba(132, 204, 22, 0.1) 0%, rgba(16, 185, 129, 0.1) 100%); border-radius: 20px; padding: 2rem; margin: 2rem 0;">
+  <h3 style="margin-bottom: 1rem;">Pilote FPV & Maker</h3>
+  <p class="card-description">
+    Passionné de drones FPV depuis 2019, je conçois et pilote mes propres appareils. Cette passion m'a enseigné la précision, la patience et l'importance des détails - des qualités que j'applique dans chaque projet de développement.
+  </p>
+  <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem;">
+    <div style="flex: 1; min-width: 200px;">
+      <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">🛠️ Construction</h4>
+      <p class="feature-description">Assemblage de composants, soudure, configuration</p>
+    </div>
+    <div style="flex: 1; min-width: 200px;">
+      <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">🎮 Pilotage</h4>
+      <p class="feature-description">Vol en immersion, freestyle, cinématique</p>
+    </div>
+    <div style="flex: 1; min-width: 200px;">
+      <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">🎬 Création</h4>
+      <p class="feature-description">Montage vidéo, post-production, storytelling</p>
+    </div>
+  </div>
 </div>
-
-<div class="skill-card">
-### SLA (Stéréolithographie)
-Pièces haute précision pour électronique et modélisme
-</div>
-
-<div class="skill-card">
-### CAO avec Fusion 360
-Conception 3D paramétrique et simulation mécanique
-</div>
-{{< /gallery >}}
 
 ---
 
-{{< button href="/projets" >}}
-Voir mes réalisations
-{{< /button >}}
-
-{{< button href="/contact" >}}
-Discutons de votre projet
-{{< /button >}}
+<div style="text-align: center; margin-top: 4rem;">
+  <p style="font-size: 1.125rem; color: #ffffff; margin-bottom: 2rem; font-weight: 500; text-shadow: 0 1px 2px rgba(0,0,0,0.2);">
+    Prêt à donner vie à vos idées ?
+  </p>
+  <div class="flex flex-col sm:flex-row gap-4 justify-center">
+    {{< button href="/projets" >}}
+    Découvrir mes projets
+    {{< /button >}}
+    {{< button href="/contact" >}}
+    Discutons ensemble
+    {{< /button >}}
+  </div>
+</div>

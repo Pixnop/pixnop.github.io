@@ -42,7 +42,37 @@
     </item>
     
     <item>
-      <title>Task Management Application</title>
+      <title>FlightCore - Open Source Flight Controller</title>
+      <link>http://localhost:1313/en/projets/drone-flight-controller/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <author>fievet.leon@free.fr (Léon Fievet)</author>
+      <guid>http://localhost:1313/en/projets/drone-flight-controller/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>GoMetrics - Distributed Monitoring System</title>
+      <link>http://localhost:1313/en/projets/microservice-monitoring/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <author>fievet.leon@free.fr (Léon Fievet)</author>
+      <guid>http://localhost:1313/en/projets/microservice-monitoring/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>PixEngine - 2D Game Engine in Rust</title>
+      <link>http://localhost:1313/en/projets/rust-game-engine/</link>
+      <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
+      <author>fievet.leon@free.fr (Léon Fievet)</author>
+      <guid>http://localhost:1313/en/projets/rust-game-engine/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TaskFlow - Collaborative Task Management Application</title>
       <link>http://localhost:1313/en/projets/application-gestion-taches/</link>
       <pubDate>Sat, 20 May 2023 00:00:00 +0000</pubDate>
       <author>fievet.leon@free.fr (Léon Fievet)</author>

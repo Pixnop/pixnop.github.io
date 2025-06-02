@@ -13,7 +13,8 @@ enableSearch = true
 enableCodeCopy = true
 
 # Custom CSS and JS for modern animations and styling
-customCSS = ["css/custom.css", "css/animations.css"]
+# Note: Blowfish automatically loads custom.css from assets/css/
+# customCSS = ["css/custom.css", "css/animations.css"]
 customJS = ["js/theme-switcher.js", "js/menu-fix.js"]
 
 mainSections = ["projets"]

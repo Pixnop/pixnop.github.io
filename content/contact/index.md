@@ -35,3 +35,19 @@ N'hésitez pas à me contacter pour toute question ou proposition. Je m'efforce 
 {{< alert "envelope" >}}
 Pour toute demande professionnelle, merci de privilégier le contact par e-mail ou LinkedIn.
 {{< /alert >}}
+
+---
+
+## 📄 Curriculum Vitae
+
+Vous pouvez consulter mon CV complet pour plus de détails sur mon parcours et mes compétences.
+
+<div class="flex flex-col sm:flex-row gap-4 justify-center mt-4">
+{{< button href="/cv" >}}
+Voir mon CV complet
+{{< /button >}}
+
+{{< button href="/cv/leon-fievet-cv.pdf" target="_blank" >}}
+Télécharger le CV (PDF)
+{{< /button >}}
+</div>

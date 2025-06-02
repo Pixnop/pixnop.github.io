@@ -41,6 +41,7 @@ Pilote et constructeur de **drones FPV**, j'applique la même passion pour la pr
 
 ---
 
+<div class="flex flex-col sm:flex-row gap-4 mt-8">
 {{< button href="/projets" target="_self" >}}
 Découvrir mes projets
 {{< /button >}}
@@ -48,3 +49,4 @@ Découvrir mes projets
 {{< button href="/contact" target="_self" >}}
 Me contacter
 {{< /button >}}
+</div>
