@@ -4,52 +4,65 @@ pageRef = "/"
 weight = 10
 
 [[main]]
+name = "Journey"
+weight = 20
+
+[[main]]
 name = "About"
 pageRef = "apropos"
-weight = 20
+weight = 21
+parent = "Journey"
 
 [[main]]
 name = "Experience"
 pageRef = "experience"
-weight = 30
+weight = 22
+parent = "Journey"
 
 [[main]]
 name = "Education"
 pageRef = "formation"
-weight = 40
+weight = 23
+parent = "Journey"
 
 [[main]]
 name = "Skills"
 pageRef = "competences"
-weight = 50
+weight = 24
+parent = "Journey"
+
+[[main]]
+name = "Learning Portfolio"
+pageRef = "portfolio-apprentissage"
+weight = 30
 
 [[main]]
 name = "Projects"
 pageRef = "projets"
-weight = 60
+weight = 40
 
 [[main]]
 name = "Categories"
 pageRef = "categories"
-weight = 61
+weight = 41
 parent = "Projects"
 
 [[main]]
 name = "Technologies"
 pageRef = "tags"
-weight = 62
+weight = 42
 parent = "Projects"
 
 [[main]]
 name = "Series"
 pageRef = "series"
-weight = 63
+weight = 43
 parent = "Projects"
 
 [[main]]
 name = "Contact"
 pageRef = "contact"
-weight = 70
+weight = 50
 
 [[footer]]
 name = "LinkedIn"

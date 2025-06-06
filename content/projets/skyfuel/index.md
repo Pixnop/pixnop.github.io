@@ -10,13 +10,26 @@ showHero: true
 heroStyle: "basic"
 ---
 
-# SkyFuel - Application de Gestion de Batteries de Drone
+{{< lead >}}
+**SkyFuel** est une application Android dédiée à la gestion efficace des batteries de drone, permettant aux pilotes et aux opérateurs de maintenir leurs batteries en bon état et d'optimiser leur durée de vie.
+{{< /lead >}}
 
-SkyFuel est une application dédiée à la gestion efficace des batteries de drone, permettant aux pilotes et aux opérateurs de maintenir leurs batteries en bon état, de suivre leur utilisation et d'optimiser leur durée de vie.
+{{< badge >}}
+Version 1.0.0
+{{< /badge >}}
+{{< badge >}}
+Android App
+{{< /badge >}}
+{{< badge >}}
+Open Source
+{{< /badge >}}
 
 {{< github repo="Pixnop/SkyFuel" >}}
 
+{{< figure src="home-and-details.png" alt="SkyFuel - Écran d'accueil et détails des batteries" caption="Interface complète de SkyFuel" >}}
+
 ## Fonctionnalités Principales
+
 
 ### 1. Gestion des Batteries
 
@@ -30,6 +43,11 @@ SkyFuel est une application dédiée à la gestion efficace des batteries de dro
   - Notes personnalisées
 
 - **Dashboard principal** : Visualisez d'un coup d'œil toutes vos batteries et leur état actuel.
+
+{{< gallery >}}
+  <img src="bat-detail_SkyFuel-app.jpg" class="grid-w50" />
+  <img src="bat-detail-2_SkyFuel-app.jpg" class="grid-w50" />
+{{< /gallery >}}
 
 - **Filtrage et recherche** : Retrouvez rapidement une batterie spécifique par statut, modèle, ou autres critères.
 
@@ -59,6 +77,8 @@ SkyFuel est une application dédiée à la gestion efficace des batteries de dro
 
 - **Modification d'état express** : Changez rapidement le statut d'une batterie après avoir scanné son QR code.
 
+{{< figure src="Qr-code_SkyFuel-app.jpg" alt="QR Code SkyFuel" caption="Génération de QR codes uniques pour chaque batterie" class="grid-w50 md:grid-w33" >}}
+
 ### 4. Système d'Alertes et Rappels
 
 - **Notifications de charge prolongée** : Alertes pour les batteries restées en charge trop longtemps.
@@ -78,6 +98,7 @@ SkyFuel est une application dédiée à la gestion efficace des batteries de dro
 - **Statistiques d'utilisation** : Suivez quelles batteries sont les plus utilisées et lesquelles pourraient être sous-utilisées.
 
 - **Export de données** : Exportez vos données dans différents formats (CSV, PDF) pour analyse externe.
+
 
 ## Spécifications Techniques
 
@@ -103,6 +124,13 @@ SkyFuel est une application dédiée à la gestion efficace des batteries de dro
 - Amateurs possédant plusieurs drones et batteries
 
 
-{{< alert >}}
-**SkyFuel v1.0.0** est maintenant disponible sur GitHub: [Pixnop/SkyFuel](https://github.com/Pixnop/SkyFuel)
+{{< alert icon="download" cardColor="#10b981" textColor="#ffffff" iconColor="#ffffff" >}}
+**Téléchargez SkyFuel v1.0.0** sur [GitHub](https://github.com/Pixnop/SkyFuel)
 {{< /alert >}}
+
+{{< keywordList >}}
+{{< keyword icon="android" >}} Android {{< /keyword >}}
+{{< keyword icon="code" >}} Kotlin {{< /keyword >}}
+{{< keyword icon="tag" >}} QR Code {{< /keyword >}}
+{{< keyword icon="shield" >}} Gestion batteries {{< /keyword >}}
+{{< /keywordList >}}

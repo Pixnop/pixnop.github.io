@@ -411,3 +411,112 @@ body div[style*="background-color"] [class*="text-neutral"] {
   color: inherit !important;
   -webkit-text-fill-color: inherit !important;
 }
+
+/* ========================================
+   TABLE OF CONTENTS WIDTH FIX
+   ======================================== */
+/* Cibler spécifiquement la table des matières sans affecter le contenu principal */
+.toc-right {
+  max-width: 250px !important;
+  width: 250px !important;
+}
+
+/* S'assurer que le conteneur intérieur de la TOC gère bien le débordement */
+.toc-right #TOCView {
+  overflow-y: auto !important; /* Permet le scroll si nécessaire */
+  overflow-x: hidden !important; /* Pas de scroll horizontal */
+}
+
+/* Ajuster le texte dans la table des matières */
+.toc-right a,
+#TableOfContents a {
+  font-size: 0.875rem !important;
+  line-height: 1.5 !important;
+}
+
+/* Sur les petits écrans, la TOC est déjà masquée par le thème */
+@media (max-width: 1024px) {
+  .toc-right {
+    display: none !important;
+  }
+}
+
+/* Pour les écrans moyens */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .toc-right {
+    max-width: 200px !important;
+    width: 200px !important;
+  }
+  
+  .toc-right a,
+  #TableOfContents a {
+    font-size: 0.8rem !important;
+  }
+  
+  /* Ajuster la largeur max pour les petits écrans */
+  #TableOfContents a {
+    max-width: 180px !important;
+  }
+}
+
+/* Réduire le padding de la TOC */
+.toc-right > div {
+  padding: 0.75rem !important;
+}
+
+/* Ajuster les niveaux d'indentation dans la TOC */
+#TableOfContents li li {
+  margin-left: 1rem !important;
+}
+
+/* Permettre aux titres de la TOC de s'afficher sur plusieurs lignes */
+#TableOfContents a {
+  display: block !important;
+  white-space: normal !important; /* Permet le retour à la ligne */
+  word-wrap: break-word !important; /* Force la coupure des mots trop longs */
+  overflow-wrap: break-word !important; /* Alternative moderne à word-wrap */
+  hyphens: auto !important; /* Ajoute des traits d'union si nécessaire */
+  max-width: 220px !important;
+  line-height: 1.4 !important; /* Espacement entre les lignes */
+  padding: 0.25rem 0 !important; /* Un peu d'espace vertical */
+}
+
+/* Améliorer la lisibilité des liens multi-lignes dans la TOC */
+#TableOfContents li {
+  margin-bottom: 0.5rem !important; /* Espace entre les entrées */
+}
+
+#TableOfContents a:hover {
+  text-decoration: underline !important;
+}
+
+/* Style pour l'entrée active dans la TOC */
+#TableOfContents a.active {
+  font-weight: 600 !important;
+  color: rgb(132, 204, 22) !important; /* Couleur primary du thème */
+}
+
+/* S'assurer que la TOC mobile (toc-inside) supporte aussi le multi-ligne */
+.toc-inside #TableOfContents a {
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+/* Fix pour le conteneur de la TOC dans Blowfish */
+.ltr\:lg\:pl-8 {
+  padding-left: 1rem !important;
+}
+
+/* S'assurer que le sticky fonctionne correctement */
+.lg\:sticky {
+  position: sticky !important;
+  top: 140px !important;
+}
+
+/* Réduire l'espace entre la TOC et le contenu */
+@media (min-width: 1024px) {
+  .order-first.lg\:ml-auto {
+    margin-left: 2rem !important;
+  }
+}

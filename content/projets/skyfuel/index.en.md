@@ -10,13 +10,26 @@ showHero: true
 heroStyle: "basic"
 ---
 
-# SkyFuel - Drone Battery Management App
+{{< lead >}}
+**SkyFuel** is an Android application dedicated to the efficient management of drone batteries, allowing pilots and operators to maintain their batteries in good condition and optimize their lifespan.
+{{< /lead >}}
 
-SkyFuel is an application dedicated to the efficient management of drone batteries, allowing pilots and operators to maintain their batteries in good condition, track their usage, and optimize their lifespan.
+{{< badge >}}
+Version 1.0.0
+{{< /badge >}}
+{{< badge >}}
+Android App
+{{< /badge >}}
+{{< badge >}}
+Open Source
+{{< /badge >}}
 
 {{< github repo="Pixnop/SkyFuel" >}}
 
+{{< figure src="home-and-details.png" alt="SkyFuel - Home screen and battery details" caption="Complete SkyFuel interface" >}}
+
 ## Main Features
+
 
 ### 1. Battery Management
 
@@ -30,6 +43,11 @@ SkyFuel is an application dedicated to the efficient management of drone batteri
   - Custom notes
 
 - **Main Dashboard**: View all your batteries and their current status at a glance.
+
+{{< gallery >}}
+  <img src="bat-detail_SkyFuel-app.jpg" class="grid-w50" />
+  <img src="bat-detail-2_SkyFuel-app.jpg" class="grid-w50" />
+{{< /gallery >}}
 
 - **Filtering and Search**: Quickly find a specific battery by status, model, or other criteria.
 
@@ -59,6 +77,8 @@ SkyFuel is an application dedicated to the efficient management of drone batteri
 
 - **Express Status Modification**: Quickly change the status of a battery after scanning its QR code.
 
+{{< figure src="Qr-code_SkyFuel-app.jpg" alt="SkyFuel QR Code" caption="Unique QR code generation for each battery" class="grid-w50 md:grid-w33" >}}
+
 ### 4. Alert and Reminder System
 
 - **Extended Charging Notifications**: Alerts for batteries left charging for too long.
@@ -78,6 +98,7 @@ SkyFuel is an application dedicated to the efficient management of drone batteri
 - **Usage Statistics**: Track which batteries are most used and which might be underutilized.
 
 - **Data Export**: Export your data in various formats (CSV, PDF) for external analysis.
+
 
 ## Technical Specifications
 
@@ -103,6 +124,13 @@ SkyFuel is an application dedicated to the efficient management of drone batteri
 - Enthusiasts with multiple drones and batteries
 
 
-{{< alert >}}
-**SkyFuel v1.0.0** is now available on GitHub: [Pixnop/SkyFuel](https://github.com/Pixnop/SkyFuel)
+{{< alert icon="download" cardColor="#10b981" textColor="#ffffff" iconColor="#ffffff" >}}
+**Download SkyFuel v1.0.0** on [GitHub](https://github.com/Pixnop/SkyFuel)
 {{< /alert >}}
+
+{{< keywordList >}}
+{{< keyword icon="android" >}} Android {{< /keyword >}}
+{{< keyword icon="code" >}} Kotlin {{< /keyword >}}
+{{< keyword icon="tag" >}} QR Code {{< /keyword >}}
+{{< keyword icon="shield" >}} Battery Management {{< /keyword >}}
+{{< /keywordList >}}
