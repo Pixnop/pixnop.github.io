@@ -51,8 +51,8 @@ FPV drone pilot and builder for 3 years, this passion has taught me:
 - Creativity in **capturing unique images**
 
 {{< gallery >}}
-  <img src="/img/drone1.jpg" class="grid-w50" alt="Custom FPV drone" />
-  <img src="/img/drone2.jpg" class="grid-w50" alt="Mountain flight" />
+  <img src="/img/drone1.webp" class="grid-w50" alt="Custom FPV drone" />
+  <img src="/img/drone2.webp" class="grid-w50" alt="Mountain flight" />
 {{< /gallery >}}
 
 ### Emerging Technologies

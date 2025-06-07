@@ -26,7 +26,7 @@ Open Source
 
 {{< github repo="Pixnop/SkyFuel" >}}
 
-{{< figure src="home-and-details.png" alt="SkyFuel - Écran d'accueil et détails des batteries" caption="Interface complète de SkyFuel" >}}
+{{< figure src="home-and-details.webp" alt="SkyFuel - Écran d'accueil et détails des batteries" caption="Interface complète de SkyFuel" >}}
 
 ## Fonctionnalités Principales
 
@@ -45,8 +45,8 @@ Open Source
 - **Dashboard principal** : Visualisez d'un coup d'œil toutes vos batteries et leur état actuel.
 
 {{< gallery >}}
-  <img src="bat-detail_SkyFuel-app.jpg" class="grid-w50" />
-  <img src="bat-detail-2_SkyFuel-app.jpg" class="grid-w50" />
+  <img src="bat-detail_SkyFuel-app.webp" class="grid-w50" />
+  <img src="bat-detail-2_SkyFuel-app.webp" class="grid-w50" />
 {{< /gallery >}}
 
 - **Filtrage et recherche** : Retrouvez rapidement une batterie spécifique par statut, modèle, ou autres critères.
@@ -77,7 +77,7 @@ Open Source
 
 - **Modification d'état express** : Changez rapidement le statut d'une batterie après avoir scanné son QR code.
 
-{{< figure src="Qr-code_SkyFuel-app.jpg" alt="QR Code SkyFuel" caption="Génération de QR codes uniques pour chaque batterie" class="grid-w50 md:grid-w33" >}}
+{{< figure src="Qr-code_SkyFuel-app.webp" alt="QR Code SkyFuel" caption="Génération de QR codes uniques pour chaque batterie" class="grid-w50 md:grid-w33" >}}
 
 ### 4. Système d'Alertes et Rappels
 

@@ -56,7 +56,7 @@ Avant ECO-voiturage, l'organisation des déplacements présentait plusieurs inef
 ## 🖼️ Interface utilisateur
 
 ### Vue cartographique principale
-![Carte des terrains d'intervention](Carte%20des%20terrains.png)
+![Carte des terrains d'intervention](Carte%20des%20terrains.webp)
 
 L'interface principale présente une carte interactive où chaque point représente un site d'intervention. Les codes couleur permettent de distinguer rapidement :
 - Les différents profils d'intervenants
@@ -65,7 +65,7 @@ L'interface principale présente une carte interactive où chaque point représe
 - Les opportunités de regroupement
 
 ### Panneau de filtrage
-![Filtres de la carte des terrains](filtres%20Carte%20des%20terrains.png)
+![Filtres de la carte des terrains](filtres%20Carte%20des%20terrains.webp)
 
 Le système de filtrage permet d'affiner l'affichage selon plusieurs critères :
 - **Période** : sélection de la plage temporelle

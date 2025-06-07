@@ -51,8 +51,8 @@ Pilote et constructeur de drones FPV depuis 3 ans, cette passion m'a appris :
 - La créativité dans la **capture d'images** uniques
 
 {{< gallery >}}
-  <img src="/img/drone1.jpg" class="grid-w50" alt="Drone FPV personnalisé" />
-  <img src="/img/drone2.jpg" class="grid-w50" alt="Vol en montagne" />
+  <img src="/img/drone1.webp" class="grid-w50" alt="Drone FPV personnalisé" />
+  <img src="/img/drone2.webp" class="grid-w50" alt="Vol en montagne" />
 {{< /gallery >}}
 
 ### Technologies émergentes

@@ -152,7 +152,7 @@ This project illustrates how digitalization can transform environmental professi
 ## 🖼️ User Interface
 
 ### Main Hub Interface
-![ECO-MED Applications Hub](Hub%20des%20applications.png)
+![ECO-MED Applications Hub](Hub%20des%20applications.webp)
 
 The ECO-MED Hub presents a modern and intuitive web interface for easy access to all developed applications. The microservices architecture ensures optimal performance and simplified maintenance.
 

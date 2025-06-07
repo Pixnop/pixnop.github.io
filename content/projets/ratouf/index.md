@@ -60,7 +60,7 @@ Avant RaTouf, l'intégration des données chiroptérologiques était entièremen
 ## 🖼️ Interface utilisateur
 
 ### Écran principal d'analyse
-![Interface principale RaTouf](RaTouf.png)
+![Interface principale RaTouf](RaTouf.webp)
 
 L'interface de RaTouf présente de manière claire :
 - Les sessions d'enregistrement à traiter
@@ -69,24 +69,24 @@ L'interface de RaTouf présente de manière claire :
 - Les niveaux d'activité calculés
 
 ### Visualisateur taxonomique
-![Visualisateur Taxonomique](Visualisateur%20Taxonomique%20des%20Chiroptères.png)
+![Visualisateur Taxonomique](Visualisateur%20Taxonomique%20des%20Chiroptères.webp)
 
 Outil avancé de navigation dans la taxonomie des chiroptères permettant d'explorer les relations entre espèces et groupes phoniques.
 
 ### Gestion des correspondances de sessions
-![Sélection des sessions](selection%20chauve%20souris%20ratouf.png)
+![Sélection des sessions](selection%20chauve%20souris%20ratouf.webp)
 
 Interface de correspondance entre les sessions SonoChiro et celles du SIN, avec gestion des cas d'exception.
 
 ### Détails des identifications
 
 #### Espèces trouvées dans le SIN
-![Détails espèces trouvées](detaille%20chauve%20souris%20touvé%20RaTouf.png)
+![Détails espèces trouvées](detaille%20chauve%20souris%20touvé%20RaTouf.webp)
 
 Vue détaillée pour les espèces déjà présentes dans le SIN, avec comparaison des données.
 
 #### Nouvelles identifications
-![Détails nouvelles espèces](detaille%20chauve%20souris%20non%20touvé%20RaTouf.png)
+![Détails nouvelles espèces](detaille%20chauve%20souris%20non%20touvé%20RaTouf.webp)
 
 Interface pour traiter les nouvelles identifications non présentes dans le SIN.
 

@@ -60,7 +60,7 @@ Before RaTouf, chiropterological data integration was entirely manual:
 ## 🖼️ User Interface
 
 ### Main Analysis Screen
-![RaTouf Main Interface](RaTouf.png)
+![RaTouf Main Interface](RaTouf.webp)
 
 RaTouf's interface clearly presents:
 - Recording sessions to process
@@ -69,24 +69,24 @@ RaTouf's interface clearly presents:
 - Calculated activity levels
 
 ### Taxonomic Visualizer
-![Taxonomic Visualizer](Visualisateur%20Taxonomique%20des%20Chiroptères.png)
+![Taxonomic Visualizer](Visualisateur%20Taxonomique%20des%20Chiroptères.webp)
 
 Advanced tool for navigating chiroptera taxonomy, allowing exploration of relationships between species and phonic groups.
 
 ### Session Correspondence Management
-![Session Selection](selection%20chauve%20souris%20ratouf.png)
+![Session Selection](selection%20chauve%20souris%20ratouf.webp)
 
 Interface for matching SonoChiro sessions with SIN sessions, with exception case management.
 
 ### Identification Details
 
 #### Species Found in SIN
-![Found Species Details](detaille%20chauve%20souris%20touvé%20RaTouf.png)
+![Found Species Details](detaille%20chauve%20souris%20touvé%20RaTouf.webp)
 
 Detailed view for species already present in SIN, with data comparison.
 
 #### New Identifications
-![New Species Details](detaille%20chauve%20souris%20non%20touvé%20RaTouf.png)
+![New Species Details](detaille%20chauve%20souris%20non%20touvé%20RaTouf.webp)
 
 Interface for processing new identifications not present in SIN.
 

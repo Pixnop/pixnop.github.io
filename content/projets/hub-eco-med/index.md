@@ -152,7 +152,7 @@ Ce projet illustre comment la digitalisation peut transformer les métiers de l'
 ## 🖼️ Interface utilisateur
 
 ### Interface principale du Hub
-![Hub des applications ECO-MED](Hub%20des%20applications.png)
+![Hub des applications ECO-MED](Hub%20des%20applications.webp)
 
 Le Hub ECO-MED présente une interface web moderne et intuitive permettant d'accéder facilement à l'ensemble des applications développées. L'architecture en micro-services garantit des performances optimales et une maintenance simplifiée.
 

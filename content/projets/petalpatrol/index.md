@@ -62,32 +62,32 @@ Avant PetalPatrol, la gestion des inventaires botaniques présentait plusieurs d
 ### Évolution de l'interface
 
 #### Ancienne interface
-{{< figure src="oldui - la PetalPatrol.png" alt="Ancienne interface PetalPatrol" caption="Interface initiale de PetalPatrol avec design basique" >}}
+{{< figure src="oldui - la PetalPatrol.webp" alt="Ancienne interface PetalPatrol" caption="Interface initiale de PetalPatrol avec design basique" >}}
 
 #### Nouvelle interface - Thème sombre
 
 **Sélection d'étude**
-{{< figure src="newui-black-selection etude-PetalPatrol.png" alt="Sélection d'étude - Thème sombre" caption="Interface de sélection d'étude avec le nouveau design sombre" >}}
+{{< figure src="newui-black-selection etude-PetalPatrol.webp" alt="Sélection d'étude - Thème sombre" caption="Interface de sélection d'étude avec le nouveau design sombre" >}}
 
 **Interface de relevé**
-{{< figure src="newui - black - releve - PetalPatrol.png" alt="Interface de relevé - Thème sombre" caption="Interface de saisie des relevés botaniques avec thème sombre" >}}
+{{< figure src="newui - black - releve - PetalPatrol.webp" alt="Interface de relevé - Thème sombre" caption="Interface de saisie des relevés botaniques avec thème sombre" >}}
 
 **Interface de validation**
-{{< figure src="newui - black - validation - PetalPatrol.png" alt="Interface de validation - Thème sombre" caption="Interface de validation des données avec thème sombre" >}}
+{{< figure src="newui - black - validation - PetalPatrol.webp" alt="Interface de validation - Thème sombre" caption="Interface de validation des données avec thème sombre" >}}
 
 #### Nouvelle interface - Thème clair
 
 **Sélection d'étude**
-{{< figure src="newui-white-selection etude-PetalPatrol.png" alt="Sélection d'étude - Thème clair" caption="Interface de sélection d'étude avec le nouveau design clair" >}}
+{{< figure src="newui-white-selection etude-PetalPatrol.webp" alt="Sélection d'étude - Thème clair" caption="Interface de sélection d'étude avec le nouveau design clair" >}}
 
 **Interface de localisation**
-{{< figure src="newui - white- location - PetalPatrol.png" alt="Interface de localisation - Thème clair" caption="Interface de géolocalisation des relevés avec thème clair" >}}
+{{< figure src="newui - white- location - PetalPatrol.webp" alt="Interface de localisation - Thème clair" caption="Interface de géolocalisation des relevés avec thème clair" >}}
 
 **Interface de relevé**
-{{< figure src="newui - white-releve - PetalPatrol.png" alt="Interface de relevé - Thème clair" caption="Interface de saisie des relevés botaniques avec thème clair" >}}
+{{< figure src="newui - white-releve - PetalPatrol.webp" alt="Interface de relevé - Thème clair" caption="Interface de saisie des relevés botaniques avec thème clair" >}}
 
 **Interface de validation**
-{{< figure src="newui - white- validation - PetalPatrol.png" alt="Interface de validation - Thème clair" caption="Interface de validation des données avec thème clair" >}}
+{{< figure src="newui - white- validation - PetalPatrol.webp" alt="Interface de validation - Thème clair" caption="Interface de validation des données avec thème clair" >}}
 
 ### Fonctionnalités de l'interface
 

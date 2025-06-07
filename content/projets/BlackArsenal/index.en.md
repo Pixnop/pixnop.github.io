@@ -24,7 +24,7 @@ PHP MVC
 E-commerce
 {{< /badge >}}
 
-{{< figure src="accueil- BlackArsenal.png" alt="BlackArsenal - Homepage" caption="BlackArsenal website homepage interface" >}}
+{{< figure src="accueil- BlackArsenal.webp" alt="BlackArsenal - Homepage" caption="BlackArsenal website homepage interface" >}}
 
 ## Project Overview
 
@@ -63,8 +63,8 @@ Design of a normalized database with well-structured relational tables, included
 ### 1. User Management
 
 {{< gallery >}}
-  <img src="page connexion - BlackArsenal.png" class="grid-w50" />
-  <img src="page creation de compte - BlackArsenal.png" class="grid-w50" />
+  <img src="page connexion - BlackArsenal.webp" class="grid-w50" />
+  <img src="page creation de compte - BlackArsenal.webp" class="grid-w50" />
 {{< /gallery >}}
 
 - **Complete authentication system** with registration and login
@@ -75,8 +75,8 @@ Design of a normalized database with well-structured relational tables, included
 ### 2. Product Catalog
 
 {{< gallery >}}
-  <img src="liste des armes - BlackArsenal.png" class="grid-w50" />
-  <img src="page arme - BlackArsenal.png" class="grid-w50" />
+  <img src="liste des armes - BlackArsenal.webp" class="grid-w50" />
+  <img src="page arme - BlackArsenal.webp" class="grid-w50" />
 {{< /gallery >}}
 
 - **Product display** with pagination
@@ -88,8 +88,8 @@ Design of a normalized database with well-structured relational tables, included
 ### 3. Administration Interface
 
 {{< gallery >}}
-  <img src="formulaire creation arme - BlackArsenal.png" class="grid-w50" />
-  <img src="formulaire modification armes - BlackArsenal.png" class="grid-w50" />
+  <img src="formulaire creation arme - BlackArsenal.webp" class="grid-w50" />
+  <img src="formulaire modification armes - BlackArsenal.webp" class="grid-w50" />
 {{< /gallery >}}
 
 - **Complete CRUD** (Create, Read, Update, Delete) for products
@@ -101,8 +101,8 @@ Design of a normalized database with well-structured relational tables, included
 ### 4. User Experience
 
 {{< gallery >}}
-  <img src="liste des armes contendante - BlackArsenal.png" class="grid-w50" />
-  <img src="page arme contendante- BlackArsenal.png" class="grid-w50" />
+  <img src="liste des armes contendante - BlackArsenal.webp" class="grid-w50" />
+  <img src="page arme contendante- BlackArsenal.webp" class="grid-w50" />
 {{< /gallery >}}
 
 - **Responsive design** adapted for mobile and tablets
@@ -198,7 +198,7 @@ CREATE TABLE Commande(
 
 ## Demonstrated Skills
 
-{{< carousel images="{formulaire creation arme - BlackArsenal.png,formulaire modification armes - BlackArsenal.png,liste des armes - BlackArsenal.png,page arme - BlackArsenal.png}" aspectRatio="16-9" interval="3000" >}}
+{{< carousel images="{formulaire creation arme - BlackArsenal.webp,formulaire modification armes - BlackArsenal.webp,liste des armes - BlackArsenal.webp,page arme - BlackArsenal.webp}" aspectRatio="16-9" interval="3000" >}}
 
 {{< alert icon="lightbulb" cardColor="#10b981" textColor="#ffffff" iconColor="#ffffff" >}}
 **Key Learning** - Complete mastery of web development cycle with PHP MVC

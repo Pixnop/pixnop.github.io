@@ -24,7 +24,7 @@ PHP MVC
 E-commerce
 {{< /badge >}}
 
-{{< figure src="accueil- BlackArsenal.png" alt="BlackArsenal - Page d'accueil" caption="Interface d'accueil du site BlackArsenal" >}}
+{{< figure src="accueil- BlackArsenal.webp" alt="BlackArsenal - Page d'accueil" caption="Interface d'accueil du site BlackArsenal" >}}
 
 ## Vue d'Ensemble du Projet
 
@@ -63,8 +63,8 @@ Conception d'une base de données normalisée avec tables relationnelles bien st
 ### 1. Gestion des Utilisateurs
 
 {{< gallery >}}
-  <img src="page connexion - BlackArsenal.png" class="grid-w50" />
-  <img src="page creation de compte - BlackArsenal.png" class="grid-w50" />
+  <img src="page connexion - BlackArsenal.webp" class="grid-w50" />
+  <img src="page creation de compte - BlackArsenal.webp" class="grid-w50" />
 {{< /gallery >}}
 
 - **Système d'authentification** complet avec inscription et connexion
@@ -75,8 +75,8 @@ Conception d'une base de données normalisée avec tables relationnelles bien st
 ### 2. Catalogue de Produits
 
 {{< gallery >}}
-  <img src="liste des armes - BlackArsenal.png" class="grid-w50" />
-  <img src="page arme - BlackArsenal.png" class="grid-w50" />
+  <img src="liste des armes - BlackArsenal.webp" class="grid-w50" />
+  <img src="page arme - BlackArsenal.webp" class="grid-w50" />
 {{< /gallery >}}
 
 - **Affichage des produits** avec pagination
@@ -88,8 +88,8 @@ Conception d'une base de données normalisée avec tables relationnelles bien st
 ### 3. Interface d'Administration
 
 {{< gallery >}}
-  <img src="formulaire creation arme - BlackArsenal.png" class="grid-w50" />
-  <img src="formulaire modification armes - BlackArsenal.png" class="grid-w50" />
+  <img src="formulaire creation arme - BlackArsenal.webp" class="grid-w50" />
+  <img src="formulaire modification armes - BlackArsenal.webp" class="grid-w50" />
 {{< /gallery >}}
 
 - **CRUD complet** (Create, Read, Update, Delete) pour les produits
@@ -101,8 +101,8 @@ Conception d'une base de données normalisée avec tables relationnelles bien st
 ### 4. Expérience Utilisateur
 
 {{< gallery >}}
-  <img src="liste des armes contendante - BlackArsenal.png" class="grid-w50" />
-  <img src="page arme contendante- BlackArsenal.png" class="grid-w50" />
+  <img src="liste des armes contendante - BlackArsenal.webp" class="grid-w50" />
+  <img src="page arme contendante- BlackArsenal.webp" class="grid-w50" />
 {{< /gallery >}}
 
 - **Design responsive** adapté aux mobiles et tablettes
@@ -205,7 +205,7 @@ CREATE TABLE Commande(
 
 ## Compétences Démontrées
 
-{{< carousel images="{formulaire creation arme - BlackArsenal.png,formulaire modification armes - BlackArsenal.png,liste des armes - BlackArsenal.png,page arme - BlackArsenal.png}" aspectRatio="16-9" interval="3000" >}}
+{{< carousel images="{formulaire creation arme - BlackArsenal.webp,formulaire modification armes - BlackArsenal.webp,liste des armes - BlackArsenal.webp,page arme - BlackArsenal.webp}" aspectRatio="16-9" interval="3000" >}}
 
 {{< alert icon="lightbulb" cardColor="#10b981" textColor="#ffffff" iconColor="#ffffff" >}}
 **Apprentissages Clés** - Maîtrise complète du cycle de développement web avec PHP MVC

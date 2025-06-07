@@ -62,32 +62,32 @@ Before PetalPatrol, botanical inventory management presented several challenges:
 ### Interface Evolution
 
 #### Legacy Interface
-{{< figure src="oldui - la PetalPatrol.png" alt="Legacy PetalPatrol interface" caption="Initial PetalPatrol interface with basic design" >}}
+{{< figure src="oldui - la PetalPatrol.webp" alt="Legacy PetalPatrol interface" caption="Initial PetalPatrol interface with basic design" >}}
 
 #### New Interface - Dark Theme
 
 **Study Selection**
-{{< figure src="newui-black-selection etude-PetalPatrol.png" alt="Study selection - Dark theme" caption="Study selection interface with new dark design" >}}
+{{< figure src="newui-black-selection etude-PetalPatrol.webp" alt="Study selection - Dark theme" caption="Study selection interface with new dark design" >}}
 
 **Survey Interface**
-{{< figure src="newui - black - releve - PetalPatrol.png" alt="Survey interface - Dark theme" caption="Botanical survey data entry interface with dark theme" >}}
+{{< figure src="newui - black - releve - PetalPatrol.webp" alt="Survey interface - Dark theme" caption="Botanical survey data entry interface with dark theme" >}}
 
 **Validation Interface**
-{{< figure src="newui - black - validation - PetalPatrol.png" alt="Validation interface - Dark theme" caption="Data validation interface with dark theme" >}}
+{{< figure src="newui - black - validation - PetalPatrol.webp" alt="Validation interface - Dark theme" caption="Data validation interface with dark theme" >}}
 
 #### New Interface - Light Theme
 
 **Study Selection**
-{{< figure src="newui-white-selection etude-PetalPatrol.png" alt="Study selection - Light theme" caption="Study selection interface with new light design" >}}
+{{< figure src="newui-white-selection etude-PetalPatrol.webp" alt="Study selection - Light theme" caption="Study selection interface with new light design" >}}
 
 **Location Interface**
-{{< figure src="newui - white- location - PetalPatrol.png" alt="Location interface - Light theme" caption="Survey geolocation interface with light theme" >}}
+{{< figure src="newui - white- location - PetalPatrol.webp" alt="Location interface - Light theme" caption="Survey geolocation interface with light theme" >}}
 
 **Survey Interface**
-{{< figure src="newui - white-releve - PetalPatrol.png" alt="Survey interface - Light theme" caption="Botanical survey data entry interface with light theme" >}}
+{{< figure src="newui - white-releve - PetalPatrol.webp" alt="Survey interface - Light theme" caption="Botanical survey data entry interface with light theme" >}}
 
 **Validation Interface**
-{{< figure src="newui - white- validation - PetalPatrol.png" alt="Validation interface - Light theme" caption="Data validation interface with light theme" >}}
+{{< figure src="newui - white- validation - PetalPatrol.webp" alt="Validation interface - Light theme" caption="Data validation interface with light theme" >}}
 
 ### Interface Features
 

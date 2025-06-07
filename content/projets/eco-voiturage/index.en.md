@@ -56,7 +56,7 @@ Before ECO-carpooling, trip organization had several inefficiencies:
 ## 🖼️ User Interface
 
 ### Main mapping view
-![Intervention site map](Carte%20des%20terrains.png)
+![Intervention site map](Carte%20des%20terrains.webp)
 
 The main interface presents an interactive map where each point represents an intervention site. Color codes allow quick distinction of:
 - Different user profiles
@@ -65,7 +65,7 @@ The main interface presents an interactive map where each point represents an in
 - Grouping opportunities
 
 ### Filtering panel
-![Site map filters](filtres%20Carte%20des%20terrains.png)
+![Site map filters](filtres%20Carte%20des%20terrains.webp)
 
 The filtering system allows display refinement according to several criteria:
 - **Period**: time range selection
