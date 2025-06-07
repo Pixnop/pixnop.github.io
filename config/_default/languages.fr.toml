@@ -23,6 +23,6 @@ bio = "Développeur polyvalent passionné par les technologies modernes. De la c
 links = [
     { email = "mailto:fievet.leon@free.fr" },
     { email = "mailto:leon.fievet@etu.umontpellier.fr" },
-    { linkedin = "https://linkedin.com/in/leonfievet" },
+    { linkedin = "https://www.linkedin.com/in/l%C3%A9on-fievet/" },
     { github = "https://github.com/pixnop" }
 ]

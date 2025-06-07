@@ -10,6 +10,10 @@ showHero: true
 heroStyle: "basic"
 ---
 
+{{< lead >}}
+**ECO-MED Application Hub** is a complete application ecosystem designed to digitalize and optimize business processes of an environmental consulting firm specialized in environmental expertise.
+{{< /lead >}}
+
 # ECO-MED Application Hub
 
 Design and development of a complete application ecosystem to digitize and optimize business processes for ECO-MED, a consulting firm specialized in environmental expertise.
@@ -134,63 +138,10 @@ Fire risk visualization module:
 - Autonomous work
 - Technology watch
 
-## 🔮 Evolution Perspectives
 
-The developed application ecosystem constitutes a solid foundation for ECO-MED's digital transformation. Perspectives include:
-- Integration of new modules (document management, AI for species recognition...)
-- Migration to microservices architecture
-- Native mobile application development
-- Implementation of a Business Intelligence system
+## 💻 Technical Implementation
 
-## 💻 Code Example
-
-Here's an example of the REST API route developed for the ECO-carpooling application:
-
-```javascript
-/**
- * Route to retrieve field data.
- * This API aggregates planning data and formats it
- * for map display
- */
-app.get('/terrains', async (req, res) => {
-    try {
-        const { terrains, dateMiseAJour } = dataProcessor.getProcessedData();
-        
-        const terrainsData = Array.from(terrains.values()).map(terrain => ({
-            affaire: {
-                code: terrain.affaire.code,
-                nom: terrain.affaire.nom,
-                commune: {
-                    ville: terrain.affaire.commune.ville,
-                    codePostal: terrain.affaire.commune.codePostal,
-                    latitude: terrain.affaire.commune.latitude,
-                    longitude: terrain.affaire.commune.longitude
-                }
-            },
-            personne: {
-                nom: terrain.personne.nom,
-                prenom: terrain.personne.prenom,
-                profils: terrain.personne.profils,
-                agence: terrain.personne.agence,
-            },
-            quantiteParMois: terrain.quantiteParMois,
-            estNuit: terrain.estNuit,
-            ligneAffaire: terrain.ligneAffaire,
-        }));
-
-        res.json({
-            terrains: terrainsData,
-            dateMiseAJour: dateMiseAJour.toLocaleString('fr-FR', { 
-                dateStyle: 'long', 
-                timeStyle: 'short' 
-            })
-        });
-    } catch (error) {
-        console.error('Error retrieving terrains:', error);
-        res.status(500).json({ error: 'Internal server error' });
-    }
-});
-```
+The ECO-carpooling application uses a specially developed REST API to retrieve and format field planning data. This API aggregates information from different sources (schedules, geolocation, user profiles) and structures it for map display. The system handles field data retrieval with geographic coordinates, associated participant information, and planning metadata, while ensuring robust error handling and appropriate date formatting for the French user interface.
 
 ## 💡 Innovation and Added Value
 
@@ -198,9 +149,13 @@ This project illustrates how digitalization can transform environmental professi
 
 > "This internship allowed me to put my technical skills at the service of a cause close to my heart: environmental preservation. Seeing the concrete impact of my work on the teams' daily life was extremely rewarding." - *Léon Fievet*
 
-## 📸 Screenshots
+## 🖼️ User Interface
 
-*Screenshots of the different applications (Main Hub, ECO-carpooling, GOAT, FroggyFactors) can be added here to illustrate the interface and developed features.*
+### Main Hub Interface
+![ECO-MED Applications Hub](Hub%20des%20applications.png)
+
+The ECO-MED Hub presents a modern and intuitive web interface for easy access to all developed applications. The microservices architecture ensures optimal performance and simplified maintenance.
+
 
 ## 📄 Documentation
 

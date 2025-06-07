@@ -10,6 +10,10 @@ showHero: true
 heroStyle: "basic"
 ---
 
+{{< lead >}}
+**Hub Applicatif ECO-MED** est un écosystème applicatif complet conçu pour digitaliser et optimiser les processus métiers d'un bureau d'études spécialisé en expertise environnementale.
+{{< /lead >}}
+
 # Hub Applicatif ECO-MED
 
 Conception et développement d'un écosystème applicatif complet pour digitaliser et optimiser les processus métiers d'ECO-MED, bureau d'études spécialisé en expertise environnementale.
@@ -134,63 +138,10 @@ Module de visualisation des risques incendie :
 - Travail en autonomie
 - Veille technologique
 
-## 🔮 Perspectives d'évolution
 
-L'écosystème applicatif développé constitue une base solide pour la transformation numérique d'ECO-MED. Les perspectives incluent :
-- Intégration de nouveaux modules (gestion documentaire, IA pour reconnaissance d'espèces...)
-- Migration vers une architecture microservices
-- Développement d'applications mobiles natives
-- Mise en place d'un système de Business Intelligence
+## 💻 Implementation technique
 
-## 💻 Exemple de code
-
-Voici un exemple de route API REST développée pour l'application ECO-voiturage :
-
-```javascript
-/**
- * Route pour récupérer les données des terrains.
- * Cette API agrège les données de planification et les formate
- * pour l'affichage cartographique
- */
-app.get('/terrains', async (req, res) => {
-    try {
-        const { terrains, dateMiseAJour } = dataProcessor.getProcessedData();
-        
-        const terrainsData = Array.from(terrains.values()).map(terrain => ({
-            affaire: {
-                code: terrain.affaire.code,
-                nom: terrain.affaire.nom,
-                commune: {
-                    ville: terrain.affaire.commune.ville,
-                    codePostal: terrain.affaire.commune.codePostal,
-                    latitude: terrain.affaire.commune.latitude,
-                    longitude: terrain.affaire.commune.longitude
-                }
-            },
-            personne: {
-                nom: terrain.personne.nom,
-                prenom: terrain.personne.prenom,
-                profils: terrain.personne.profils,
-                agence: terrain.personne.agence,
-            },
-            quantiteParMois: terrain.quantiteParMois,
-            estNuit: terrain.estNuit,
-            ligneAffaire: terrain.ligneAffaire,
-        }));
-
-        res.json({
-            terrains: terrainsData,
-            dateMiseAJour: dateMiseAJour.toLocaleString('fr-FR', { 
-                dateStyle: 'long', 
-                timeStyle: 'short' 
-            })
-        });
-    } catch (error) {
-        console.error('Erreur lors de la récupération des terrains :', error);
-        res.status(500).json({ error: 'Erreur interne du serveur' });
-    }
-});
-```
+L'application ECO-voiturage utilise une API REST développée spécialement pour récupérer et formater les données de planification terrain. Cette API agrège les informations des différentes sources (plannings, géolocalisation, profils utilisateurs) et les structure pour l'affichage cartographique. Le système gère la récupération des données terrain avec leurs coordonnées géographiques, les informations des intervenants associés, et les métadonnées de planification, tout en assurant une gestion d'erreur robuste et un formatage approprié des dates pour l'interface utilisateur française.
 
 ## 💡 Innovation et valeur ajoutée
 
@@ -198,9 +149,13 @@ Ce projet illustre comment la digitalisation peut transformer les métiers de l'
 
 > "Ce stage m'a permis de mettre mes compétences techniques au service d'une cause qui me tient à cœur : la préservation de l'environnement. Voir l'impact concret de mon travail sur le quotidien des équipes a été extrêmement gratifiant." - *Léon Fievet*
 
-## 📸 Captures d'écran
+## 🖼️ Interface utilisateur
 
-*Les captures d'écran des différentes applications (Hub principal, ECO-voiturage, GOAT, FroggyFactors) peuvent être ajoutées ici pour illustrer l'interface et les fonctionnalités développées.*
+### Interface principale du Hub
+![Hub des applications ECO-MED](Hub%20des%20applications.png)
+
+Le Hub ECO-MED présente une interface web moderne et intuitive permettant d'accéder facilement à l'ensemble des applications développées. L'architecture en micro-services garantit des performances optimales et une maintenance simplifiée.
+
 
 ## 📄 Documentation
 

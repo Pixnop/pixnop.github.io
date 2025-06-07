@@ -8,7 +8,7 @@ showTableOfContents: true
 ---
 
 ## Développeur Informatique FullStack
-**ECO-MED Montpellier** | Juillet - Août 2024
+**ECO-MED Montpellier** | Résidence Atrium, 2éme étage - 113 rue Raymond Recouly, 34070 Montpellier |Juillet - Août 2024
 
 En tant que développeur fullstack, j'ai contribué à la modernisation des outils numériques de l'entreprise:
 
@@ -24,7 +24,7 @@ En tant que développeur fullstack, j'ai contribué à la modernisation des outi
 **Technologies**: JavaScript, Node.js, React, MongoDB, Express, Git
 
 ## Stage Développement Informatique
-**ECO-MED Montpellier** | Avril - Juin 2024 | 12 semaines
+**ECO-MED Montpellier** | Résidence Atrium, 2éme étage - 113 rue Raymond Recouly, 34070 Montpellier | Avril - Juin 2024 | 12 semaines
 
 Stage de fin d'études au sein du bureau d'études en environnement ECO-MED, axé sur:
 
@@ -36,7 +36,7 @@ Stage de fin d'études au sein du bureau d'études en environnement ECO-MED, ax�
 **Technologies**: JavaScript, HTML/CSS, PHP, MySQL, Git
 
 ## Maître nageur sauveteur
-**Camping Domaine des Mûriers** | Saison estivale 2023
+**Camping Domaine des Mûriers** | Route Départementale 37, 34350 Vendres-plage | Saison estivale 2023
 
 - Surveillance des bassins et sécurité des baigneurs
 - Organisation d'activités aquatiques
@@ -52,11 +52,3 @@ Stage de fin d'études au sein du bureau d'études en environnement ECO-MED, ax�
 - Formation des administrateurs à la gestion du contenu
 
 **Technologies**: WordPress, HTML/CSS, PHP
-
-## Travail en cuisine
-**Restaurant La Boucherie** | 2021
-
-- Préparation des plats sous supervision du chef
-- Gestion du stock alimentaire
-- Respect des normes d'hygiène HACCP
-- Travail en équipe dans un environnement à rythme soutenu
