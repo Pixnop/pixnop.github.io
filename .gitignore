@@ -1,1 +1,26 @@
 **/.claude/settings.local.json
+
+# Hugo generated files
+/public/
+/resources/_gen/
+hugo_stats.json
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Local environment files
+.env.local
+.env.*.local
