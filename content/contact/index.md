@@ -7,8 +7,6 @@ showReadingTime: false
 layout: "simple"
 ---
 
-# Contactez-moi
-
 Je suis ouvert aux opportunités professionnelles, collaborations sur des projets ou simplement échanger sur des sujets liés au développement web et à l'informatique.
 
 ## Informations de contact

@@ -7,8 +7,6 @@ showReadingTime: false
 showTableOfContents: true
 ---
 
-# Professional Experience
-
 ## FullStack Developer
 **ECO-MED Montpellier** | July - August 2024
 

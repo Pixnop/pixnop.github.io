@@ -7,8 +7,6 @@ showReadingTime: false
 layout: "simple"
 ---
 
-# Contact Me
-
 I am open to professional opportunities, project collaborations, or simply exchanging ideas about web development and computer science.
 
 ## Contact Information

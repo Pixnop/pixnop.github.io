@@ -7,8 +7,6 @@ showReadingTime: false
 showTableOfContents: true
 ---
 
-# Formation
-
 ## BUT Informatique
 **IUT Montpellier-Sète, Université de Montpellier** | 2021 - 2024 | Alternance à ECO-MED
 

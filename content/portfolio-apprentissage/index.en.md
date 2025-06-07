@@ -1,6 +1,6 @@
 ---
 title: "Learning Portfolio - BUT 2"
-description: "My learnings for the three competencies that stop at level 2 in the RACDV track of the Computer Science BUT"
+description: "My learnings for the three competencies that stop at level 2 in the IAMSI track of the Computer Science BUT"
 showDate: false
 showAuthor: false
 showReadingTime: false
@@ -8,7 +8,7 @@ showTableOfContents: true
 ---
 
 {{< lead >}}
-This page presents my learnings for the three competencies that stop at level 2 in the RACDV track of the Computer Science BUT.
+This page presents my learnings for the three competencies that stop at level 2 in the IAMSI track of the Computer Science BUT.
 {{< /lead >}}
 
 ## 🎯 Competency 2: Optimize Applications
@@ -272,22 +272,3 @@ Mathematics is essential for optimizing databases. I used relational algebra to 
 
 **Reflection:**
 Data quality is crucial. I implemented multi-level validation mechanisms for each project: database constraints, application validation, and periodic consistency tests. This "defense in depth" approach maintained 99.99% integrity on critical data.
-
----
-
-## Conclusion
-
-These three competencies allowed me to develop a comprehensive approach to software development:
-- **Optimization**: I can choose and implement the most suitable algorithms
-- **Administration**: I can deploy and maintain complex infrastructures
-- **Data Management**: I design performant and compliant data systems
-
-This technical versatility, combined with my practical experience, ideally prepares me for continuing my journey in application development.
-
-{{< button href="/projets" >}}
-Discover my projects
-{{< /button >}}
-
-{{< button href="/competences" >}}
-View my technical skills
-{{< /button >}}

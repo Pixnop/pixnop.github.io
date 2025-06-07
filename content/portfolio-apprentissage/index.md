@@ -1,6 +1,6 @@
 ---
 title: "Portfolio d'apprentissage - BUT 2"
-description: "Mes apprentissages pour les trois compétences qui s'arrêtent au niveau 2 dans le parcours RACDV du BUT Informatique"
+description: "Mes apprentissages pour les trois compétences qui s'arrêtent au niveau 2 dans le parcours IAMSI du BUT Informatique"
 showDate: false
 showAuthor: false
 showReadingTime: false
@@ -8,7 +8,7 @@ showTableOfContents: true
 ---
 
 {{< lead >}}
-Cette page présente mes apprentissages pour les trois compétences qui s'arrêtent au niveau 2 dans le parcours RACDV du BUT Informatique.
+Cette page présente mes apprentissages pour les trois compétences qui s'arrêtent au niveau 2 dans le parcours IAMSI du BUT Informatique.
 {{< /lead >}}
 
 ## 🎯 Compétence 2 : Optimiser des applications
@@ -272,22 +272,3 @@ Les mathématiques sont essentielles pour optimiser les bases de données. J'ai 
 
 **Argumentation :**
 La qualité des données est cruciale. J'ai mis en place pour chaque projet des mécanismes de validation à plusieurs niveaux : contraintes en base, validation applicative, et tests de cohérence périodiques. Cette approche "defense in depth" a permis de maintenir une intégrité de 99.99% sur les données critiques.
-
----
-
-## Conclusion
-
-Ces trois compétences m'ont permis de développer une approche complète du développement logiciel :
-- **Optimisation** : Je sais choisir et implémenter les algorithmes les plus adaptés
-- **Administration** : Je peux déployer et maintenir des infrastructures complexes
-- **Gestion des données** : Je conçois des systèmes de données performants et conformes
-
-Cette polyvalence technique, combinée à mon expérience pratique, me prépare idéalement pour la suite de mon parcours en développement d'applications.
-
-{{< button href="/projets" >}}
-Découvrir mes projets
-{{< /button >}}
-
-{{< button href="/competences" >}}
-Voir mes compétences techniques
-{{< /button >}}

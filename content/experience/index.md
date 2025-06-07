@@ -7,8 +7,6 @@ showReadingTime: false
 showTableOfContents: true
 ---
 
-# Expérience professionnelle
-
 ## Développeur Informatique FullStack
 **ECO-MED Montpellier** | Juillet - Août 2024
 

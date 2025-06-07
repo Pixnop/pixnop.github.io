@@ -33,6 +33,9 @@ jobs:
       - name: Create public .nojekyll file
         run: touch ./public/.nojekyll
 
+      - name: Create CNAME file
+        run: echo "leonfvt.fr" > ./public/CNAME
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.9.3
         with:

@@ -7,8 +7,6 @@ showReadingTime: false
 showTableOfContents: true
 ---
 
-# Education
-
 ## Bachelor's Degree in Computer Science
 **IUT Montpellier-Sète, University of Montpellier** | 2021 - 2024 | Work-study at ECO-MED
 
