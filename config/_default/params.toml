@@ -69,6 +69,7 @@ layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
 showBreadcrumbs = true
 showDraftLabel = true
 showEdit = true
+editURL = "https://github.com/Pixnop/pixnop.github.io/edit/main/content"
 editAppendPath = true
 seriesOpened = true
 showHeadingAnchors = true
@@ -84,8 +85,6 @@ showWordCount = true
 sharingLinks = ["linkedin", "twitter", "email", "facebook", "reddit"]
 showZenMode = true
 
-# Configuration pour le bouton Edit
-editPost = "https://github.com/Pixnop/pixnop.github.io/edit/main/content"
 
 [list]
 showHero = true
