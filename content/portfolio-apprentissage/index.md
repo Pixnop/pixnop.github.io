@@ -32,9 +32,6 @@ Cette page présente mes apprentissages pour les trois compétences qui s'arrêt
 - Utilisation de **structures de graphes** pour l'algorithme de matching dans [**Eco-Voiturage**](/projets/eco-voiturage/)
 - **Skip List** implémentée dans un TP pour la gestion optimisée de données ordonnées
 
-{{< alert icon="check" cardColor="#10b981" textColor="#000000" iconColor="#ffffff" >}}
-**Maîtrise validée** - Je sais analyser les besoins et choisir la structure la plus adaptée (complexité temporelle vs spatiale)
-{{< /alert >}}
 
 #### AC2 - Utiliser des techniques algorithmiques adaptées pour des problèmes complexes
 
@@ -49,9 +46,6 @@ Cette page présente mes apprentissages pour les trois compétences qui s'arrêt
 - **A\*** implémenté pour la navigation dans l'application mobile [**SkyFuel**](/projets/skyfuel/)
 - **Programmation dynamique** appliquée au problème du sac à dos dans une SAÉ (note: 18/20)
 
-{{< alert icon="star" cardColor="#f59e0b" textColor="#000000" iconColor="#ffffff" >}}
-**Expertise acquise** - Je maîtrise les paradigmes algorithmiques avancés et sais les appliquer à des problèmes réels
-{{< /alert >}}
 
 #### AC3 - Comprendre les enjeux et moyens de sécurisation des données et du code
 
@@ -64,11 +58,9 @@ Cette page présente mes apprentissages pour les trois compétences qui s'arrêt
 **Traces concrètes :**
 - **Sécurisation complète** de [**BlackArsenal**](/projets/blackarsenal/) : protection XSS, CSRF, injections SQL
 - **Chiffrement AES-256** des données sensibles dans la base de données du [**Hub ECO-MED**](/projets/hub-eco-med/)
+- **Création de défis sécurité** pour la [**Plateforme CTF YGGAME**](/projets/plateforme-ctf-yggame/) : buffer overflow, injection SQL, reverse engineering
 - **Rapport d'audit de sécurité** réalisé avec OWASP ZAP sur mes projets
 
-{{< alert icon="shield" cardColor="#ef4444" textColor="#000000" iconColor="#ffffff" >}}
-**Sécurité intégrée** - Application systématique du principe de "security by design" dans tous mes développements
-{{< /alert >}}
 
 #### AC4 - Évaluer l'impact environnemental et sociétal des solutions proposées
 
@@ -83,9 +75,6 @@ Cette page présente mes apprentissages pour les trois compétences qui s'arrêt
 - **Analyse d'impact carbone** documentée pour le déploiement du [**Hub ECO-MED**](/projets/hub-eco-med/)
 - **Lazy loading et pagination** implémentés pour réduire la bande passante de 70%
 
-{{< alert icon="lightbulb" cardColor="#10b981" textColor="#000000" iconColor="#ffffff" >}}
-**Conscience écologique** - Évaluation systématique de l'empreinte environnementale de mes solutions techniques
-{{< /alert >}}
 
 ---
 
@@ -109,10 +98,8 @@ Cette page présente mes apprentissages pour les trois compétences qui s'arrêt
 - **API REST complète** pour le [**Hub ECO-MED**](/projets/hub-eco-med/) avec documentation OpenAPI
 - **WebSockets** implémentés dans [**PetalPatrol**](/projets/petalpatrol/) pour la synchronisation temps réel
 - **Architecture microservices** avec Docker Compose pour découpler les services
+- **Bot Discord et API CTFd** intégrés dans la [**Plateforme CTF YGGAME**](/projets/plateforme-ctf-yggame/) pour notifications temps réel
 
-{{< alert icon="fire" cardColor="#10b981" textColor="#000000" iconColor="#ffffff" >}}
-**Architecture maîtrisée** - Conception d'applications distribuées scalables et maintenables
-{{< /alert >}}
 
 #### AC2 - Utiliser des serveurs et des services réseaux virtualisés
 
@@ -125,11 +112,9 @@ Cette page présente mes apprentissages pour les trois compétences qui s'arrêt
 **Traces concrètes :**
 - **Dockerisation complète** de tous mes projets avec docker-compose.yml optimisés
 - **Déploiement Kubernetes** pour le [**Hub ECO-MED**](/projets/hub-eco-med/) avec auto-scaling
+- **Infrastructure CTF conteneurisée** dans la [**Plateforme CTF YGGAME**](/projets/plateforme-ctf-yggame/) : 8 défis Docker + Dockge
 - **Terraform** utilisé pour provisionner l'infrastructure cloud de manière reproductible
 
-{{< alert icon="star" cardColor="#f59e0b" textColor="#000000" iconColor="#ffffff" >}}
-**DevOps appliqué** - Infrastructure entièrement automatisée et versionnée
-{{< /alert >}}
 
 #### AC3 - Sécuriser les services et données d'un système
 
@@ -144,9 +129,6 @@ Cette page présente mes apprentissages pour les trois compétences qui s'arrêt
 - **Certificats SSL/TLS** avec Let's Encrypt et renouvellement automatique
 - **Tests de pénétration** documentés avec remédiation des vulnérabilités identifiées
 
-{{< alert icon="shield" cardColor="#ef4444" textColor="#000000" iconColor="#ffffff" >}}
-**Sécurité proactive** - Monitoring continu et réponse automatisée aux menaces
-{{< /alert >}}
 
 ---
 
@@ -171,10 +153,6 @@ Cette page présente mes apprentissages pour les trois compétences qui s'arrêt
 - **Modélisation mathématique** pour le [**Hub ECO-MED**](/projets/hub-eco-med/) avec calculs de cardinalités
 - **Requêtes complexes optimisées** : jointures sur 7 tables passées de 12s à 0.3s
 
-{{< alert icon="fire" cardColor="#10b981" textColor="#000000" iconColor="#ffffff" >}}
-**Performance drastique** - Application rigoureuse de l'algèbre relationnelle pour des gains mesurables
-{{< /alert >}}
-
 #### AC2 - Assurer la confidentialité des données + CE4.01 (respect vie privée)
 
 {{< keywordList >}}
@@ -187,10 +165,6 @@ Cette page présente mes apprentissages pour les trois compétences qui s'arrêt
 - **Module RGPD complet** pour [**Eco-Voiturage**](/projets/eco-voiturage/) : consentement, portabilité, oubli
 - **Chiffrement AES-256-GCM** des données sensibles avec rotation automatique des clés
 - **Logs d'audit blockchain** pour traçabilité inaltérable dans [**PetalPatrol**](/projets/petalpatrol/)
-
-{{< alert icon="shield" cardColor="#8b5cf6" textColor="#000000" iconColor="#ffffff" >}}
-**Protection maximale** - Données chiffrées de bout en bout avec conformité légale totale
-{{< /alert >}}
 
 #### AC3 - Organiser la restitution de données + CE4.02 (enjeux écologiques)
 
@@ -205,9 +179,6 @@ Cette page présente mes apprentissages pour les trois compétences qui s'arrêt
 - **Système de cache Redis** réduisant de 90% les requêtes base et la consommation serveur
 - **Archivage progressif** : données chaudes SSD → tièdes HDD → froides S3
 
-{{< alert icon="star" cardColor="#f59e0b" textColor="#000000" iconColor="#ffffff" >}}
-**Éco-responsabilité** - Réduction de 65% de l'empreinte carbone par optimisation intelligente
-{{< /alert >}}
 
 #### AC4 - Manipuler des données hétérogènes + CE4.04 (cohérence et qualité)
 
@@ -221,8 +192,4 @@ Cette page présente mes apprentissages pour les trois compétences qui s'arrêt
 - **Pipeline ETL Python** pour intégrer CSV, JSON, XML dans le [**Hub ECO-MED**](/projets/hub-eco-med/)
 - **Validation multicouche** : schémas JSON, contraintes DB, tests unitaires = 99.9% intégrité
 - **API universelle** supportant REST, GraphQL et export multi-formats
-
-{{< alert icon="check" cardColor="#ef4444" textColor="#000000" iconColor="#ffffff" >}}
-**Qualité garantie** - Données hétérogènes unifiées avec cohérence maintenue à 99.99%
-{{< /alert >}}
 

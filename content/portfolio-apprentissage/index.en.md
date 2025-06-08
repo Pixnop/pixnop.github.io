@@ -64,6 +64,7 @@ This page presents my learnings for the three competencies that stop at level 2 
 **Concrete evidence:**
 - **Complete security** for [**BlackArsenal**](/projets/blackarsenal/): XSS, CSRF, SQL injection protection
 - **AES-256 encryption** of sensitive data in [**Hub ECO-MED**](/projets/hub-eco-med/) database
+- **Security challenges creation** for [**YGGAME CTF Platform**](/projets/plateforme-ctf-yggame/): buffer overflow, SQL injection, reverse engineering
 - **Security audit report** performed with OWASP ZAP on my projects
 
 {{< alert icon="shield" cardColor="#ef4444" textColor="#000000" iconColor="#ffffff" >}}
@@ -109,6 +110,7 @@ This page presents my learnings for the three competencies that stop at level 2 
 - **Complete REST API** for [**Hub ECO-MED**](/projets/hub-eco-med/) with OpenAPI documentation
 - **WebSockets** implemented in [**PetalPatrol**](/projets/petalpatrol/) for real-time synchronization
 - **Microservices architecture** with Docker Compose to decouple services
+- **Discord Bot and CTFd API** integrated in [**YGGAME CTF Platform**](/projets/plateforme-ctf-yggame/) for real-time notifications
 
 {{< alert icon="fire" cardColor="#10b981" textColor="#000000" iconColor="#ffffff" >}}
 **Mastered architecture** - Design of scalable and maintainable distributed applications
@@ -125,6 +127,7 @@ This page presents my learnings for the three competencies that stop at level 2 
 **Concrete evidence:**
 - **Complete Dockerization** of all projects with optimized docker-compose.yml files
 - **Kubernetes deployment** for [**Hub ECO-MED**](/projets/hub-eco-med/) with auto-scaling
+- **Containerized CTF infrastructure** in [**YGGAME CTF Platform**](/projets/plateforme-ctf-yggame/): 8 Docker challenges + Dockge
 - **Terraform** used to provision cloud infrastructure in a reproducible way
 
 {{< alert icon="star" cardColor="#f59e0b" textColor="#000000" iconColor="#ffffff" >}}

@@ -520,3 +520,24 @@ body div[style*="background-color"] [class*="text-neutral"] {
     margin-left: 2rem !important;
   }
 }
+
+/* ========================================
+   FIX SCROLL-TO-TOP BUTTON Z-INDEX
+   ======================================== */
+   
+/* Force le bouton scroll-to-top à être au-dessus de tout */
+#top-scroller {
+  z-index: 99999 !important;
+}
+
+#top-scroller a {
+  z-index: 99999 !important;
+  pointer-events: auto !important;
+}
+
+/* Réduire le z-index du TOC pour être sûr qu'il passe en dessous */
+.toc-right,
+#TOCView,
+.toc-inside {
+  z-index: 5 !important;
+}
