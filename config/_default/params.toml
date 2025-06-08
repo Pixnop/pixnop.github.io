@@ -68,7 +68,7 @@ layoutBackgroundBlur = true # only used when heroStyle equals background or thum
 layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
 showBreadcrumbs = true
 showDraftLabel = true
-showEdit = false
+showEdit = true
 editAppendPath = true
 seriesOpened = true
 showHeadingAnchors = true
@@ -82,7 +82,7 @@ showTaxonomies = true
 showAuthorsBadges = false
 showWordCount = false
 sharingLinks = ["linkedin", "twitter", "email"]
-showZenMode = false
+showZenMode = true
 
 [list]
 showHero = true
