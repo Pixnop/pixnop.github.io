@@ -237,8 +237,13 @@ div[style*="background-color: #fef3c7"] * {
 
 /* Alert bleu clair */
 div[style*="background-color: #dbeafe"],
-div[style*="background-color: #dbeafe"] * {
+div[style*="background-color: #dbeafe"] *,
+div[style*="#dbeafe"],
+div[style*="#dbeafe"] *,
+div[style*="rgb(219, 234, 254)"],
+div[style*="rgb(219, 234, 254)"] * {
   color: #1e3a8a !important;
+  -webkit-text-fill-color: #1e3a8a !important;
 }
 
 /* Alert bleu très clair (problème signalé) */
@@ -248,10 +253,14 @@ div[style*="background-color: #e0f2fe"] * {
 }
 
 /* Override plus spécifique pour le contenu de l'alert bleu clair */
+.flex.px-4.py-3.rounded-md[style*="#dbeafe"] span,
+.flex.px-4.py-3.rounded-md[style*="#dbeafe"] span *,
+.flex.px-4.py-3.rounded-md[style*="#dbeafe"] strong,
 .flex.px-4.py-3.rounded-md[style*="#e0f2fe"] span,
 .flex.px-4.py-3.rounded-md[style*="#e0f2fe"] span *,
 .flex.px-4.py-3.rounded-md[style*="#e0f2fe"] strong {
-  color: #0c4a6e !important;
+  color: #1e3a8a !important;
+  -webkit-text-fill-color: #1e3a8a !important;
 }
 
 /* Forcer les styles pour les éléments strong dans les alerts */
@@ -540,4 +549,27 @@ body div[style*="background-color"] [class*="text-neutral"] {
 #TOCView,
 .toc-inside {
   z-index: 5 !important;
+}
+
+/* ========================================
+   FIX SPÉCIFIQUE POUR ALERT FORMATION
+   ======================================== */
+   
+/* Force absolue pour l'alert de formation - page à propos */
+html body div[style*="cardColor"] span:not(:first-child),
+html body div[style*="cardColor"] span:not(:first-child) *,
+html body div[style*="cardColor"] span:not(:first-child) strong,
+html body div.flex.px-4.py-3 span[style*="color"],
+html body div.flex.px-4.py-3 span[style*="color"] * {
+  color: #1e3a8a !important;
+  -webkit-text-fill-color: #1e3a8a !important;
+}
+
+/* Selector super spécifique pour la page à propos */
+body div span:contains("Formation actuelle"),
+body div span:contains("Formation actuelle") *,
+body div span:contains("3ème année"),
+body div span:contains("3ème année") * {
+  color: #1e3a8a !important;
+  -webkit-text-fill-color: #1e3a8a !important;
 }
