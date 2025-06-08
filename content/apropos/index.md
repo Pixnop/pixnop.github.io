@@ -15,7 +15,7 @@ Développeur passionné, je crée des expériences web qui font la différence.
 
 Étudiant en **BUT Informatique** à l'IUT de Montpellier, j'ai découvert ma passion pour le développement web dès mes premiers cours de programmation. Cette formation m'a permis d'acquérir des bases solides en **algorithmique**, **conception de systèmes** et **développement d'applications**.
 
-{{< alert icon="graduation-cap" cardColor="#e0f2fe" iconColor="#0284c7" textColor="#0c4a6e" >}}
+{{< alert icon="graduation-cap" cardColor="#dbeafe" iconColor="#0284c7" textColor="#1e3a8a" >}}
 **Formation actuelle** : 3ème année de BUT Informatique - Parcours Développement d'Applications
 {{< /alert >}}
 

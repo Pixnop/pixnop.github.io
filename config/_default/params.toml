@@ -61,7 +61,7 @@ showViews = false
 showLikes = false
 showDateOnlyInArticle = false
 showDateUpdated = true
-showAuthor = true
+showAuthor = false
 showHero = true
 heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
 layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
@@ -83,6 +83,9 @@ showAuthorsBadges = false
 showWordCount = true
 sharingLinks = ["linkedin", "twitter", "email", "facebook", "reddit"]
 showZenMode = true
+
+# Configuration pour le bouton Edit
+editPost = "https://github.com/Pixnop/pixnop.github.io/edit/main/content"
 
 [list]
 showHero = true
