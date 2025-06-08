@@ -61,7 +61,7 @@ showViews = false
 showLikes = false
 showDateOnlyInArticle = false
 showDateUpdated = true
-showAuthor = false
+showAuthor = true
 showHero = true
 heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
 layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
@@ -80,8 +80,8 @@ showRelatedContent = true
 relatedContentLimit = 3
 showTaxonomies = true
 showAuthorsBadges = false
-showWordCount = false
-sharingLinks = ["linkedin", "twitter", "email"]
+showWordCount = true
+sharingLinks = ["linkedin", "twitter", "email", "facebook", "reddit"]
 showZenMode = true
 
 [list]
