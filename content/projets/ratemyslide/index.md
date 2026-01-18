@@ -1,6 +1,6 @@
 ---
 title: "RateMySlide - Application de critiques de toboggans"
-description: "Application web full-stack pour noter et critiquer des toboggans aquatiques, développée avec Symfony et Vue.js"
+description: "Application web full-stack pour noter et critiquer des toboggans aquatiques, développée avec Symfony 6, API Platform et Vue.js 3. Authentification JWT, rate limiting et qualité de code avec PHPStan et SonarQube."
 date: 2024-01-15
 draft: false
 tags: ["Symfony", "Vue.js", "API Platform", "Docker", "JWT", "PHPStan", "MariaDB"]
@@ -10,26 +10,61 @@ showHero: true
 heroStyle: "basic"
 ---
 
-# RateMySlide - Application de critiques de toboggans
+{{< lead >}}
+**RateMySlide** est une application web de notation de toboggans aquatiques développée en binôme dans le cadre du BUT Informatique (Semestre 5). Un concept humoristique qui cache une architecture technique sérieuse et professionnelle.
+{{< /lead >}}
 
-Application web de notation de toboggans aquatiques développée en binôme dans le cadre du BUT Informatique (Semestre 5). Un concept humoristique qui cache une architecture technique sérieuse et professionnelle.
 
-## 🎯 Objectif
+## Contexte du Projet
 
-Développer une application web complète en suivant les bonnes pratiques de l'industrie : API REST avec Symfony et API Platform, frontend réactif avec Vue.js, authentification JWT sécurisée, et intégration de pratiques DevOps.
+Ce projet a été réalisé dans le cadre d'une SAÉ du BUT Informatique. L'objectif pédagogique était de maîtriser le développement full-stack avec un framework PHP moderne (Symfony) couplé à un framework JavaScript réactif (Vue.js), tout en intégrant des pratiques DevOps et de qualité de code.
 
-## 🎢 Contexte du projet
+En binôme avec Quentin Grelier, nous avons conçu et développé une application complète respectant les standards de l'industrie.
 
-L'objectif pédagogique était de maîtriser le développement full-stack avec un framework PHP moderne couplé à un framework JavaScript réactif, tout en intégrant des pratiques DevOps et de qualité de code.
+### Objectifs Techniques
 
-### Objectifs techniques
 - Concevoir et implémenter une **API REST** respectant les standards
 - Développer une **interface utilisateur** moderne et réactive
 - Mettre en place un système d'**authentification sécurisé** (JWT)
 - Appliquer les **bonnes pratiques** de développement (tests, analyse statique, CI/CD)
 - Travailler en **équipe** avec un workflow Git professionnel
 
-## 🛠️ Stack technique
+## Documentation API
+
+L'API est entièrement documentée via Swagger UI, permettant de tester les endpoints directement depuis le navigateur.
+
+{{< figure src="swagger.png" alt="Documentation Swagger de l'API RateMySlide" caption="Interface Swagger UI pour explorer et tester l'API REST" >}}
+
+## Fonctionnalités Principales
+
+### Gestion des Utilisateurs
+
+- **Inscription sécurisée** : Validation robuste du mot de passe (force, longueur)
+- **Authentification JWT** : Tokens d'accès avec système de refresh token
+- **Gestion du profil** : Modification des informations personnelles
+
+### Gestion des Toboggans
+
+- **CRUD complet** : Création, lecture, modification, suppression avec système de brouillons/publication
+- **Filtres avancés** : Recherche par lieu, type, hauteur, longueur
+- **Tri multi-critères** : Organisation personnalisée des résultats
+- **Système de favoris** : Sauvegarde des toboggans préférés
+
+### Système de Critiques
+
+- **Publication de critiques** : Avis détaillés sur les toboggans
+- **Notation** : Système d'étoiles et commentaires
+- **Liaison automatique** : Association avec l'auteur connecté
+
+### Sécurité Applicative
+
+- **Rate limiting** : Protection anti-bruteforce sur l'authentification
+- **Voters Symfony** : Contrôle d'accès granulaire aux ressources
+- **Filtrage contextuel** : Affichage automatique des données selon le profil utilisateur
+
+## Architecture Technique
+
+### Stack Technologique
 
 | Couche | Technologies |
 |--------|--------------|
@@ -40,46 +75,7 @@ L'objectif pédagogique était de maîtriser le développement full-stack avec u
 | **Qualité** | PHPStan (level 6), PHP CS Fixer, PHPUnit |
 | **DevOps** | Docker, Docker Compose, SonarQube |
 
-## 📖 Documentation API
-
-L'API est entièrement documentée via Swagger UI, permettant de tester les endpoints directement depuis le navigateur.
-
-![Documentation Swagger de l'API RateMySlide](swagger.png)
-
-## ⚡ Fonctionnalités implémentées
-
-### Gestion des utilisateurs
-- 👤 **Inscription** avec validation robuste du mot de passe (force, longueur)
-- 🔐 **Authentification JWT** avec refresh token
-- ⚙️ **Gestion du profil** utilisateur
-
-### Gestion des toboggans
-- 📝 **CRUD complet** avec système de brouillons/publication
-- 🔍 **Filtres avancés** (lieu, type, hauteur, longueur)
-- 📊 **Tri multi-critères**
-- ⭐ **Système de favoris** personnalisé
-
-### Système de critiques
-- 💬 **Publication de critiques** sur les toboggans
-- ⭐ **Notation et commentaires**
-- 🔗 **Liaison automatique** avec l'auteur
-
-### Sécurité
-- 🛡️ **Rate limiting** sur l'authentification (protection anti-bruteforce)
-- 🔒 **Voters Symfony** pour le contrôle d'accès granulaire
-- 🔐 **Filtrage automatique** des données selon le contexte utilisateur
-
-## 👨‍💻 Mon rôle et contributions
-
-En binôme avec Quentin Grelier, j'ai principalement travaillé sur :
-
-- **Architecture backend** : Mise en place de la structure API Platform avec les processors personnalisés
-- **Système d'authentification** : Implémentation complète du flux JWT avec refresh tokens
-- **Sécurité** : Développement du rate limiting et des voters d'autorisation
-- **Qualité de code** : Configuration de PHPStan, mise en place des tests automatisés
-- **Dockerisation** : Configuration de l'environnement de développement conteneurisé
-
-## 📁 Architecture du projet
+### Structure du Projet
 
 ```
 src/
@@ -93,7 +89,15 @@ src/
 └── State/               # Processors API Platform
 ```
 
-## 📊 Indicateurs de qualité
+## Mon Rôle et Contributions
+
+- **Architecture backend** : Mise en place de la structure API Platform avec les processors personnalisés
+- **Système d'authentification** : Implémentation complète du flux JWT avec refresh tokens
+- **Sécurité** : Développement du rate limiting et des voters d'autorisation
+- **Qualité de code** : Configuration de PHPStan, mise en place des tests automatisés
+- **Dockerisation** : Configuration de l'environnement de développement conteneurisé
+
+## Indicateurs de Qualité
 
 Le projet est suivi par SonarQube avec les métriques suivantes :
 
@@ -104,28 +108,40 @@ Le projet est suivi par SonarQube avec les métriques suivantes :
 | Lignes dupliquées | Contrôlées |
 | Hotspots de sécurité | Analysés |
 
-## 🎓 Compétences développées
+## Compétences Développées
 
-### Développement backend
+### Développement Backend
+
 - Maîtrise de **Symfony 6** et de son écosystème (Doctrine, Security, Events)
 - Conception d'**API REST** avec API Platform
 - Utilisation des **fonctionnalités PHP 8.1+** (Enums, Attributes, Traits)
 
-### Sécurité applicative
+### Sécurité Applicative
+
 - Implémentation de l'**authentification JWT**
 - Protection contre les attaques par **force brute**
 - Gestion fine des **autorisations** avec le pattern Voter
 
-### DevOps et qualité
+### DevOps et Qualité
+
 - Conteneurisation avec **Docker**
 - Analyse statique avec **PHPStan**
 - Intégration continue avec **SonarQube**
 - Tests automatisés avec **PHPUnit**
 
-### Travail collaboratif
+### Travail Collaboratif
+
 - Utilisation de **Git** en équipe (branches, pull requests, code review)
 - Documentation technique (README, OpenAPI)
 
 ---
 
-*RateMySlide m'a permis de consolider mes compétences en développement web full-stack tout en découvrant des pratiques professionnelles essentielles : architecture logicielle propre, sécurité applicative, et intégration continue.*
+Ce projet m'a permis de consolider mes compétences en développement web full-stack tout en découvrant des pratiques professionnelles essentielles : architecture logicielle propre, sécurité applicative, et intégration continue.
+
+{{< keywordList >}}
+{{< keyword icon="code" >}} Symfony 6 {{< /keyword >}}
+{{< keyword icon="code" >}} Vue.js 3 {{< /keyword >}}
+{{< keyword icon="shield" >}} JWT {{< /keyword >}}
+{{< keyword icon="server" >}} API Platform {{< /keyword >}}
+{{< keyword icon="cube" >}} Docker {{< /keyword >}}
+{{< /keywordList >}}
