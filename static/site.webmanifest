@@ -1,0 +1,14 @@
+{
+  "name": "Léon Fievet - Portfolio",
+  "short_name": "LF Portfolio",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#1b7974",
+  "background_color": "#3c4845",
+  "display": "standalone"
+}
