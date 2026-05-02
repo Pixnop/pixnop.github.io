@@ -1,6 +1,6 @@
 ---
-title: "Learning Portfolio - BUT 2"
-description: "My learnings for the three competencies that stop at level 2 in the IAMS track of the Computer Science BUT"
+title: "Learning Portfolio"
+description: "My learnings for the six competencies of the IAMSI track (Application Integration and Information System Management) of the Computer Science BUT"
 showDate: false
 showAuthor: false
 showReadingTime: false
@@ -8,8 +8,78 @@ showTableOfContents: true
 ---
 
 {{< lead >}}
-This page presents my learnings for the three competencies that stop at level 2 in the Integration of Applications and Information System Management (IAMS) track of the Computer Science BUT.
+This page presents my learnings for the six competencies of the **Application Integration and Information System Management (IAMSI)** track of the Computer Science BUT. Three competencies stop at level 2 (C2, C3, C4) and three are developed up to level 3 (C1, C5, C6), mainly through my work-study program at **ECO-MED** (environmental consulting firm).
 {{< /lead >}}
+
+## Competency 1: Develop an Application
+
+{{< alert icon="rocket" cardColor="#0ea5e9" textColor="#ffffff" iconColor="#ffffff" >}}
+**Competency in progress** at level 3 — *Specialize on a set of platforms with qualitative monitoring*
+{{< /alert >}}
+
+### Critical Learning Outcomes and Evidence
+
+#### CL1 - Choose and implement appropriate architectures
+
+{{< keywordList >}}
+{{< keyword icon="code" >}} 3-tier architecture {{< /keyword >}}
+{{< keyword icon="fire" >}} Modular services {{< /keyword >}}
+{{< keyword icon="star" >}} SOLID & OWASP {{< /keyword >}}
+{{< /keywordList >}}
+
+**Concrete evidence:**
+- **3-tier architecture** (presentation / business / data) of the [**Hub ECO-MED**](/projets/hub-eco-med/), with an abstraction layer to isolate external systems (SX Everwin, ArcGIS, Azure AD)
+- **Service-oriented architecture** for [**RaTouf**](/projets/ratouf/): AuthService, ApiService, ChiroptereService, ReferentialService, DataProcessor, ActivityLevelCalculator, SessionValidator
+- Documented justification of Node.js + Express + MongoDB choices against constraints: schema flexibility (evolving regulations), learning curve for project handover, performance on limited workstations
+- Application of **SOLID** principles and **OWASP** recommendations across all ECO-MED projects
+
+
+#### CL2 - Develop applications on specific platforms
+
+{{< keywordList >}}
+{{< keyword icon="globe" >}} Responsive web {{< /keyword >}}
+{{< keyword icon="code" >}} Field mobile {{< /keyword >}}
+{{< keyword icon="lightbulb" >}} Specialized business apps {{< /keyword >}}
+{{< /keywordList >}}
+
+**Concrete evidence:**
+- [**PetalPatrol**](/projets/petalpatrol/) — field interface designed for tablets in real conditions: large buttons, full-sun readability, intermittent connectivity support
+- [**EcoSur**](/projets/hub-eco-med/) — deferred synchronization for offline use in low-coverage areas, with automatic conflict resolution on reconnection
+- Multi-projection conversion (Lambert 93, UTM, WGS84) via **Proj4js** in-browser to support national and international contexts
+
+
+#### CL3 - Audit an application
+
+{{< keywordList >}}
+{{< keyword icon="eye" >}} Quality audit {{< /keyword >}}
+{{< keyword icon="shield" >}} Security audit {{< /keyword >}}
+{{< keyword icon="check" >}} Automated tests {{< /keyword >}}
+{{< /keywordList >}}
+
+**Concrete evidence:**
+- **IT fleet audit at ECO-MED** carried out during the internship: renewal analysis, hardware inventory, costed recommendations
+- Automated **Jest** tests on critical components: RaTouf CSV parser, chiroptera activity computations, geographic coordinate conversions
+- Implementation of a **centralized logging system** (user actions, external API calls, errors) for production audit and diagnostics
+- Code instrumentation for fine behavior analysis (large CSV processing optimization in RaTouf)
+- **OWASP security audit** carried out on the ECO-MED applications (confidential report, not published)
+
+
+#### CL4 - Integrate solutions in a production environment
+
+{{< keywordList >}}
+{{< keyword icon="docker" >}} Linux deployment {{< /keyword >}}
+{{< keyword icon="fire" >}} CI / CD {{< /keyword >}}
+{{< keyword icon="code" >}} GitFlow {{< /keyword >}}
+{{< /keywordList >}}
+
+**Concrete evidence:**
+- **Production deployment** of the Hub and business apps on Debian Linux VM + NGINX at ECO-MED, with sizing co-defined with the IT provider
+- Full **GitFlow**: `main` / `dev` / `feature/*` branches, mandatory Pull Requests before merge, dedicated server-config branch
+- **GitHub continuous integration**: tests run automatically on each push to detect regressions
+- **JWT + Azure AD SSO** integrated with ECO-MED's existing infrastructure, with periodic token validity check and automatic reconnection
+
+
+---
 
 ## Competency 2: Optimize Applications
 
@@ -228,4 +298,117 @@ This page presents my learnings for the three competencies that stop at level 2 
 {{< alert icon="check" cardColor="#ef4444" textColor="#000000" iconColor="#ffffff" >}}
 **Quality guaranteed** - Heterogeneous data unified with 99.99% consistency maintained
 {{< /alert >}}
+
+---
+
+## Competency 5: Lead a Project
+
+{{< alert icon="rocket" cardColor="#0ea5e9" textColor="#ffffff" iconColor="#ffffff" >}}
+**Competency in progress** at level 3 — *Participate in the design and implementation of an information system project*
+{{< /alert >}}
+
+### Critical Learning Outcomes and Evidence
+
+#### CL1 - Measure the economic, societal and technological impacts of an IT project
+
+{{< keywordList >}}
+{{< keyword icon="chart" >}} Cost-benefit analysis {{< /keyword >}}
+{{< keyword icon="lightbulb" >}} ROI {{< /keyword >}}
+{{< keyword icon="globe" >}} Regulatory compliance {{< /keyword >}}
+{{< /keywordList >}}
+
+**Concrete evidence:**
+- **Detailed budget study** for the production of connected entomological traps: costed Li-Ion (€1,379 for 30 units) vs LiFePO4 (€1,415) comparison, with performance / autonomy / cost criteria
+- **IT fleet renewal analysis** at ECO-MED with costed recommendations delivered to management
+- **Time savings measurement** through automation of data transmission to INPN: removal of the manual Excel → SIN process, reduced data-entry error risk
+- Documented societal impact: **GDPR**, **French Environmental Code (article L411-1A)**, **INSPIRE directive**, **SINP protocol** compliance
+
+
+#### CL2 - Integrate an IT project into the IS of an organization
+
+{{< keywordList >}}
+{{< keyword icon="globe" >}} ERP integration {{< /keyword >}}
+{{< keyword icon="code" >}} APIs & adapters {{< /keyword >}}
+{{< keyword icon="shield" >}} SSO {{< /keyword >}}
+{{< /keywordList >}}
+
+**Concrete evidence:**
+- **Integration of the [Hub ECO-MED](/projets/hub-eco-med/)** with the existing ecosystem: **SX Everwin** ERP (administrative management), **SIN ArcGIS** (naturalist data), **Azure AD** (identities)
+- **Abstraction layer** isolating external systems: eases maintenance, unit testing, and replacing a system without impacting the rest
+- **Custom HTTP module** for SX Everwin (which lacks a complete REST API), with smart caching to limit server load
+- **EcoSur** automatically retrieves projects from SX Everwin → eliminates re-entry and ensures cross-app consistency
+- **PetalPatrol and RaTouf** push validated data to the SIN ArcGIS, which then forwards them to INPN through the established institutional flow
+
+
+#### CL3 - Adapt an information system
+
+{{< keywordList >}}
+{{< keyword icon="lightbulb" >}} Architectural evolution {{< /keyword >}}
+{{< keyword icon="fire" >}} Progressive migration {{< /keyword >}}
+{{< keyword icon="check" >}} Service continuity {{< /keyword >}}
+{{< /keywordList >}}
+
+**Concrete evidence:**
+- **Monolithic → modular architectural evolution**: choice of a federating Hub rather than a single application, to allow incremental addition of business apps without redesign
+- **Progressive migration** of safety sheets from Excel to EcoSur without disrupting the field process: versioning, automatic risk-level computation, advanced search
+- **MongoDB** vs SQL Server choice justified by the need to adapt the IS to fast-evolving regulatory schemas (safety sheets, INPN formats)
+- **Deferred synchronization** introduced specifically to adapt the IS to the mobile/field context with variable connectivity
+- **Systematic technical documentation** of architectural choices and integrations, in a context without IT department: essential to ensure IS sustainability beyond my work-study contract
+
+
+---
+
+## Competency 6: Work in a Computing Team
+
+{{< alert icon="rocket" cardColor="#0ea5e9" textColor="#ffffff" iconColor="#ffffff" >}}
+**Competency in progress** at level 3 — *Manage a computing team*
+{{< /alert >}}
+
+### Critical Learning Outcomes and Evidence
+
+#### CL1 - Organize and share technological and informational watch
+
+{{< keywordList >}}
+{{< keyword icon="eye" >}} Structured watch {{< /keyword >}}
+{{< keyword icon="code" >}} Discord RSS bot {{< /keyword >}}
+{{< keyword icon="lightbulb" >}} Collaborative sharing {{< /keyword >}}
+{{< /keywordList >}}
+
+**Concrete evidence:**
+- **4-month active watch** on three complementary themes (Large Language Models, cybersecurity, planned obsolescence), with **iterative source mapping**: companies (Anthropic, Meta), specialized media (BleepingComputer, Dark Reading, Help Net Security), institutional bodies (ARPP, HOP), academic (IEEE, MIT, Univ. Chicago)
+- **Discord RSS bot developed** to automate collection and sharing: continuous feed monitoring, thematic-channel publishing, preliminary summary generation, **on-demand deep analysis via Gemini API** (translation, key-point extraction, relevance scoring)
+- **6 articles published** on the educational Moodle forum: Anthropic-Iceland AI education partnership, Lazarus group attack on European defense industry, Meta's Mango/Avocado models, Microsoft conviction over Windows 11 obsolescence, WiFi sensing & privacy (IEEE 802.11bf), WhatsApp API flaw — with active participation in discussions
+- **Technical watch in a corporate setting**: official documentation, forums and exploration before each major technical choice (ArcGIS API, Proj4js, JWT, Azure AD, MongoDB, alternative Go/Gin stack)
+- Reasoned use of **AI tools** (Claude for source identification, Gemini for article analysis), with systematic critical review
+
+
+#### CL2 - Identify the stakes of innovation economics
+
+{{< keywordList >}}
+{{< keyword icon="star" >}} Tech choices {{< /keyword >}}
+{{< keyword icon="chart" >}} Open source vs proprietary {{< /keyword >}}
+{{< keyword icon="lightbulb" >}} Obsolescence & lifecycle {{< /keyword >}}
+{{< /keywordList >}}
+
+**Concrete evidence:**
+- **Comparative analysis Li-Ion (INR18650-25R) vs LiFePO4 (JGCFR18650-2200)** for entomological traps: autonomy, cost, durability, safety — with costed budgeting for 30 units
+- **Open-source choice** (Node.js, Express, MongoDB, Leaflet, Proj4js) over proprietary solutions to reduce vendor lock-in and total cost of ownership
+- **Watch on planned obsolescence** (tracking Microsoft Windows 11 condemnation by the JDP, monitoring the 2026 ADEME budget for circular economy) → awareness of eco-design and software-durability stakes
+- Continuous evaluation of the AI ecosystem (LLMs, Meta models, Anthropic research) to spot integration opportunities for ECO-MED tools
+
+
+#### CL3 - Guide IT change management within an organization
+
+{{< keywordList >}}
+{{< keyword icon="check" >}} Change management {{< /keyword >}}
+{{< keyword icon="star" >}} User adoption {{< /keyword >}}
+{{< keyword icon="globe" >}} Pedagogy {{< /keyword >}}
+{{< /keywordList >}}
+
+**Concrete evidence:**
+- **Introduction of agile practices** at ECO-MED (Kanban, GitFlow, Pull Requests, CI) in an organization previously running in a V-cycle — pedagogical effort with the tutor and stakeholders
+- **Regular demos** of progress to key users to create a continuous feedback loop and foster ownership
+- **EcoSur requirement reframing**: shifting from a simple data-entry form initially requested to a complete solution (versioning, risk scoring, advanced search) after user dialogue — solution ultimately praised for addressing needs the users hadn't explicitly formulated
+- **Systematic documentation** of technical choices and features to ensure continuity after my departure
+- **Widespread adoption** of the applications (Hub, PetalPatrol, RaTouf, EcoSur) by ECO-MED teams, with **regular constructive feedback** from users feeding into successive iterations
 
