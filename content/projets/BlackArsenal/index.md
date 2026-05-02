@@ -269,7 +269,7 @@ Le projet comprend :
 {{< /alert >}}
 
 {{< alert icon="graduation-cap" cardColor="#8b5cf6" textColor="#ffffff" iconColor="#ffffff" >}}
-**Portfolio d'Apprentissage** - Ce projet illustre concrètement les compétences développées dans mon [Portfolio d'Apprentissage BUT 2](/portfolio-apprentissage/) : modélisation UML, architecture MVC et conception de bases de données.
+**Portfolio d'Apprentissage** - Ce projet illustre concrètement les compétences développées dans mon [Portfolio d'Apprentissage](/portfolio-apprentissage/) : modélisation UML, architecture MVC et conception de bases de données.
 {{< /alert >}}
 
 
